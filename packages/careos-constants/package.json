@@ -1,0 +1,27 @@
+{
+  "name": "careos-constants",
+  "version": "0.0.0",
+  "description": "Shared careos constants used across apps",
+  "main": "./dist",
+  "types": "./dist/index.d.ts",
+  "author": "Rabbit Internet Company Limited",
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "splitting": false,
+    "sourcemap": true,
+    "clean": false,
+    "onSuccess": "pnpm run gen-types"
+  },
+  "scripts": {
+    "build": "tsup --format esm,cjs",
+    "dev": "tsup --format esm,cjs --watch",
+    "gen-types": "tsc --declaration --emitDeclarationOnly"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "workspace:*",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.4"
+  }
+}

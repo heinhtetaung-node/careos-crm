@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/Users/hein/rabbit/careos-frontend/packages/sorting-filtering/src/motor/motorSortingAndFiltering.test.ts">
+    <testCase name="sortItem should sort Items by price" duration="55"/>
+    <testCase name="sortItem should sort Items by sumInsured" duration="2"/>
+    <testCase name="filterDeductible all packages" duration="0"/>
+    <testCase name="filterDeductible only deductible" duration="0"/>
+    <testCase name="filterDeductible no deductible" duration="5"/>
+  </file>
+  <file path="/Users/hein/rabbit/careos-frontend/packages/sorting-filtering/src/sortingFiltering.test.ts">
+    <testCase name="sortAndFilter returns filtered package with type motor is passed" duration="57"/>
+    <testCase name="sortAndFilter returns no package with type motor is passed and omission logic is enabled" duration="5"/>
+    <testCase name="sortAndFilter returns the packages passed with type is not passed" duration="1"/>
+    <testCase name="sortAndFilter should not returns the normalPackages same like customPackages passed with type is passed" duration="2"/>
+    <testCase name="sortAndFilter should not returns the customPackages passed with type is passed" duration="4"/>
+    <testCase name="sortAndFilter should return correct package if sumInsured and price filter are present" duration="0"/>
+    <testCase name="Render motor filter Should not return blank array if we passed []" duration="1"/>
+    <testCase name="Render motor filter Should not return customPackageMockData if we passed customPackageMockData" duration="0"/>
+    <testCase name="Render motor filter Should not return sortByDate if status passed mock package with key" duration="1"/>
+  </file>
+</testExecutions>

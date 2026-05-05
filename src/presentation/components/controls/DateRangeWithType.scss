@@ -1,0 +1,175 @@
+@import '../../../scss/reuse-mixin.scss';
+
+.shared-date-range-picker {
+  display: flex;
+  width: 100%;
+
+  .MuiSelect-select {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+
+  .MuiOutlinedInput-root {
+    height: 100%;
+  }
+
+  .calendar-date-type {
+    .MuiOutlinedInput-root {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .MuiSelect-root {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .Mui-focused {
+      .MuiSelect-root[aria-expanded='true'] {
+        border: 1px solid $text-color-blue-6;
+        border-bottom: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+
+    .MuiSelect-icon {
+      color: $text-color-blue-6;
+      margin-right: 6px;
+    }
+  }
+
+  .calendar-date-range {
+    width: 100%;
+
+    .MuiInputBase-root {
+      padding: 11px 16px;
+      border: 1px solid $bg-color-blue-5;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      height: 42px;
+
+      &.Mui-focused {
+        border: 1px solid $text-color-blue-6;
+      }
+    }
+
+    .MuiOutlinedInput-root {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border: none;
+
+      &:hover,
+      &:focus {
+        border: none;
+      }
+    }
+
+    fieldset {
+      border: none;
+    }
+  }
+
+  .form-date {
+    position: absolute;
+
+    @include max-xl {
+      left: -30%;
+
+      .rdrCalendarWrapper {
+        max-width: 450px;
+      }
+    }
+
+    @include device {
+      left: -80%;
+    }
+
+    box-shadow: 10px 10px 20px -1px rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+
+    .rdrDefinedRangesWrapper__header {
+      font-size: 14px;
+      padding: 10px 0 10px 20px;
+      font-weight: bold;
+    }
+
+    .rdrDefinedRangesWrapper {
+      position: absolute;
+      top: -1px;
+      right: -180px;
+      width: 180px;
+      border: 1px solid #eee;
+      border-top: 0;
+      box-shadow: 10px 10px 20px -1px rgba(0, 0, 0, 0.3);
+      order: 2;
+      min-height: 421px;
+    }
+
+    .rdrDateRangePickerWrapper {
+      min-height: 420px;
+    }
+
+    .rdrCalendarWrapper {
+      padding-bottom: 30px;
+
+      .rdrDateDisplayWrapper {
+        background-color: #fff;
+        position: absolute;
+        bottom: 1px;
+        padding: 0 16px;
+        width: 100%;
+
+        .rdrDateDisplay {
+          border-top: 1px solid grey;
+
+          .rdrDateInput {
+            box-shadow: none;
+          }
+
+          .rdrDateDisplayItemActive {
+            border: none;
+          }
+        }
+      }
+    }
+
+    .preset-label {
+      position: absolute;
+      top: 0;
+      left: 22px;
+      font-weight: bold;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .date-wrapper {
+      -webkit-box-shadow: 10px 10px 20px 9px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 10px 10px 20px 9px rgba(0, 0, 0, 0.3);
+      box-shadow: 10px 10px 20px 9px rgba(0, 0, 0, 0.3);
+      position: relative;
+      z-index: 1000;
+    }
+
+    .close-btn {
+      position: absolute;
+      cursor: pointer;
+      top: -11px;
+      right: -11px;
+      background-color: #f8f6f6;
+      color: #413c3c;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid #ccc;
+    }
+
+    .select-date-type {
+      height: 100%;
+    }
+  }
+
+  .display-flex-md {
+    flex: 1;
+  }
+}

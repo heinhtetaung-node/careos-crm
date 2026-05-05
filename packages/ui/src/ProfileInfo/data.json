@@ -1,0 +1,40 @@
+[
+  {
+    "title": "Personal information",
+    "isHeader": true
+  },
+  {
+    "title": "Title",
+    "description": "",
+    "key": "title"
+  },
+  {
+    "title": "First Name",
+    "description": "",
+    "key": "firstName"
+  },
+  {
+    "title": "Last Name",
+    "description": "",
+    "key": "lastName"
+  },
+  {
+    "title": "Date of Birth",
+    "description": "",
+    "key": "dateOfBirth"
+  },
+  {
+    "title": "Contact details",
+    "isHeader": true
+  },
+  {
+    "title": "Primary Phone Number",
+    "description": "",
+    "key": "phoneNumber"
+  },
+  {
+    "title": "Email",
+    "description": "",
+    "key": "email"
+  }
+]

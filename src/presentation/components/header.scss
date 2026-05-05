@@ -1,0 +1,134 @@
+@import '../../scss/reuse-mixin.scss';
+
+.general-header {
+  &__toolbar {
+    // INFO: set width equal 100vw for fixed header, so that when popup open layout will not break (even if scrollbar display or not).
+    width: 100vw;
+  }
+
+  .header-rabbit-icon {
+    @include max-lg {
+      padding-bottom: 10px;
+    }
+  }
+
+  &__detail-buttons {
+    padding-left: 50px;
+    width: 60%;
+
+    @include max-lg {
+      width: unset;
+      padding-left: 20px;
+      padding-top: 10px;
+    }
+  }
+
+  &__user-buttons {
+    display: flex;
+    padding: 5px 0;
+    padding-right: 17px;
+    justify-content: flex-end;
+    align-items: center;
+
+    .MuiSelect-icon {
+      color: $text-color-blue-6;
+      margin-right: 6px;
+    }
+
+    .user-logout-button {
+      margin-bottom: 5px;
+
+      span {
+        color: $text-color-blue-6;
+      }
+    }
+
+    &__performance {
+      padding-left: 20px;
+      display: flex;
+      align-items: center;
+
+      @include max-lg {
+        padding-left: 0;
+        padding-bottom: 15px;
+      }
+    }
+
+    .shared-select {
+      .Mui-focused {
+        border-radius: 10px;
+
+        .MuiSelect-select[aria-expanded='true'] {
+          border: 1px solid $text-color-blue-6;
+          border-bottom: 0;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+      }
+    }
+  }
+
+  .user-buttons-lead-detail {
+    @include max-lg {
+      padding-top: 10px;
+      flex-direction: column;
+      max-height: unset;
+
+      .user-logout-button {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  position: fixed;
+
+  @include min-md {
+    right: 0;
+    left: 0;
+  }
+
+  @include max-md {
+    width: 100%;
+  }
+
+  top: 0;
+  z-index: $z-index-header;
+
+  .menu-route {
+    .menu-route__items {
+      display: inline-block;
+      padding: 5px 30px;
+
+      @include max-md {
+        padding: 5px 20px 5px 30px;
+      }
+
+      box-sizing: border-box;
+      position: relative;
+
+      .menu-route__icon {
+        background-color: $bg-color-white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        text-align: center;
+
+        .MuiSvgIcon-root {
+          margin-top: 7px;
+          color: $text-color-blue-6;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .menu-route__link {
+      margin-left: 10px;
+      text-decoration: none;
+      color: $text-color-blue-6;
+      font-size: 15px;
+    }
+  }
+}

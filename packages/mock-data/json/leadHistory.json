@@ -1,0 +1,67 @@
+{
+  "record": {
+    "name": "records/lead/v1alpha2/leads/f2725cba-7594-4538-ab95-933b118cbf67/versions/1",
+    "createTime": "2023-10-25T04:54:25.176201Z",
+    "deleteTime": null,
+    "resourceName": "lead/v1alpha2/leads/f2725cba-7594-4538-ab95-933b118cbf67",
+    "resourceVersion": "1",
+    "resource": {
+      "@type": "type.googleapis.com/rf.lead.v1alpha2.Lead",
+      "name": "leads/f2725cba-7594-4538-ab95-933b118cbf67",
+      "createTime": "2023-10-25T04:54:25.145271519Z",
+      "updateTime": "2023-10-25T04:54:25.145271519Z",
+      "deleteTime": null,
+      "createBy": "",
+      "product": "products/car-insurance",
+      "schema": "schemas/efce3390-8da6-44b3-9e4c-2c7b78ca2c9d",
+      "data": {
+        "carDashCam": true,
+        "carLicensePlate": "",
+        "carModified": false,
+        "carSubModelYear": 48573,
+        "carUsageType": "personal",
+        "chassisNumber": "",
+        "consents": {
+          "dataAnalytics": false,
+          "partners": false,
+          "rabbit": false
+        },
+        "currentInsurer": 0,
+        "customerEmail": [],
+        "customerPhoneNumber": [
+          {
+            "phone": "+66999999999",
+            "status": "valid"
+          }
+        ],
+        "customerPolicyAddress": [],
+        "customerShippingAddress": [],
+        "locale": "th-en",
+        "marketingConsent": false,
+        "numberOfFixedDriver": 0,
+        "primaryPhoneIndex": 0,
+        "registeredProvince": 100000,
+        "sundayContactable": false,
+        "utm": {
+          "lead_source": "rabbit.co.th",
+          "query_params": {
+            "insurer": "in-page-form"
+          },
+          "referrer_url": "http://localhost:3000/"
+        },
+        "vehicleIdNumber": ""
+      },
+      "source": "sources/83894936-ac03-4e7d-ba4b-6fc5f3b529b2",
+      "important": false,
+      "assignedTo": "",
+      "status": "LEAD_STATUS_NEW",
+      "humanId": "L9907588",
+      "root": "",
+      "type": "LEAD_TYPE_NEW",
+      "isRejected": false,
+      "reference": "",
+      "annotations": null
+    },
+    "actor": ""
+  }
+}

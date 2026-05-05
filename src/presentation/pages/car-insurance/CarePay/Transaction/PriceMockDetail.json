@@ -1,0 +1,110 @@
+{
+"price": {
+        "name": "prices/284801e8-10d8-4389-a75d-31d22bd09577",
+        "priceDetail": {
+          "resourceName": "packages/1357849",
+          "priceSummary": {
+            "interestRate": 0.74,
+            "interestAmount": "17846",
+            "processingFeeRate": 0.37,
+            "processingFeeAmount": "8924",
+            "feeRate": 1.1,
+            "feeAmount": "26770",
+            "discountRate": 3,
+            "discountAmount": "75000",
+            "netDiscountRate": -1.93,
+            "netDiscountAmount": "-48230",
+            "packagePriceAfterDiscount": "2425000",
+            "netPremiumAmount": "2451769",
+            "initialAmount": "817257",
+            "subsequentAmount": "817256",
+            "discount": {
+              "type": "DISCOUNT_TYPE_RCL",
+              "percentage": 300,
+              "amount": "75000"
+                },
+            "shipmentFee": "0",
+            "feeAmountNoShip": "26770",
+            "vatRate": 7,
+            "vatAmount": "163552",
+            "stampRate": 0.4,
+            "stampAmount": "9400",
+            "whtRate": 1,
+            "whtAmount": "0"
+            },
+          "installmentDetails": [
+                {
+              "period": 1,
+              "paymentAmount": "817257",
+              "principal": "808333",
+              "addOns": "0",
+              "interest": "0",
+              "processingFee": "8924",
+              "principalBalance": "1616667",
+              "interestBalance": "17846",
+              "processingFeeBalance": "0",
+              "totalBalance": "1634512"
+                },
+                {
+              "period": 2,
+              "paymentAmount": "817256",
+              "principal": "805374",
+              "addOns": "0",
+              "interest": "11883",
+              "processingFee": "0",
+              "principalBalance": "811293",
+              "interestBalance": "5963",
+              "processingFeeBalance": "0",
+              "totalBalance": "817256"
+                },
+                {
+              "period": 3,
+              "paymentAmount": "817256",
+              "principal": "811293",
+              "addOns": "0",
+              "interest": "5963",
+              "processingFee": "0",
+              "principalBalance": "0",
+              "interestBalance": "0",
+              "processingFeeBalance": "0",
+              "totalBalance": "0"
+                }
+            ]
+        },
+        "paymentOption": "RABBIT_CARE_INSTALLMENT",
+        "paymentMethod": "QR_CODE",
+        "numberOfInstallments": 3,
+        "cardProvider": "",
+        "createTime": "2024-03-18T06: 15: 40.690118Z",
+        "updateTime": "2024-03-18T06: 15: 40.690118Z",
+        "discountEntity": {
+          "name": "leads/6b13e4af-9c2b-426c-9610-412908d11a34/packages/1357849/discounts/314459b6-ef3c-4029-af50-4b81c47ba914",
+          "requestResource": "",
+          "source": "",
+          "amount": 0,
+          "percentage": 300,
+          "type": "DISCOUNT_TYPE_RCL",
+          "createTime": "2024-03-18T06: 15: 40.565355Z",
+          "updateTime": "2024-03-18T06: 15: 40.565355Z",
+          "deleteTime": null,
+          "createBy": "users/20d37cbe-feb6-44e9-9527-3d789a2949b8"
+        },
+        "discountType": "DISCOUNT_TYPE_RCL",
+        "packageResource": {
+          "carPackage": {
+            "package": "packages/1357849",
+            "packagePrice": {
+              "voluntaryPrice": "2500000",
+              "compulsoryPrice": "0",
+              "discount": {
+                "type": "DISCOUNT_TYPE_RCL",
+                "percentage": 300,
+                "amount": "0"
+                    }
+                },
+            "insurer": "insurers/27",
+            "insuranceType": "TYPE_1"
+            }
+        }
+    }
+}

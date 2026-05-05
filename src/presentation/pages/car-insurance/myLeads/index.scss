@@ -1,0 +1,100 @@
+@import '../../../../scss/reuse-mixin.scss';
+
+.my-leads-page {
+  flex: 1;
+
+  .shared-my-leads-filter {
+    margin-top: 0;
+  }
+
+  .shared-filter-panel {
+    padding: 15px 40px;
+  }
+
+  .MuiPaper-elevation1 {
+    box-shadow: unset;
+  }
+
+  .MuiSelect-outlined.MuiSelect-outlined {
+    padding: 13px;
+  }
+
+  .my-leads-filter {
+    padding: 0;
+    margin: 0;
+
+    .shared-my-leads-filter__icon-btn {
+      .share-btn {
+        vertical-align: middle;
+      }
+    }
+
+    button {
+      z-index: 1;
+    }
+  }
+
+  .my-leads-buttons {
+    margin: 0 20px;
+  }
+
+  .my-leads-table {
+    .MuiTableHead-root {
+      .MuiTableRow-head {
+        .MuiTableCell-stickyHeader {
+          .MuiTableSortLabel-root {
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+
+    .MuiTableBody-root {
+      .MuiTableRow-root {
+        .colum-break-spaces {
+          white-space: break-spaces;
+        }
+      }
+
+      tr td .MuiTableCell-root.MuiTableCell-body:nth-child(3) {
+        .table-cell-icon {
+          font-size: 2.125rem;
+          border-radius: 50%;
+          background-color: #005098;
+          color: white;
+          padding: 5px;
+        }
+      }
+    }
+  }
+
+  .dp-flex {
+    display: flex;
+
+    .shared-button {
+      &:last-child {
+        .MuiButtonBase-root {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .flex-end {
+    justify-content: flex-end;
+  }
+
+  .paging-my-leads {
+    justify-content: flex-end;
+  }
+
+  .top-paging {
+    @include max-md {
+      margin-top: 20px;
+    }
+  }
+
+  .btn-uppercase {
+    text-transform: uppercase;
+  }
+}

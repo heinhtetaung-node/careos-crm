@@ -1,0 +1,43 @@
+@import '../../../scss/reuse-mixin.scss';
+
+.shared-days-component {
+  margin: 15px 0;
+
+  .app-day-component {
+    margin: 0 5px;
+    max-width: 200px;
+  }
+
+  &__container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__arrows {
+      position: absolute;
+      display: flex;
+      transform: translateY(-50%);
+
+      @include min-sm {
+        left: 45%;
+        top: 105%;
+      }
+
+      @include min-md {
+        justify-content: space-between;
+        width: 100%;
+        top: 50%;
+        left: 0;
+      }
+
+      .left-arrow {
+        transform: rotate(180deg);
+      }
+
+      .arrow {
+        cursor: pointer;
+      }
+    }
+  }
+}

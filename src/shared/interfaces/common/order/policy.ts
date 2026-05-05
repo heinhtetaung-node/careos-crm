@@ -1,0 +1,34 @@
+export interface Policy {
+  addons?: string[];
+  adjustedPremium?: string;
+  approvalBy?: string;
+  approvalStatus?: string;
+  createTime?: string;
+  deleteTime?: string | null;
+  discounts?: string[];
+  documentStatus?: string;
+  grossPremium?: string;
+  humanId?: string;
+  insurer?: string;
+  isCancelled?: false;
+  motorItemType?: string;
+  name?: string;
+  netPremium?: string;
+  package?: string;
+  policyStartDate?: string;
+  price?: string;
+  printingAndShippingStatus?: string;
+  product?: string;
+  qcStatus?: string;
+  stampDuty?: string;
+  stampDutyPercentage?: number;
+  submissionBy?: string;
+  submissionStatus?: string;
+  submitDate?: string;
+  sumInsured?: string;
+  updateTime?: string;
+  vatAmount?: string;
+  vatPercent?: number;
+  trackingNumber?: string;
+  policyNumber?: string;
+}

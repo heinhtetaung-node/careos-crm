@@ -1,0 +1,72 @@
+{
+    "shipments": {
+      "orders/87e9920e-11eb-48a8-b318-3184c0c1e3b5/items/2fbfdbe7-399e-4bc4-a1b2-c0d0798d1e3b": {
+        "shipments": [
+          {
+            "courier_provider": "COURIER_PROVIDER_KERRY",
+            "create_time": "2022-09-07 08:07:25.713111 +0000 UTC",
+            "delivery_time": "0001-01-01 00:00:00 +0000 UTC",
+            "name": "shipments/af74853c-8384-45b5-b6f5-8e04c213cec0",
+            "order": "orders/87e9920e-11eb-48a8-b318-3184c0c1e3b5",
+            "shipment_method": "SHIPMENT_METHOD_EMAIL",
+            "status_update_time": "2022-09-07 08:07:25.711822 +0000 UTC",
+            "tracking_number": ""
+          },
+          {
+            "courier_provider": "COURIER_PROVIDER_KERRY",
+            "create_time": "2022-09-07 08:07:43.237307 +0000 UTC",
+            "delivery_time": "0001-01-01 00:00:00 +0000 UTC",
+            "name": "shipments/925cf232-23f3-4b0d-afdc-8835882e1e30",
+            "order": "orders/87e9920e-11eb-48a8-b318-3184c0c1e3b5",
+            "shipment_method": "SHIPMENT_METHOD_PICKUP",
+            "status_update_time": "2022-09-07 08:07:43.23513 +0000 UTC",
+            "tracking_number": ""
+          },
+          {
+            "courier_provider": "COURIER_PROVIDER_KERRY",
+            "create_time": "2022-09-07 08:07:13.484794 +0000 UTC",
+            "delivery_time": "0001-01-01 00:00:00 +0000 UTC",
+            "name": "shipments/5262eece-3d66-46a5-a0be-ed590cf5b576",
+            "order": "orders/87e9920e-11eb-48a8-b318-3184c0c1e3b5",
+            "shipment_method": "SHIPMENT_METHOD_COURIER",
+            "status_update_time": "2022-09-07 08:07:13.483301 +0000 UTC",
+            "tracking_number": "RABL098736900"
+          }
+        ]
+      },
+      "orders/87e9920e-11eb-48a8-b318-3184c0c1e3b5/items/49be2256-4d91-4a72-8d8f-8b7826acfa6c": {
+        "shipments": [
+          {
+            "courier_provider": "COURIER_PROVIDER_KERRY",
+            "create_time": "2022-09-07 08:07:25.713111 +0000 UTC",
+            "delivery_time": "0001-01-01 00:00:00 +0000 UTC",
+            "name": "shipments/af74853c-8384-45b5-b6f5-8e04c213cec0",
+            "order": "orders/87e9920e-11eb-48a8-b318-3184c0c1e3b5",
+            "shipment_method": "SHIPMENT_METHOD_EMAIL",
+            "status_update_time": "2022-09-07 08:07:25.711822 +0000 UTC",
+            "tracking_number": ""
+          },
+          {
+            "courier_provider": "COURIER_PROVIDER_KERRY",
+            "create_time": "2022-09-07 08:07:43.237307 +0000 UTC",
+            "delivery_time": "0001-01-01 00:00:00 +0000 UTC",
+            "name": "shipments/925cf232-23f3-4b0d-afdc-8835882e1e30",
+            "order": "orders/87e9920e-11eb-48a8-b318-3184c0c1e3b5",
+            "shipment_method": "SHIPMENT_METHOD_PICKUP",
+            "status_update_time": "2022-09-07 08:07:43.23513 +0000 UTC",
+            "tracking_number": ""
+          },
+          {
+            "courier_provider": "COURIER_PROVIDER_KERRY",
+            "create_time": "2022-09-07 08:07:13.484794 +0000 UTC",
+            "delivery_time": "0001-01-01 00:00:00 +0000 UTC",
+            "name": "shipments/5262eece-3d66-46a5-a0be-ed590cf5b576",
+            "order": "orders/87e9920e-11eb-48a8-b318-3184c0c1e3b5",
+            "shipment_method": "SHIPMENT_METHOD_COURIER",
+            "status_update_time": "2022-09-07 08:07:13.483301 +0000 UTC",
+            "tracking_number": "RABL098736900"
+          }
+        ]
+      }
+    }
+  }

@@ -1,0 +1,254 @@
+{
+    "districts":  [
+      {
+        "name":  "provinces/100000/districts/100100",
+        "nameEn":  "Phra Nakhon",
+        "nameTh":  "พระนคร"
+      },
+      {
+        "name":  "provinces/100000/districts/100200",
+        "nameEn":  "Dusit",
+        "nameTh":  "ดุสิต"
+      },
+      {
+        "name":  "provinces/100000/districts/100300",
+        "nameEn":  "Nong Chok",
+        "nameTh":  "หนองจอก"
+      },
+      {
+        "name":  "provinces/100000/districts/100400",
+        "nameEn":  "Bang Rak",
+        "nameTh":  "บางรัก"
+      },
+      {
+        "name":  "provinces/100000/districts/100500",
+        "nameEn":  "Bang Khen",
+        "nameTh":  "บางเขน"
+      },
+      {
+        "name":  "provinces/100000/districts/100600",
+        "nameEn":  "Bang Kapi",
+        "nameTh":  "บางกะปิ"
+      },
+      {
+        "name":  "provinces/100000/districts/100700",
+        "nameEn":  "Pathum Wan",
+        "nameTh":  "ปทุมวัน"
+      },
+      {
+        "name":  "provinces/100000/districts/100800",
+        "nameEn":  "Pom Prap Sattru Phai",
+        "nameTh":  "ป้อมปราบศัตรูพ่าย"
+      },
+      {
+        "name":  "provinces/100000/districts/100900",
+        "nameEn":  "Phra Khanong",
+        "nameTh":  "พระโขนง"
+      },
+      {
+        "name":  "provinces/100000/districts/101000",
+        "nameEn":  "Min Buri",
+        "nameTh":  "มีนบุรี"
+      },
+      {
+        "name":  "provinces/100000/districts/101100",
+        "nameEn":  "Lat Krabang",
+        "nameTh":  "ลาดกระบัง"
+      },
+      {
+        "name":  "provinces/100000/districts/101200",
+        "nameEn":  "Yan Nawa",
+        "nameTh":  "ยานนาวา"
+      },
+      {
+        "name":  "provinces/100000/districts/101300",
+        "nameEn":  "Samphanthawong",
+        "nameTh":  "สัมพันธวงศ์"
+      },
+      {
+        "name":  "provinces/100000/districts/101400",
+        "nameEn":  "Phaya Thai",
+        "nameTh":  "พญาไท"
+      },
+      {
+        "name":  "provinces/100000/districts/101500",
+        "nameEn":  "Thon Buri",
+        "nameTh":  "ธนบุรี"
+      },
+      {
+        "name":  "provinces/100000/districts/101600",
+        "nameEn":  "Bangkok Yai",
+        "nameTh":  "บางกอกใหญ่"
+      },
+      {
+        "name":  "provinces/100000/districts/101700",
+        "nameEn":  "Huai Khwang",
+        "nameTh":  "ห้วยขวาง"
+      },
+      {
+        "name":  "provinces/100000/districts/101800",
+        "nameEn":  "Khlong San",
+        "nameTh":  "คลองสาน"
+      },
+      {
+        "name":  "provinces/100000/districts/101900",
+        "nameEn":  "Taling Chan",
+        "nameTh":  "ตลิ่งชัน"
+      },
+      {
+        "name":  "provinces/100000/districts/102000",
+        "nameEn":  "Bangkok Noi",
+        "nameTh":  "บางกอกน้อย"
+      },
+      {
+        "name":  "provinces/100000/districts/102100",
+        "nameEn":  "Bang Khun Thian",
+        "nameTh":  "บางขุนเทียน"
+      },
+      {
+        "name":  "provinces/100000/districts/102200",
+        "nameEn":  "Phasi Charoen",
+        "nameTh":  "ภาษีเจริญ"
+      },
+      {
+        "name":  "provinces/100000/districts/102300",
+        "nameEn":  "Nong Khaem",
+        "nameTh":  "หนองแขม"
+      },
+      {
+        "name":  "provinces/100000/districts/102400",
+        "nameEn":  "Rat Burana",
+        "nameTh":  "ราษฎร์บูรณะ"
+      },
+      {
+        "name":  "provinces/100000/districts/102500",
+        "nameEn":  "Bang Phlat",
+        "nameTh":  "บางพลัด"
+      },
+      {
+        "name":  "provinces/100000/districts/102600",
+        "nameEn":  "Din Daeng",
+        "nameTh":  "ดินแดง"
+      },
+      {
+        "name":  "provinces/100000/districts/102700",
+        "nameEn":  "Bueng Kum",
+        "nameTh":  "บึงกุ่ม"
+      },
+      {
+        "name":  "provinces/100000/districts/102800",
+        "nameEn":  "Sathon",
+        "nameTh":  "สาทร"
+      },
+      {
+        "name":  "provinces/100000/districts/102900",
+        "nameEn":  "Bang Sue",
+        "nameTh":  "บางซื่อ"
+      },
+      {
+        "name":  "provinces/100000/districts/103000",
+        "nameEn":  "Chatuchak",
+        "nameTh":  "จตุจักร"
+      },
+      {
+        "name":  "provinces/100000/districts/103100",
+        "nameEn":  "Bang Kho Laem",
+        "nameTh":  "บางคอแหลม"
+      },
+      {
+        "name":  "provinces/100000/districts/103200",
+        "nameEn":  "Prawet",
+        "nameTh":  "ประเวศ"
+      },
+      {
+        "name":  "provinces/100000/districts/103300",
+        "nameEn":  "Khlong Toei",
+        "nameTh":  "คลองเตย"
+      },
+      {
+        "name":  "provinces/100000/districts/103400",
+        "nameEn":  "Suan Luang",
+        "nameTh":  "สวนหลวง"
+      },
+      {
+        "name":  "provinces/100000/districts/103500",
+        "nameEn":  "Chom Thong",
+        "nameTh":  "จอมทอง"
+      },
+      {
+        "name":  "provinces/100000/districts/103600",
+        "nameEn":  "Don Mueang",
+        "nameTh":  "ดอนเมือง"
+      },
+      {
+        "name":  "provinces/100000/districts/103700",
+        "nameEn":  "Ratchathewi",
+        "nameTh":  "ราชเทวี"
+      },
+      {
+        "name":  "provinces/100000/districts/103800",
+        "nameEn":  "Lat Phrao",
+        "nameTh":  "ลาดพร้าว"
+      },
+      {
+        "name":  "provinces/100000/districts/103900",
+        "nameEn":  "Vadhana",
+        "nameTh":  "วัฒนา"
+      },
+      {
+        "name":  "provinces/100000/districts/104000",
+        "nameEn":  "Bang Khae",
+        "nameTh":  "บางแค"
+      },
+      {
+        "name":  "provinces/100000/districts/104100",
+        "nameEn":  "Lak Si",
+        "nameTh":  "หลักสี่"
+      },
+      {
+        "name":  "provinces/100000/districts/104200",
+        "nameEn":  "Sai Mai",
+        "nameTh":  "สายไหม"
+      },
+      {
+        "name":  "provinces/100000/districts/104300",
+        "nameEn":  "Khan Na Yao",
+        "nameTh":  "คันนายาว"
+      },
+      {
+        "name":  "provinces/100000/districts/104400",
+        "nameEn":  "Saphan Sung",
+        "nameTh":  "สะพานสูง"
+      },
+      {
+        "name":  "provinces/100000/districts/104500",
+        "nameEn":  "Wang Thonglang",
+        "nameTh":  "วังทองหลาง"
+      },
+      {
+        "name":  "provinces/100000/districts/104600",
+        "nameEn":  "Khlong Sam Wa",
+        "nameTh":  "คลองสามวา"
+      },
+      {
+        "name":  "provinces/100000/districts/104700",
+        "nameEn":  "Bang Na",
+        "nameTh":  "บางนา"
+      },
+      {
+        "name":  "provinces/100000/districts/104800",
+        "nameEn":  "Thawi Watthana",
+        "nameTh":  "ทวีวัฒนา"
+      },
+      {
+        "name":  "provinces/100000/districts/104900",
+        "nameEn":  "Thung Khru",
+        "nameTh":  "ทุ่งครุ"
+      },
+      {
+        "name":  "provinces/100000/districts/105000",
+        "nameEn":  "Bang Bon",
+        "nameTh":  "บางบอน"
+      }
+    ]
+  }

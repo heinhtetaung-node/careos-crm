@@ -1,0 +1,21 @@
+.MuiFormLabel-root {
+  color: rgba(black, 0.87);
+}
+
+.MuiInputLabel-formControl {
+  text-transform: lowercase;
+
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
+
+.MuiButton-containedPrimary {
+  .MuiButton-label {
+    color: white;
+  }
+}
+
+.carepay-contract-filter .MuiInputLabel-formControl {
+  text-transform: inherit !important;
+}

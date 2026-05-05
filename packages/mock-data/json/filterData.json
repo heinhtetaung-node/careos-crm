@@ -1,0 +1,65 @@
+[
+  {
+    "id": 904446,
+    "discount_amount": 1917.1,
+    "discount_percentage": 0.08,
+    "insurance_type": "Type 1",
+    "repair_type": "Dealer",
+    "insurance_company": {
+      "id": 17,
+      "name_en": "Muang Thai Insurance Public Company Limited",
+      "name_th": "บริษัท เมืองไทยประกันภัย จำกัด (มหาชน)",
+      "phone": "Tel: 0-2665-4000",
+      "shortname_en": "Muang Thai Insurance",
+      "shortname_th": "Muang Thai Insurance",
+      "ticker": "MTI"
+    },
+    "insurance_category": "voluntary",
+    "original_price": 23963.72,
+    "sum_coverage": 390000,
+    "sum_coverage_max": 400000,
+    "sum_coverage_min": 400000
+  },
+  {
+    "id": 720440,
+    "discount_amount": 204,
+    "discount_percentage": 0.08,
+    "insurance_type": "Type 3+",
+    "repair_type": "Garage",
+    "insurance_company": {
+      "id": 4,
+      "name_en": "Asia Insurance 1950 Co., Ltd",
+      "name_th": "บริษัท เอเชียประกันภัย (1950) จำกัด (มหาชน)",
+      "phone": "0-2254-9977",
+      "shortname_en": "Asia Insurance",
+      "shortname_th": "Asia Insurance",
+      "ticker": "AII"
+    },
+    "insurance_category": "voluntary",
+    "original_price": 2550,
+    "sum_coverage": 100000,
+    "sum_coverage_max": 100000,
+    "sum_coverage_min": 100000
+  },
+  {
+    "id": 767139,
+    "discount_amount": 230.4,
+    "discount_percentage": 0.08,
+    "insurance_type": "Type 2",
+    "repair_type": "Garage",
+    "insurance_company": {
+      "id": 25,
+      "name_en": "Thaivivat Insurance Public Co., Ltd.",
+      "name_th": "บริษัทประกันภัยไทยวิวัฒน์ จำกัด (มหาชน)",
+      "phone": "0-2695-0800",
+      "shortname_en": "Thaivivat Insurance",
+      "shortname_th": "Thaivivat Insurance",
+      "ticker": "TVI"
+    },
+    "insurance_category": "voluntary",
+    "original_price": 2880,
+    "sum_coverage": 50000,
+    "sum_coverage_max": 50000,
+    "sum_coverage_min": 50000
+  }
+]

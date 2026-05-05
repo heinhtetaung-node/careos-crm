@@ -1,0 +1,120 @@
+// core overrides
+//grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 600px,
+  md: 960px,
+  lg: 1280px,
+  xl: 1440px,
+);
+//colors
+$colors: (
+  c-white: #fff,
+  c-blue: #232e48,
+  c-blue-2: #1a489c,
+  c-blue-3: #303f62,
+  c-blue-4: #f5f8ff,
+  c-blue-5: #e9edf5,
+  c-blue-6: #005098,
+  c-yellow: #ffd25d,
+  c-yellow-2: #fff6df,
+  c-yellow-3: #fff6de,
+  c-gray: #5e5e66,
+  c-gray-2: #dddee0,
+  c-gray-8: #f3f3f3,
+  c-gray-4: #ccc,
+  c-gray-5: #f2f2f2,
+  c-gray-6: #7b7b85,
+  c-gray-7: #d2d2d2,
+  c-gray-9: #494949,
+  c-gray-10: #fafafa,
+  c-gray-11: #757575,
+  c-gray-12: #2a31cb1a,
+  c-gray-13: #a5aac0,
+  c-gray-14: #4f4b66,
+  c-pink: #e02d47,
+  c-pink-2: #f5455a,
+  c-pink-3: #ea4548,
+  c-gray-light: #ddd,
+  c-gray-3: #a5a5ac,
+  c-light-gray: #656565,
+  c-dark-green: #078171,
+  bg-light: #f2f3fa,
+  bg-light-2: #e5eef8,
+);
+//fonts
+$fonts: (
+  f-english: (
+    lato,
+    meiryo,
+    'Hiragino Mincho Pro',
+    'Hiragino Kaku Gothic Pro',
+    'Tahoma',
+    'Osaka',
+  ),
+  f-thailand: (
+    meiryo,
+    'Hiragino Mincho Pro',
+    'Hiragino Kaku Gothic Pro',
+    'Tahoma',
+    'Osaka',
+  ),
+);
+$bg-color-primary: color(c-white);
+$bg-color-nav: color(c-blue);
+$bg-color-yellow: color(c-yellow);
+$bg-color-yellow-2: color(c-yellow-2);
+$bg-color-blue: color(c-blue);
+$bg-color-blue-2: color(c-blue-2);
+$bg-color-blue-4: color(c-blue-4);
+$bg-color-blue-5: color(c-blue-5);
+$bg-color-gray-3: color(c-gray-3);
+$bg-color-gray-8: color(c-gray-8);
+$bg-color-gray-5: color(c-gray-5);
+$bg-color-gray-7: color(c-gray-7);
+$bg-color-gray-9: color(c-gray-9);
+$bg-color-gray-10: color(c-gray-10);
+$bg-color-pink: color(c-pink);
+$bg-color-yellow-3: color(c-yellow-3);
+$bg-color-white: color(c-white);
+$text-color-yellow: color(c-yellow);
+$text-color-blue: color(c-blue);
+$text-color-blue-2: color(c-blue-2);
+$text-color-blue-6: color(c-blue-6);
+$text-color-gray: color(c-gray);
+$text-color-gray-6: color(c-gray-6);
+$text-color-gray-10: color(c-gray-10);
+$text-color-gray-11: color(c-gray-11);
+$text-color-gray-9: color(c-gray-9);
+$text-color-pink: color(c-pink);
+$text-color-pink-2: color(c-pink-2);
+$text-color-pink-3: color(c-pink-3);
+$text-color-light-gray: color(c-light-gray);
+$text-dark-green: color(c-dark-green);
+$border-color-yellow: color(c-yellow);
+$border-color-blue: color(c-blue);
+$border-color-blue-3: color(c-blue-3);
+$border-color-gray-2: color(c-gray-2);
+$border-color-gray-4: color(c-gray-4);
+$text-color-placeholder: color(c-gray-3);
+$border-color-yellow: color(c-yellow);
+$border-color-blue: color(c-blue);
+$border-color-blue-2: color(c-blue-2);
+$border-color-blue-3: color(c-blue-3);
+$border-color-gray-2: color(c-gray-2);
+$border-color-gray-4: color(c-gray-4);
+$border-color-gray-6: color(c-gray-6);
+$border-color-gray-7: color(c-gray-7);
+$border-color-pink: color(c-pink);
+$border-dark-green: color(c-dark-green);
+$box-shadow-field: color(c-gray-12);
+$color-placeholder: color(c-gray-13);
+$color-selected: color(c-gray-14);
+$color-bg-light: color(bg-light);
+$color-bg-light-2: color(bg-light-2);
+$box-shadow-room-card: 2px 3px 14px 0 rgba(74, 74, 74, 0.25);
+$border-color-light-gray: color(c-gray-light);
+$font-english: font(f-english);
+$font-thailand: font(f-thailand);
+$z-index-header: 3;
+$z-index-normal: 1;

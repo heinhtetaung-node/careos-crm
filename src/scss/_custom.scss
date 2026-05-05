@@ -1,0 +1,214 @@
+@import './reuse-mixin.scss';
+
+body {
+  height: 100%;
+  background-color: #eaeff3;
+  overflow-x: hidden;
+  box-sizing: content-box;
+
+  &.is-nav-open {
+    overflow: hidden;
+  }
+
+  .MuiAutocomplete-option[data-focus='true'] {
+    background-color: $color-bg-light-2;
+  }
+
+  .MuiPaper-root.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm.MuiPaper-elevation24.MuiPaper-rounded {
+    overflow-y: unset;
+  }
+
+  .MuiList-padding {
+    padding: 0;
+  }
+
+  .MuiFormControl-root {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .shared-autocomplete {
+    line-height: 0.3;
+
+    &[aria-expanded='false'] {
+      .shared-input {
+        .MuiFormLabel-filled.Mui-focused + .MuiAutocomplete-inputRoot {
+          background: $color-bg-light;
+        }
+      }
+    }
+
+    .shared-input {
+      .MuiAutocomplete-inputRoot {
+        border: 1px solid $bg-color-blue-5;
+        min-height: 42px;
+        padding: 3px 20px 3px 16px;
+        box-sizing: border-box;
+        background: $bg-color-primary;
+        border-radius: 10px;
+
+        &.Mui-focused {
+          border: 1px solid $text-color-blue-6;
+        }
+      }
+
+      .MuiAutocomplete-endAdornment {
+        margin-right: 6px;
+
+        .MuiSvgIcon-root {
+          color: $text-color-blue-6;
+        }
+      }
+
+      .MuiAutocomplete-tag {
+        background: $bg-color-blue-5;
+        border-radius: 6px;
+        padding: 4px;
+        max-width: 88px;
+      }
+
+      .MuiInputLabel-outlined.MuiInputLabel-shrink {
+        transform: translate(0, -15px) scale(0.75);
+      }
+    }
+  }
+
+  .MuiAutocomplete-popper {
+    .MuiAutocomplete-option {
+      .MuiButtonBase-root.MuiIconButton-root {
+        .MuiIconButton-label {
+          .MuiSvgIcon-root {
+            fill: $bg-color-blue-5;
+          }
+        }
+      }
+
+      &[data-focus='true'],
+      &[aria-selected='true'] {
+        background: $bg-color-blue-5;
+
+        .MuiButtonBase-root.MuiIconButton-root {
+          .MuiIconButton-label {
+            .MuiSvgIcon-root {
+              fill: $text-color-blue-6;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .MuiOutlinedInput-input {
+    padding: 12px;
+  }
+
+  .MuiSelect-outlined.MuiSelect-outlined {
+    padding: 12.5px;
+  }
+
+  .MuiAutocomplete-root.MuiAutocomplete-hasClearIcon.MuiAutocomplete-hasPopupIcon {
+    width: 100% !important; // this is to overwrite MUI with default width 500px
+  }
+
+  .MuiAutocomplete-inputRoot.MuiOutlinedInput-root {
+    padding: 3px;
+  }
+
+  .form-control {
+    .select-input {
+      border-radius: 0;
+      width: 90%;
+
+      .MuiPaper-rounded {
+        border: 1px solid grey;
+      }
+
+      .select-item {
+        border-bottom: 1px solid grey;
+      }
+    }
+  }
+
+  .customize-text-input {
+    border-radius: 0;
+  }
+
+  .MuiPaper-elevation8 {
+    border: 1px solid $text-color-blue-6;
+    border-top: 0;
+    box-shadow: 0 7px 15px 0 $box-shadow-field;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+    .MuiMenu-list {
+      li:first-child {
+        position: relative;
+
+        &::after {
+          content: '';
+          height: 1px;
+          width: 86%;
+          background: $bg-color-blue-5;
+          position: absolute;
+          top: 0;
+        }
+      }
+    }
+  }
+
+  .MuiAutocomplete-options {
+    position: absolute;
+    z-index: 1300;
+    top: calc(100% - 11px);
+
+    .MuiPaper-root.MuiAutocomplete-paper.MuiPaper-elevation1.MuiPaper-rounded {
+      background-color: white;
+      border: 1px solid $text-color-blue-6;
+      border-top: 0;
+      box-shadow: 0 7px 15px 0 $box-shadow-field;
+      border-radius: 0 0 10px 10px;
+      position: relative;
+      padding-top: 7px;
+
+      &::before {
+        content: '';
+        height: 1px;
+        width: 86%;
+        background: $bg-color-blue-5;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  .MuiTableCell-root.MuiTableCell-body {
+    &:not(:nth-child(1)) {
+      min-width: 80px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 180px;
+    }
+  }
+
+  .MuiList-root[role='listbox'] {
+    max-height: 200px;
+    overflow: auto;
+  }
+
+  #email-msg-template ul {
+    padding: 0;
+    margin-left: -10px;
+  }
+}

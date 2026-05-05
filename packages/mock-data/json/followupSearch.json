@@ -1,0 +1,3545 @@
+{
+    "followups": [
+      {
+        "followup": {
+          "name": "transactions/f6138fe3-6b22-4e63-9867-d2c55f361d53/followups/fb271f3a-fc5b-4493-bedd-329eacf925c9",
+          "createTime": "2023-12-15T08:24:09.868561Z",
+          "updateTime": "2023-12-15T08:32:27.903145Z",
+          "deleteTime": null,
+          "chargeId": "transactions/f6138fe3-6b22-4e63-9867-d2c55f361d53/charges/f8153124-c45b-4c6c-8b2b-acddcd61dc38",
+          "transactionId": "transactions/f6138fe3-6b22-4e63-9867-d2c55f361d53",
+          "installmentNumber": 3,
+          "dueDate": "2024-06-12T00:00:00Z",
+          "sendSms": false,
+          "priceId": "prices/04765704-ad90-43ab-9284-b02de5b41c0c"
+        },
+        "lead": {
+          "name": "leads/878c9099-3d0c-423f-967d-5ef550800b4d",
+          "createTime": "2023-12-15T08:16:44.690551Z",
+          "updateTime": "2023-12-15T08:20:02.358698Z",
+          "deleteTime": null,
+          "createBy": "users/20d37cbe-feb6-44e9-9527-3d789a2949b8",
+          "product": "products/car-insurance",
+          "schema": "schemas/efce3390-8da6-44b3-9e4c-2c7b78ca2c9d",
+          "data": {
+            "carColor": [
+              "black"
+            ],
+            "carDashCam": false,
+            "carLicensePlate": "redplate",
+            "carModified": false,
+            "carSubModelYear": 47094,
+            "carUsageType": "personal",
+            "chassisNumber": "123",
+            "checkout": {
+              "installments": 3,
+              "package": "customPackages/8a4dd9d8-a8c6-4d20-a53c-9caf240044c5",
+              "paymentMethod": "QR_CODE",
+              "paymentOption": "RABBIT_CARE_INSTALLMENT"
+            },
+            "customerBillingAddress": [
+              {
+                "address": "134",
+                "addressType": "personal",
+                "district": 100100,
+                "firstName": "Test",
+                "lastName": "Test",
+                "postCode": 10200,
+                "province": 100000,
+                "subDistrict": 100101
+              }
+            ],
+            "customerDOB": "2000-06-28",
+            "customerEmail": [
+              "natthapatp@rabbit.co.th"
+            ],
+            "customerFirstName": "Test",
+            "customerGender": "m",
+            "customerLastName": "Test",
+            "customerPhoneNumber": [
+              {
+                "phone": "+66999999999",
+                "status": "unverified"
+              }
+            ],
+            "customerPolicyAddress": [
+              {
+                "address": "134",
+                "addressType": "personal",
+                "district": 100100,
+                "firstName": "Test",
+                "lastName": "Test",
+                "postCode": 10200,
+                "province": 100000,
+                "subDistrict": 100101
+              }
+            ],
+            "customerShippingAddress": [
+              {
+                "address": "134",
+                "addressType": "personal",
+                "district": 100100,
+                "firstName": "Test",
+                "lastName": "Test",
+                "postCode": 10200,
+                "province": 100000,
+                "subDistrict": 100101
+              }
+            ],
+            "insuranceKind": "voluntary",
+            "locale": "th-th",
+            "numberOfFixedDriver": 0,
+            "policyHolderDOB": "2000-06-28",
+            "policyHolderFirstName": "Test",
+            "policyHolderLastName": "Test",
+            "policyHolderNationalId": "123",
+            "policyHolderType": "customer",
+            "policyStartDate": "2023-12-31",
+            "policyTitle": "MR",
+            "primaryPhoneIndex": 0,
+            "registeredProvince": 100000,
+            "vehicleIdNumber": "123",
+            "voluntaryInsuranceType": [
+              "type_1"
+            ]
+          },
+          "source": "sources/86670f83-23da-4322-b349-848dac7e0dba",
+          "important": false,
+          "assignedTo": "",
+          "status": "LEAD_STATUS_PENDING_PAYMENT",
+          "humanId": "L9908639",
+          "root": "",
+          "type": "LEAD_TYPE_NEW",
+          "isRejected": false,
+          "reference": "123",
+          "annotations": null
+        },
+        "transaction": {
+          "name": "transactions/f6138fe3-6b22-4e63-9867-d2c55f361d53",
+          "createTime": "2023-12-15T08:20:00.355538924Z",
+          "updateTime": "2023-12-15T08:20:00.355538924Z",
+          "money": {
+            "currencyCode": "THB",
+            "amount": "2010450"
+          },
+          "installments": 3,
+          "lead": "leads/878c9099-3d0c-423f-967d-5ef550800b4d",
+          "leadHumanId": "L9908639",
+          "order": "",
+          "gatewayReference": "gateway-references/ICO-L9908639-231215151959",
+          "statusCode": "PENDING",
+          "paymentOption": "RABBIT_CARE_INSTALLMENT"
+        },
+        "assigned": null,
+        "team": null,
+        "charges": [],
+        "attributes": {
+          "customerEmail": "natthapatp@rabbit.co.th",
+          "customerFullName": "Test Test",
+          "customerPhone": "+66999999999",
+          "licensePlate": "redplate"
+        },
+        "price": {
+          "name": "prices/04765704-ad90-43ab-9284-b02de5b41c0c",
+          "priceDetail": {
+            "resourceName": "packages/1355013",
+            "priceSummary": {
+              "interestRate": 0.74,
+              "interestAmount": "14633",
+              "processingFeeRate": 0.37,
+              "processingFeeAmount": "7318",
+              "feeRate": 1.1,
+              "feeAmount": "21951",
+              "discountRate": 3,
+              "discountAmount": "61500",
+              "netDiscountRate": -1.93,
+              "netDiscountAmount": "-39549",
+              "packagePriceAfterDiscount": "1988500",
+              "netPremiumAmount": "2010451",
+              "initialAmount": "670151",
+              "subsequentAmount": "670150",
+              "discount": {
+                "type": "DISCOUNT_TYPE_RCL",
+                "percentage": 300,
+                "amount": "61500"
+              },
+              "shipmentFee": "0",
+              "feeAmountNoShip": "21951"
+            },
+            "installmentDetails": [
+              {
+                "period": 1,
+                "paymentAmount": "670151",
+                "principal": "662833",
+                "addOns": "0",
+                "interest": "0",
+                "processingFee": "7318",
+                "principalBalance": "1325667",
+                "interestBalance": "14633",
+                "processingFeeBalance": "0",
+                "totalBalance": "1340300"
+              },
+              {
+                "period": 2,
+                "paymentAmount": "670150",
+                "principal": "660406",
+                "addOns": "0",
+                "interest": "9744",
+                "processingFee": "0",
+                "principalBalance": "665260",
+                "interestBalance": "4890",
+                "processingFeeBalance": "0",
+                "totalBalance": "670150"
+              },
+              {
+                "period": 3,
+                "paymentAmount": "670150",
+                "principal": "665260",
+                "addOns": "0",
+                "interest": "4890",
+                "processingFee": "0",
+                "principalBalance": "0",
+                "interestBalance": "0",
+                "processingFeeBalance": "0",
+                "totalBalance": "0"
+              }
+            ]
+          },
+          "paymentOption": "RABBIT_CARE_INSTALLMENT",
+          "paymentMethod": "QR_CODE",
+          "numberOfInstallments": 3,
+          "cardProvider": "",
+          "createTime": "2023-12-15T08:18:17.220278764Z",
+          "updateTime": "2023-12-15T08:18:17.220278764Z",
+          "discountType": "DISCOUNT_TYPE_RCL",
+          "packageResource": {
+            "carPackage": {
+              "package": "packages/1355013",
+              "packagePrice": {
+                "voluntaryPrice": "2050000",
+                "compulsoryPrice": "0",
+                "discount": {
+                  "type": "DISCOUNT_TYPE_RCL",
+                  "percentage": 300,
+                  "amount": "0"
+                }
+              },
+              "insurer": "insurers/27",
+              "insuranceType": "TYPE_1"
+            }
+          }
+        }
+      },
+      {
+        "followup": {
+          "name": "transactions/edd491bc-9265-4deb-b98a-d938610d790e/followups/6c8e10a1-5282-44f6-9cde-563a6fc0faef",
+          "createTime": "2023-12-15T08:08:02.165519696Z",
+          "updateTime": "2023-12-15T08:08:02.165519813Z",
+          "deleteTime": null,
+          "chargeId": "",
+          "transactionId": "transactions/edd491bc-9265-4deb-b98a-d938610d790e",
+          "installmentNumber": 1,
+          "dueDate": "2024-01-06T00:00:00Z",
+          "sendSms": false,
+          "priceId": ""
+        },
+        "lead": {
+          "name": "leads/7aa4f81f-6a24-4494-be49-6ca74a22610a",
+          "createTime": "2023-12-15T08:02:11.410989Z",
+          "updateTime": "2023-12-15T08:03:36.136347Z",
+          "deleteTime": null,
+          "createBy": "users/20d37cbe-feb6-44e9-9527-3d789a2949b8",
+          "product": "products/car-insurance",
+          "schema": "schemas/efce3390-8da6-44b3-9e4c-2c7b78ca2c9d",
+          "data": {
+            "carColor": [
+              "black"
+            ],
+            "carDashCam": false,
+            "carLicensePlate": "redplate",
+            "carModified": false,
+            "carSubModelYear": 47094,
+            "carUsageType": "personal",
+            "chassisNumber": "123",
+            "checkout": {
+              "installments": 3,
+              "package": "customPackages/ef96d504-319b-48f5-a46a-199ee8405429",
+              "paymentMethod": "QR_CODE",
+              "paymentOption": "RABBIT_CARE_INSTALLMENT"
+            },
+            "customerBillingAddress": [
+              {
+                "address": "134",
+                "addressType": "personal",
+                "district": 100100,
+                "firstName": "Test",
+                "lastName": "Test",
+                "postCode": 10200,
+                "province": 100000,
+                "subDistrict": 100101
+              }
+            ],
+            "customerDOB": "2000-06-28",
+            "customerEmail": [
+              "natthapatp@rabbit.co.th"
+            ],
+            "customerFirstName": "Test",
+            "customerGender": "m",
+            "customerLastName": "Test",
+            "customerPhoneNumber": [
+              {
+                "phone": "+66999999999",
+                "status": "unverified"
+              }
+            ],
+            "customerPolicyAddress": [
+              {
+                "address": "134",
+                "addressType": "personal",
+                "district": 100100,
+                "firstName": "Test",
+                "lastName": "Test",
+                "postCode": 10200,
+                "province": 100000,
+                "subDistrict": 100101
+              }
+            ],
+            "customerShippingAddress": [
+              {
+                "address": "134",
+                "addressType": "personal",
+                "district": 100100,
+                "firstName": "Test",
+                "lastName": "Test",
+                "postCode": 10200,
+                "province": 100000,
+                "subDistrict": 100101
+              }
+            ],
+            "insuranceKind": "voluntary",
+            "locale": "th-th",
+            "numberOfFixedDriver": 0,
+            "policyHolderDOB": "2000-06-28",
+            "policyHolderFirstName": "Test",
+            "policyHolderLastName": "Test",
+            "policyHolderNationalId": "213",
+            "policyHolderType": "customer",
+            "policyStartDate": "2023-12-31",
+            "policyTitle": "MR",
+            "primaryPhoneIndex": 0,
+            "registeredProvince": 100000,
+            "vehicleIdNumber": "123",
+            "voluntaryInsuranceType": [
+              "type_1"
+            ]
+          },
+          "source": "sources/86670f83-23da-4322-b349-848dac7e0dba",
+          "important": false,
+          "assignedTo": "",
+          "status": "LEAD_STATUS_PENDING_PAYMENT",
+          "humanId": "L9908636",
+          "root": "",
+          "type": "LEAD_TYPE_NEW",
+          "isRejected": false,
+          "reference": "123",
+          "annotations": null
+        },
+        "transaction": {
+          "name": "transactions/edd491bc-9265-4deb-b98a-d938610d790e",
+          "createTime": "2023-12-15T08:03:34.117441401Z",
+          "updateTime": "2023-12-15T08:03:34.117441401Z",
+          "money": {
+            "currencyCode": "THB",
+            "amount": "2010450"
+          },
+          "installments": 3,
+          "lead": "leads/7aa4f81f-6a24-4494-be49-6ca74a22610a",
+          "leadHumanId": "L9908636",
+          "order": "",
+          "gatewayReference": "gateway-references/ICO-L9908636-231215150333",
+          "statusCode": "PENDING",
+          "paymentOption": "RABBIT_CARE_INSTALLMENT"
+        },
+        "assigned": null,
+        "team": null,
+        "charges": [
+          {
+            "name": "transactions/edd491bc-9265-4deb-b98a-d938610d790e/charges/3ca26b5a-0280-4b52-aca1-68487a8ccbaf",
+            "createTime": "2023-12-15T08:04:05.928332Z",
+            "updateTime": "2023-12-15T08:04:06.099221Z",
+            "money": {
+              "currencyCode": "THB",
+              "amount": "670151"
+            },
+            "serviceProvider": "ICOLLECTION",
+            "paymentMethod": "QR_CODE",
+            "returnUri": "",
+            "authorizeUri": "",
+            "token": "",
+            "status": "SUCCESSFUL",
+            "thirdPartyId": "OR6612000141973",
+            "sourceUri": "",
+            "errorCode": "",
+            "httpStatusCode": 200,
+            "errorMessage": "",
+            "installmentNumber": 1,
+            "cardToken": "",
+            "dueDate": "1970-01-01T00:00:00Z",
+            "slipIdResource": "",
+            "sendSms": false,
+            "paymentDate": null
+          },
+          {
+            "name": "transactions/edd491bc-9265-4deb-b98a-d938610d790e/charges/a1a3905c-6517-452e-a46f-dd7dbbe9aa30",
+            "createTime": "2023-12-15T08:04:07.947212Z",
+            "updateTime": "2023-12-15T08:04:08.087367Z",
+            "money": {
+              "currencyCode": "THB",
+              "amount": "670151"
+            },
+            "serviceProvider": "ICOLLECTION",
+            "paymentMethod": "QR_CODE",
+            "returnUri": "",
+            "authorizeUri": "",
+            "token": "",
+            "status": "SUCCESSFUL",
+            "thirdPartyId": "OR6612000142284",
+            "sourceUri": "",
+            "errorCode": "",
+            "httpStatusCode": 200,
+            "errorMessage": "",
+            "installmentNumber": 1,
+            "cardToken": "",
+            "dueDate": "1970-01-01T00:00:00Z",
+            "slipIdResource": "",
+            "sendSms": false,
+            "paymentDate": null
+          }
+        ],
+        "attributes": {
+          "customerEmail": "natthapatp@rabbit.co.th",
+          "customerFullName": "Test Test",
+          "customerPhone": "+66999999999",
+          "licensePlate": "redplate"
+        },
+        "price": null
+      },
+      {
+        "followup": {
+          "name": "transactions/69ef468c-0f83-4d06-b5dd-262160e3e65d/followups/e42c5e3e-1195-436e-b224-39f9ad0a0716",
+          "createTime": "2023-12-15T08:06:04.485647981Z",
+          "updateTime": "2023-12-15T08:06:04.485648070Z",
+          "deleteTime": null,
+          "chargeId": "",
+          "transactionId": "transactions/69ef468c-0f83-4d06-b5dd-262160e3e65d",
+          "installmentNumber": 1,
+          "dueDate": "2024-01-06T00:00:00Z",
+          "sendSms": false,
+          "priceId": ""
+        },
+        "lead": {
+          "name": "leads/296703fb-5c4d-468c-989b-050bbdc3b5c8",
+          "createTime": "2023-12-15T07:25:17.594650Z",
+          "updateTime": "2023-12-15T07:28:22.891574Z",
+          "deleteTime": null,
+          "createBy": "users/20d37cbe-feb6-44e9-9527-3d789a2949b8",
+          "product": "products/car-insurance",
+          "schema": "schemas/efce3390-8da6-44b3-9e4c-2c7b78ca2c9d",
+          "data": {
+            "carColor": [
+              "black"
+            ],
+            "carDashCam": false,
+            "carLicensePlate": "redplate",
+            "carModified": false,
+            "carSubModelYear": 47094,
+            "carUsageType": "personal",
+            "chassisNumber": "123",
+            "checkout": {
+              "installments": 3,
+              "package": "customPackages/9ab36a58-1a17-4e3b-b6e8-4e46ea82b6b2",
+              "paymentMethod": "QR_CODE",
+              "paymentOption": "RABBIT_CARE_INSTALLMENT"
+            },
+            "customerBillingAddress": [
+              {
+                "address": "134",
+                "addressType": "personal",
+                "district": 100100,
+                "firstName": "Test",
+                "lastName": "Test",
+                "postCode": 10200,
+                "province": 100000,
+                "subDistrict": 100101
+              }
+            ],
+            "customerDOB": "2000-06-28",
+            "customerEmail": [
+              "natthapatp@rabbit.co.th"
+            ],
+            "customerFirstName": "Test",
+            "customerGender": "m",
+            "customerLastName": "Test",
+            "customerPhoneNumber": [
+              {
+                "phone": "+66999999999",
+                "status": "unverified"
+              }
+            ],
+            "customerPolicyAddress": [
+              {
+                "address": "134",
+                "addressType": "personal",
+                "district": 100100,
+                "firstName": "Test",
+                "lastName": "Test",
+                "postCode": 10200,
+                "province": 100000,
+                "subDistrict": 100101
+              }
+            ],
+            "customerShippingAddress": [
+              {
+                "address": "134",
+                "addressType": "personal",
+                "district": 100100,
+                "firstName": "Test",
+                "lastName": "Test",
+                "postCode": 10200,
+                "province": 100000,
+                "subDistrict": 100101
+              }
+            ],
+            "insuranceKind": "voluntary",
+            "locale": "th-th",
+            "numberOfFixedDriver": 0,
+            "policyHolderDOB": "2000-06-28",
+            "policyHolderFirstName": "Test",
+            "policyHolderLastName": "Test",
+            "policyHolderNationalId": "123",
+            "policyHolderType": "customer",
+            "policyStartDate": "2023-12-31",
+            "policyTitle": "MR",
+            "primaryPhoneIndex": 0,
+            "registeredProvince": 100000,
+            "vehicleIdNumber": "123",
+            "voluntaryInsuranceType": [
+              "type_1"
+            ]
+          },
+          "source": "sources/86670f83-23da-4322-b349-848dac7e0dba",
+          "important": false,
+          "assignedTo": "",
+          "status": "LEAD_STATUS_PENDING_PAYMENT",
+          "humanId": "L9908630",
+          "root": "",
+          "type": "LEAD_TYPE_NEW",
+          "isRejected": false,
+          "reference": "123",
+          "annotations": null
+        },
+        "transaction": {
+          "name": "transactions/69ef468c-0f83-4d06-b5dd-262160e3e65d",
+          "createTime": "2023-12-15T07:28:19.667815932Z",
+          "updateTime": "2023-12-15T07:28:19.667815932Z",
+          "money": {
+            "currencyCode": "THB",
+            "amount": "2010450"
+          },
+          "installments": 3,
+          "lead": "leads/296703fb-5c4d-468c-989b-050bbdc3b5c8",
+          "leadHumanId": "L9908630",
+          "order": "",
+          "gatewayReference": "gateway-references/ICO-L9908630-231215142819",
+          "statusCode": "PENDING",
+          "paymentOption": "RABBIT_CARE_INSTALLMENT"
+        },
+        "assigned": null,
+        "team": null,
+        "charges": [
+          {
+            "name": "transactions/69ef468c-0f83-4d06-b5dd-262160e3e65d/charges/ce6b5dd1-a988-4a64-a29d-ebf980c968e0",
+            "createTime": "2023-12-15T07:29:30.862848Z",
+            "updateTime": "2023-12-15T07:29:31.044236Z",
+            "money": {
+              "currencyCode": "THB",
+              "amount": "670151"
+            },
+            "serviceProvider": "ICOLLECTION",
+            "paymentMethod": "QR_CODE",
+            "returnUri": "",
+            "authorizeUri": "",
+            "token": "",
+            "status": "SUCCESSFUL",
+            "thirdPartyId": "OR6612000140992",
+            "sourceUri": "",
+            "errorCode": "",
+            "httpStatusCode": 200,
+            "errorMessage": "",
+            "installmentNumber": 1,
+            "cardToken": "",
+            "dueDate": "1970-01-01T00:00:00Z",
+            "slipIdResource": "",
+            "sendSms": false,
+            "paymentDate": null
+          }
+        ],
+        "attributes": {
+          "customerEmail": "natthapatp@rabbit.co.th",
+          "customerFullName": "Test Test",
+          "customerPhone": "+66999999999",
+          "licensePlate": "redplate"
+        },
+        "price": null
+      },
+      {
+        "followup": {
+          "name": "transactions/a9d2a084-e083-4e4b-b194-c36aa5b8098c/followups/7617a7bc-cbb2-4123-b795-2f9f32f7c474",
+          "createTime": "2023-12-15T07:58:20.699481378Z",
+          "updateTime": "2023-12-15T07:58:20.699481473Z",
+          "deleteTime": null,
+          "chargeId": "",
+          "transactionId": "transactions/a9d2a084-e083-4e4b-b194-c36aa5b8098c",
+          "installmentNumber": 6,
+          "dueDate": "2024-08-12T00:00:00Z",
+          "sendSms": false,
+          "priceId": "prices/8ec71598-4a02-4691-a10b-2ac187bd8e25"
+        },
+        "lead": {
+          "name": "leads/679a0630-0085-4a53-a3cf-672c2d0deb01",
+          "createTime": "2023-11-28T05:12:10.394412Z",
+          "updateTime": "2023-11-29T01:34:47.720813Z",
+          "deleteTime": null,
+          "createBy": "users/20d37cbe-feb6-44e9-9527-3d789a2949b8",
+          "product": "products/car-insurance",
+          "schema": "schemas/efce3390-8da6-44b3-9e4c-2c7b78ca2c9d",
+          "data": {
+            "carColor": [
+              "yellow"
+            ],
+            "carDashCam": true,
+            "carLicensePlate": "12-2134 กท",
+            "carModified": true,
+            "carSubModelYear": 46913,
+            "carUsageType": "personal",
+            "chassisNumber": "412421412",
+            "checkout": {
+              "installments": 6,
+              "package": "customPackages/6274bc54-c517-43fa-8cb3-614d64f89224",
+              "paymentMethod": "QR_CODE",
+              "paymentOption": "RABBIT_CARE_INSTALLMENT"
+            },
+            "compulsoryPolicyStartDate": "2023-11-30",
+            "currentInsurer": 7,
+            "customerBillingAddress": [
+              {
+                "address": "123213",
+                "addressType": "personal",
+                "district": 100100,
+                "firstName": "Bobby",
+                "lastName": "Combs",
+                "postCode": 10200,
+                "province": 100000,
+                "subDistrict": 100101
+              }
+            ],
+            "customerDOB": "1978-11-28",
+            "customerEmail": [
+              "bobbyc@mail.com"
+            ],
+            "customerFirstName": "Bobby",
+            "customerGender": "m",
+            "customerLastName": "Combs",
+            "customerPhoneNumber": [
+              {
+                "phone": "+66999999999",
+                "status": "unverified"
+              }
+            ],
+            "customerPolicyAddress": [
+              {
+                "address": "123213",
+                "addressType": "personal",
+                "district": 100100,
+                "firstName": "Bobby",
+                "lastName": "Combs",
+                "postCode": 10200,
+                "province": 100000,
+                "subDistrict": 100101
+              }
+            ],
+            "customerShippingAddress": [
+              {
+                "address": "123213",
+                "addressType": "personal",
+                "district": 100100,
+                "firstName": "Bobby",
+                "lastName": "Combs",
+                "postCode": 10200,
+                "province": 100000,
+                "subDistrict": 100101
+              }
+            ],
+            "firstDriverDOB": "1993-12-22",
+            "firstDriverFirstName": "rwrwa",
+            "firstDriverLastName": "rwqr",
+            "firstDriverLicense": "3213213",
+            "firstDriverNationalId": "321321",
+            "insuranceKind": "voluntary",
+            "locale": "th-th",
+            "numberOfFixedDriver": 1,
+            "policyHolderDOB": "1978-11-28",
+            "policyHolderFirstName": "Bobby",
+            "policyHolderLastName": "Combs",
+            "policyHolderNationalId": "231421421421421412",
+            "policyHolderType": "customer",
+            "policyStartDate": "2023-11-30",
+            "policyTitle": "MRS",
+            "preferredInsurer": 7,
+            "primaryPhoneIndex": 0,
+            "registeredProvince": 100000,
+            "vehicleIdNumber": "421421412",
+            "voluntaryInsuranceType": [
+              "type_1",
+              "type_2"
+            ]
+          },
+          "source": "sources/789aae44-aa64-4624-bf0b-5eae6259fa71",
+          "important": false,
+          "assignedTo": "",
+          "status": "LEAD_STATUS_PENDING_PAYMENT",
+          "humanId": "L9908291",
+          "root": "",
+          "type": "LEAD_TYPE_NEW",
+          "isRejected": false,
+          "reference": "1",
+          "annotations": null
+        },
+        "transaction": {
+          "name": "transactions/a9d2a084-e083-4e4b-b194-c36aa5b8098c",
+          "createTime": "2023-11-29T01:34:46.072935957Z",
+          "updateTime": "2023-11-29T01:34:46.072935957Z",
+          "money": {
+            "currencyCode": "THB",
+            "amount": "1548606"
+          },
+          "installments": 6,
+          "lead": "leads/679a0630-0085-4a53-a3cf-672c2d0deb01",
+          "leadHumanId": "L9908291",
+          "order": "",
+          "gatewayReference": "",
+          "statusCode": "PENDING",
+          "paymentOption": "RABBIT_CARE_INSTALLMENT"
+        },
+        "assigned": null,
+        "team": null,
+        "charges": [
+          {
+            "name": "transactions/a9d2a084-e083-4e4b-b194-c36aa5b8098c/charges/0287603d-efe6-4e88-ba95-4bad89c9d0b3",
+            "createTime": "2023-11-29T01:34:47.563800918Z",
+            "updateTime": "2023-11-29T01:34:47.563800918Z",
+            "money": {
+              "currencyCode": "THB",
+              "amount": "1548606"
+            },
+            "serviceProvider": "RABBIT_LENDING",
+            "paymentMethod": "QR_CODE",
+            "returnUri": "",
+            "authorizeUri": "",
+            "token": "",
+            "status": "PENDING",
+            "thirdPartyId": "chrg_test_5xxf0weun4zlisaknlt",
+            "sourceUri": "https://api.omise.co/charges/chrg_test_5xxf0weun4zlisaknlt/documents/docu_test_5xxf0wgj52jssy1vab7/downloads/04E09E04419E3585",
+            "errorCode": "",
+            "httpStatusCode": 200,
+            "errorMessage": "",
+            "installmentNumber": 6,
+            "cardToken": "",
+            "dueDate": "1970-01-01T00:00:00Z",
+            "slipIdResource": "",
+            "sendSms": false,
+            "paymentDate": null
+          }
+        ],
+        "attributes": {
+          "customerEmail": "bobbyc@mail.com",
+          "customerFullName": "Bobby Combs",
+          "customerPhone": "+66999999999",
+          "licensePlate": "12-2134 กท"
+        },
+        "price": {
+          "name": "prices/8ec71598-4a02-4691-a10b-2ac187bd8e25",
+          "priceDetail": {
+            "resourceName": "packages/1354810",
+            "priceSummary": {
+              "interestRate": 3.45,
+              "interestAmount": "65499",
+              "processingFeeRate": 1.15,
+              "processingFeeAmount": "21850",
+              "feeRate": 4.6,
+              "feeAmount": "87349",
+              "discountRate": 0,
+              "discountAmount": "0",
+              "netDiscountRate": 4.45,
+              "netDiscountAmount": "87349",
+              "packagePriceAfterDiscount": "1964521",
+              "netPremiumAmount": "2051870",
+              "initialAmount": "561371",
+              "subsequentAmount": "165611",
+              "discount": null,
+              "shipmentFee": "0",
+              "feeAmountNoShip": "87349"
+            },
+            "installmentDetails": [
+              {
+                "period": 1,
+                "paymentAmount": "561371",
+                "principal": "475000",
+                "addOns": "64521",
+                "interest": "0",
+                "processingFee": "21850",
+                "principalBalance": "1425000",
+                "interestBalance": "65499",
+                "processingFeeBalance": "0",
+                "totalBalance": "1490499"
+              },
+              {
+                "period": 2,
+                "paymentAmount": "165611",
+                "principal": "152667",
+                "addOns": "0",
+                "interest": "12944",
+                "processingFee": "0",
+                "principalBalance": "1272333",
+                "interestBalance": "52555",
+                "processingFeeBalance": "0",
+                "totalBalance": "1324888"
+              },
+              {
+                "period": 3,
+                "paymentAmount": "165611",
+                "principal": "154054",
+                "addOns": "0",
+                "interest": "11557",
+                "processingFee": "0",
+                "principalBalance": "1118279",
+                "interestBalance": "40998",
+                "processingFeeBalance": "0",
+                "totalBalance": "1159277"
+              },
+              {
+                "period": 4,
+                "paymentAmount": "165611",
+                "principal": "155453",
+                "addOns": "0",
+                "interest": "10158",
+                "processingFee": "0",
+                "principalBalance": "962825",
+                "interestBalance": "30840",
+                "processingFeeBalance": "0",
+                "totalBalance": "993666"
+              },
+              {
+                "period": 5,
+                "paymentAmount": "165611",
+                "principal": "156865",
+                "addOns": "0",
+                "interest": "8746",
+                "processingFee": "0",
+                "principalBalance": "805960",
+                "interestBalance": "22095",
+                "processingFeeBalance": "0",
+                "totalBalance": "828055"
+              },
+              {
+                "period": 6,
+                "paymentAmount": "165611",
+                "principal": "158290",
+                "addOns": "0",
+                "interest": "7321",
+                "processingFee": "0",
+                "principalBalance": "647670",
+                "interestBalance": "14774",
+                "processingFeeBalance": "0",
+                "totalBalance": "662444"
+              },
+              {
+                "period": 7,
+                "paymentAmount": "165611",
+                "principal": "159728",
+                "addOns": "0",
+                "interest": "5883",
+                "processingFee": "0",
+                "principalBalance": "487942",
+                "interestBalance": "8891",
+                "processingFeeBalance": "0",
+                "totalBalance": "496833"
+              },
+              {
+                "period": 8,
+                "paymentAmount": "165611",
+                "principal": "161179",
+                "addOns": "0",
+                "interest": "4432",
+                "processingFee": "0",
+                "principalBalance": "326763",
+                "interestBalance": "4459",
+                "processingFeeBalance": "0",
+                "totalBalance": "331222"
+              },
+              {
+                "period": 9,
+                "paymentAmount": "165611",
+                "principal": "162643",
+                "addOns": "0",
+                "interest": "2968",
+                "processingFee": "0",
+                "principalBalance": "164120",
+                "interestBalance": "1491",
+                "processingFeeBalance": "0",
+                "totalBalance": "165611"
+              },
+              {
+                "period": 10,
+                "paymentAmount": "165611",
+                "principal": "164120",
+                "addOns": "0",
+                "interest": "1491",
+                "processingFee": "0",
+                "principalBalance": "0",
+                "interestBalance": "0",
+                "processingFeeBalance": "0",
+                "totalBalance": "0"
+              }
+            ]
+          },
+          "paymentOption": "RABBIT_CARE_INSTALLMENT",
+          "paymentMethod": "QR_CODE",
+          "numberOfInstallments": 10,
+          "cardProvider": "",
+          "createTime": "2023-12-12T04:08:48.139314417Z",
+          "updateTime": "2023-12-12T04:08:48.139314417Z",
+          "discountType": "",
+          "packageResource": {
+            "carPackage": {
+              "package": "packages/1354810",
+              "packagePrice": {
+                "voluntaryPrice": "1900000",
+                "compulsoryPrice": "64521",
+                "discount": {
+                  "type": "",
+                  "percentage": 0,
+                  "amount": "0"
+                }
+              },
+              "insurer": "insurers/27",
+              "insuranceType": "TYPE_1"
+            }
+          }
+        }
+      },
+      {
+        "followup": {
+          "name": "transactions/1e717aa3-a44b-43d2-b4fa-01c7afb787dc/followups/327176c1-f7b4-40d4-8cda-b42e5d795463",
+          "createTime": "2023-12-15T07:57:39.118042934Z",
+          "updateTime": "2023-12-15T07:57:39.118043034Z",
+          "deleteTime": null,
+          "chargeId": "",
+          "transactionId": "transactions/1e717aa3-a44b-43d2-b4fa-01c7afb787dc",
+          "installmentNumber": 5,
+          "dueDate": "2024-08-12T00:00:00Z",
+          "sendSms": false,
+          "priceId": "prices/8ec71598-4a02-4691-a10b-2ac187bd8e25"
+        },
+        "lead": {
+          "name": "leads/110db59d-05e0-4a76-bb9a-c5d64b6998d2",
+          "createTime": "2023-12-11T13:26:31.700832Z",
+          "updateTime": "2023-12-12T00:00:34.375197Z",
+          "deleteTime": null,
+          "createBy": "users/20d37cbe-feb6-44e9-9527-3d789a2949b8",
+          "product": "products/car-insurance",
+          "schema": "schemas/efce3390-8da6-44b3-9e4c-2c7b78ca2c9d",
+          "data": {
+            "carColor": [
+              "black"
+            ],
+            "carDashCam": false,
+            "carLicensePlate": "redplate",
+            "carModified": false,
+            "carSubModelYear": 47094,
+            "carUsageType": "personal",
+            "chassisNumber": "123",
+            "checkout": {
+              "installments": 3,
+              "package": "customPackages/554bc005-6169-4968-bbb1-356d8c8284fe",
+              "paymentMethod": "QR_CODE",
+              "paymentOption": "RABBIT_CARE_INSTALLMENT"
+            },
+            "customerBillingAddress": [
+              {
+                "address": "134",
+                "addressType": "personal",
+                "district": 100100,
+                "firstName": "Test",
+                "lastName": "Test",
+                "postCode": 10200,
+                "province": 100000,
+                "subDistrict": 100101
+              }
+            ],
+            "customerDOB": "2000-06-28",
+            "customerEmail": [
+              "natthapatp@rabbit.co.th"
+            ],
+            "customerFirstName": "Test",
+            "customerGender": "m",
+            "customerLastName": "Test",
+            "customerPhoneNumber": [
+              {
+                "phone": "+66999999999",
+                "status": "unverified"
+              }
+            ],
+            "customerPolicyAddress": [
+              {
+                "address": "134",
+                "addressType": "personal",
+                "district": 100100,
+                "firstName": "Test",
+                "lastName": "Test",
+                "postCode": 10200,
+                "province": 100000,
+                "subDistrict": 100101
+              }
+            ],
+            "customerShippingAddress": [
+              {
+                "address": "134",
+                "addressType": "personal",
+                "district": 100100,
+                "firstName": "Test",
+                "lastName": "Test",
+                "postCode": 10200,
+                "province": 100000,
+                "subDistrict": 100101
+              }
+            ],
+            "insuranceKind": "voluntary",
+            "locale": "th-th",
+            "numberOfFixedDriver": 0,
+            "policyHolderDOB": "2000-06-28",
+            "policyHolderFirstName": "Test",
+            "policyHolderLastName": "Test",
+            "policyHolderNationalId": "1234567890123",
+            "policyHolderType": "customer",
+            "policyStartDate": "2023-12-31",
+            "policyTitle": "MR",
+            "primaryPhoneIndex": 0,
+            "registeredProvince": 100000,
+            "vehicleIdNumber": "123",
+            "voluntaryInsuranceType": [
+              "type_1"
+            ]
+          },
+          "source": "sources/a7aa0b5c-60c3-4d9a-828f-b0d9d5c1449c",
+          "important": false,
+          "assignedTo": "",
+          "status": "LEAD_STATUS_PENDING_PAYMENT",
+          "humanId": "L9908505",
+          "root": "",
+          "type": "LEAD_TYPE_NEW",
+          "isRejected": false,
+          "reference": "123",
+          "annotations": null
+        },
+        "transaction": {
+          "name": "transactions/1e717aa3-a44b-43d2-b4fa-01c7afb787dc",
+          "createTime": "2023-12-12T00:00:32.322285Z",
+          "updateTime": "2023-12-12T00:20:43.073244Z",
+          "money": {
+            "currencyCode": "THB",
+            "amount": "2010450"
+          },
+          "installments": 3,
+          "lead": "leads/110db59d-05e0-4a76-bb9a-c5d64b6998d2",
+          "leadHumanId": "L9908505",
+          "order": "",
+          "gatewayReference": "gateway-references/ICO-L9908505-231212070032",
+          "statusCode": "SUCCESSFUL",
+          "paymentOption": "RABBIT_CARE_INSTALLMENT"
+        },
+        "assigned": null,
+        "team": null,
+        "charges": [],
+        "attributes": {
+          "customerEmail": "natthapatp@rabbit.co.th",
+          "customerFullName": "Test Test",
+          "customerPhone": "+66999999999",
+          "licensePlate": "redplate"
+        },
+        "price": {
+          "name": "prices/8ec71598-4a02-4691-a10b-2ac187bd8e25",
+          "priceDetail": {
+            "resourceName": "packages/1354810",
+            "priceSummary": {
+              "interestRate": 3.45,
+              "interestAmount": "65499",
+              "processingFeeRate": 1.15,
+              "processingFeeAmount": "21850",
+              "feeRate": 4.6,
+              "feeAmount": "87349",
+              "discountRate": 0,
+              "discountAmount": "0",
+              "netDiscountRate": 4.45,
+              "netDiscountAmount": "87349",
+              "packagePriceAfterDiscount": "1964521",
+              "netPremiumAmount": "2051870",
+              "initialAmount": "561371",
+              "subsequentAmount": "165611",
+              "discount": null,
+              "shipmentFee": "0",
+              "feeAmountNoShip": "87349"
+            },
+            "installmentDetails": [
+              {
+                "period": 1,
+                "paymentAmount": "561371",
+                "principal": "475000",
+                "addOns": "64521",
+                "interest": "0",
+                "processingFee": "21850",
+                "principalBalance": "1425000",
+                "interestBalance": "65499",
+                "processingFeeBalance": "0",
+                "totalBalance": "1490499"
+              },
+              {
+                "period": 2,
+                "paymentAmount": "165611",
+                "principal": "152667",
+                "addOns": "0",
+                "interest": "12944",
+                "processingFee": "0",
+                "principalBalance": "1272333",
+                "interestBalance": "52555",
+                "processingFeeBalance": "0",
+                "totalBalance": "1324888"
+              },
+              {
+                "period": 3,
+                "paymentAmount": "165611",
+                "principal": "154054",
+                "addOns": "0",
+                "interest": "11557",
+                "processingFee": "0",
+                "principalBalance": "1118279",
+                "interestBalance": "40998",
+                "processingFeeBalance": "0",
+                "totalBalance": "1159277"
+              },
+              {
+                "period": 4,
+                "paymentAmount": "165611",
+                "principal": "155453",
+                "addOns": "0",
+                "interest": "10158",
+                "processingFee": "0",
+                "principalBalance": "962825",
+                "interestBalance": "30840",
+                "processingFeeBalance": "0",
+                "totalBalance": "993666"
+              },
+              {
+                "period": 5,
+                "paymentAmount": "165611",
+                "principal": "156865",
+                "addOns": "0",
+                "interest": "8746",
+                "processingFee": "0",
+                "principalBalance": "805960",
+                "interestBalance": "22095",
+                "processingFeeBalance": "0",
+                "totalBalance": "828055"
+              },
+              {
+                "period": 6,
+                "paymentAmount": "165611",
+                "principal": "158290",
+                "addOns": "0",
+                "interest": "7321",
+                "processingFee": "0",
+                "principalBalance": "647670",
+                "interestBalance": "14774",
+                "processingFeeBalance": "0",
+                "totalBalance": "662444"
+              },
+              {
+                "period": 7,
+                "paymentAmount": "165611",
+                "principal": "159728",
+                "addOns": "0",
+                "interest": "5883",
+                "processingFee": "0",
+                "principalBalance": "487942",
+                "interestBalance": "8891",
+                "processingFeeBalance": "0",
+                "totalBalance": "496833"
+              },
+              {
+                "period": 8,
+                "paymentAmount": "165611",
+                "principal": "161179",
+                "addOns": "0",
+                "interest": "4432",
+                "processingFee": "0",
+                "principalBalance": "326763",
+                "interestBalance": "4459",
+                "processingFeeBalance": "0",
+                "totalBalance": "331222"
+              },
+              {
+                "period": 9,
+                "paymentAmount": "165611",
+                "principal": "162643",
+                "addOns": "0",
+                "interest": "2968",
+                "processingFee": "0",
+                "principalBalance": "164120",
+                "interestBalance": "1491",
+                "processingFeeBalance": "0",
+                "totalBalance": "165611"
+              },
+              {
+                "period": 10,
+                "paymentAmount": "165611",
+                "principal": "164120",
+                "addOns": "0",
+                "interest": "1491",
+                "processingFee": "0",
+                "principalBalance": "0",
+                "interestBalance": "0",
+                "processingFeeBalance": "0",
+                "totalBalance": "0"
+              }
+            ]
+          },
+          "paymentOption": "RABBIT_CARE_INSTALLMENT",
+          "paymentMethod": "QR_CODE",
+          "numberOfInstallments": 10,
+          "cardProvider": "",
+          "createTime": "2023-12-12T04:08:48.139314417Z",
+          "updateTime": "2023-12-12T04:08:48.139314417Z",
+          "discountType": "",
+          "packageResource": {
+            "carPackage": {
+              "package": "packages/1354810",
+              "packagePrice": {
+                "voluntaryPrice": "1900000",
+                "compulsoryPrice": "64521",
+                "discount": {
+                  "type": "",
+                  "percentage": 0,
+                  "amount": "0"
+                }
+              },
+              "insurer": "insurers/27",
+              "insuranceType": "TYPE_1"
+            }
+          }
+        }
+      },
+      {
+        "followup": {
+          "name": "transactions/1e717aa3-a44b-43d2-b4fa-01c7afb787dc/followups/458dd79a-aba2-4ff9-9d10-ca9806f18e9a",
+          "createTime": "2023-12-15T07:56:46.882178005Z",
+          "updateTime": "2023-12-15T07:56:46.882178107Z",
+          "deleteTime": null,
+          "chargeId": "",
+          "transactionId": "transactions/1e717aa3-a44b-43d2-b4fa-01c7afb787dc",
+          "installmentNumber": 4,
+          "dueDate": "2024-08-12T00:00:00Z",
+          "sendSms": false,
+          "priceId": "prices/8ec71598-4a02-4691-a10b-2ac187bd8e25"
+        },
+        "lead": {
+          "name": "leads/110db59d-05e0-4a76-bb9a-c5d64b6998d2",
+          "createTime": "2023-12-11T13:26:31.700832Z",
+          "updateTime": "2023-12-12T00:00:34.375197Z",
+          "deleteTime": null,
+          "createBy": "users/20d37cbe-feb6-44e9-9527-3d789a2949b8",
+          "product": "products/car-insurance",
+          "schema": "schemas/efce3390-8da6-44b3-9e4c-2c7b78ca2c9d",
+          "data": {
+            "carColor": [
+              "black"
+            ],
+            "carDashCam": false,
+            "carLicensePlate": "redplate",
+            "carModified": false,
+            "carSubModelYear": 47094,
+            "carUsageType": "personal",
+            "chassisNumber": "123",
+            "checkout": {
+              "installments": 3,
+              "package": "customPackages/554bc005-6169-4968-bbb1-356d8c8284fe",
+              "paymentMethod": "QR_CODE",
+              "paymentOption": "RABBIT_CARE_INSTALLMENT"
+            },
+            "customerBillingAddress": [
+              {
+                "address": "134",
+                "addressType": "personal",
+                "district": 100100,
+                "firstName": "Test",
+                "lastName": "Test",
+                "postCode": 10200,
+                "province": 100000,
+                "subDistrict": 100101
+              }
+            ],
+            "customerDOB": "2000-06-28",
+            "customerEmail": [
+              "natthapatp@rabbit.co.th"
+            ],
+            "customerFirstName": "Test",
+            "customerGender": "m",
+            "customerLastName": "Test",
+            "customerPhoneNumber": [
+              {
+                "phone": "+66999999999",
+                "status": "unverified"
+              }
+            ],
+            "customerPolicyAddress": [
+              {
+                "address": "134",
+                "addressType": "personal",
+                "district": 100100,
+                "firstName": "Test",
+                "lastName": "Test",
+                "postCode": 10200,
+                "province": 100000,
+                "subDistrict": 100101
+              }
+            ],
+            "customerShippingAddress": [
+              {
+                "address": "134",
+                "addressType": "personal",
+                "district": 100100,
+                "firstName": "Test",
+                "lastName": "Test",
+                "postCode": 10200,
+                "province": 100000,
+                "subDistrict": 100101
+              }
+            ],
+            "insuranceKind": "voluntary",
+            "locale": "th-th",
+            "numberOfFixedDriver": 0,
+            "policyHolderDOB": "2000-06-28",
+            "policyHolderFirstName": "Test",
+            "policyHolderLastName": "Test",
+            "policyHolderNationalId": "1234567890123",
+            "policyHolderType": "customer",
+            "policyStartDate": "2023-12-31",
+            "policyTitle": "MR",
+            "primaryPhoneIndex": 0,
+            "registeredProvince": 100000,
+            "vehicleIdNumber": "123",
+            "voluntaryInsuranceType": [
+              "type_1"
+            ]
+          },
+          "source": "sources/a7aa0b5c-60c3-4d9a-828f-b0d9d5c1449c",
+          "important": false,
+          "assignedTo": "",
+          "status": "LEAD_STATUS_PENDING_PAYMENT",
+          "humanId": "L9908505",
+          "root": "",
+          "type": "LEAD_TYPE_NEW",
+          "isRejected": false,
+          "reference": "123",
+          "annotations": null
+        },
+        "transaction": {
+          "name": "transactions/1e717aa3-a44b-43d2-b4fa-01c7afb787dc",
+          "createTime": "2023-12-12T00:00:32.322285Z",
+          "updateTime": "2023-12-12T00:20:43.073244Z",
+          "money": {
+            "currencyCode": "THB",
+            "amount": "2010450"
+          },
+          "installments": 3,
+          "lead": "leads/110db59d-05e0-4a76-bb9a-c5d64b6998d2",
+          "leadHumanId": "L9908505",
+          "order": "",
+          "gatewayReference": "gateway-references/ICO-L9908505-231212070032",
+          "statusCode": "SUCCESSFUL",
+          "paymentOption": "RABBIT_CARE_INSTALLMENT"
+        },
+        "assigned": null,
+        "team": null,
+        "charges": [],
+        "attributes": {
+          "customerEmail": "natthapatp@rabbit.co.th",
+          "customerFullName": "Test Test",
+          "customerPhone": "+66999999999",
+          "licensePlate": "redplate"
+        },
+        "price": {
+          "name": "prices/8ec71598-4a02-4691-a10b-2ac187bd8e25",
+          "priceDetail": {
+            "resourceName": "packages/1354810",
+            "priceSummary": {
+              "interestRate": 3.45,
+              "interestAmount": "65499",
+              "processingFeeRate": 1.15,
+              "processingFeeAmount": "21850",
+              "feeRate": 4.6,
+              "feeAmount": "87349",
+              "discountRate": 0,
+              "discountAmount": "0",
+              "netDiscountRate": 4.45,
+              "netDiscountAmount": "87349",
+              "packagePriceAfterDiscount": "1964521",
+              "netPremiumAmount": "2051870",
+              "initialAmount": "561371",
+              "subsequentAmount": "165611",
+              "discount": null,
+              "shipmentFee": "0",
+              "feeAmountNoShip": "87349"
+            },
+            "installmentDetails": [
+              {
+                "period": 1,
+                "paymentAmount": "561371",
+                "principal": "475000",
+                "addOns": "64521",
+                "interest": "0",
+                "processingFee": "21850",
+                "principalBalance": "1425000",
+                "interestBalance": "65499",
+                "processingFeeBalance": "0",
+                "totalBalance": "1490499"
+              },
+              {
+                "period": 2,
+                "paymentAmount": "165611",
+                "principal": "152667",
+                "addOns": "0",
+                "interest": "12944",
+                "processingFee": "0",
+                "principalBalance": "1272333",
+                "interestBalance": "52555",
+                "processingFeeBalance": "0",
+                "totalBalance": "1324888"
+              },
+              {
+                "period": 3,
+                "paymentAmount": "165611",
+                "principal": "154054",
+                "addOns": "0",
+                "interest": "11557",
+                "processingFee": "0",
+                "principalBalance": "1118279",
+                "interestBalance": "40998",
+                "processingFeeBalance": "0",
+                "totalBalance": "1159277"
+              },
+              {
+                "period": 4,
+                "paymentAmount": "165611",
+                "principal": "155453",
+                "addOns": "0",
+                "interest": "10158",
+                "processingFee": "0",
+                "principalBalance": "962825",
+                "interestBalance": "30840",
+                "processingFeeBalance": "0",
+                "totalBalance": "993666"
+              },
+              {
+                "period": 5,
+                "paymentAmount": "165611",
+                "principal": "156865",
+                "addOns": "0",
+                "interest": "8746",
+                "processingFee": "0",
+                "principalBalance": "805960",
+                "interestBalance": "22095",
+                "processingFeeBalance": "0",
+                "totalBalance": "828055"
+              },
+              {
+                "period": 6,
+                "paymentAmount": "165611",
+                "principal": "158290",
+                "addOns": "0",
+                "interest": "7321",
+                "processingFee": "0",
+                "principalBalance": "647670",
+                "interestBalance": "14774",
+                "processingFeeBalance": "0",
+                "totalBalance": "662444"
+              },
+              {
+                "period": 7,
+                "paymentAmount": "165611",
+                "principal": "159728",
+                "addOns": "0",
+                "interest": "5883",
+                "processingFee": "0",
+                "principalBalance": "487942",
+                "interestBalance": "8891",
+                "processingFeeBalance": "0",
+                "totalBalance": "496833"
+              },
+              {
+                "period": 8,
+                "paymentAmount": "165611",
+                "principal": "161179",
+                "addOns": "0",
+                "interest": "4432",
+                "processingFee": "0",
+                "principalBalance": "326763",
+                "interestBalance": "4459",
+                "processingFeeBalance": "0",
+                "totalBalance": "331222"
+              },
+              {
+                "period": 9,
+                "paymentAmount": "165611",
+                "principal": "162643",
+                "addOns": "0",
+                "interest": "2968",
+                "processingFee": "0",
+                "principalBalance": "164120",
+                "interestBalance": "1491",
+                "processingFeeBalance": "0",
+                "totalBalance": "165611"
+              },
+              {
+                "period": 10,
+                "paymentAmount": "165611",
+                "principal": "164120",
+                "addOns": "0",
+                "interest": "1491",
+                "processingFee": "0",
+                "principalBalance": "0",
+                "interestBalance": "0",
+                "processingFeeBalance": "0",
+                "totalBalance": "0"
+              }
+            ]
+          },
+          "paymentOption": "RABBIT_CARE_INSTALLMENT",
+          "paymentMethod": "QR_CODE",
+          "numberOfInstallments": 10,
+          "cardProvider": "",
+          "createTime": "2023-12-12T04:08:48.139314417Z",
+          "updateTime": "2023-12-12T04:08:48.139314417Z",
+          "discountType": "",
+          "packageResource": {
+            "carPackage": {
+              "package": "packages/1354810",
+              "packagePrice": {
+                "voluntaryPrice": "1900000",
+                "compulsoryPrice": "64521",
+                "discount": {
+                  "type": "",
+                  "percentage": 0,
+                  "amount": "0"
+                }
+              },
+              "insurer": "insurers/27",
+              "insuranceType": "TYPE_1"
+            }
+          }
+        }
+      },
+      {
+        "followup": {
+          "name": "transactions/1e717aa3-a44b-43d2-b4fa-01c7afb787dc/followups/709f5092-3602-498c-8ef4-defeb45b563b",
+          "createTime": "2023-12-15T07:54:57.943255316Z",
+          "updateTime": "2023-12-15T07:54:57.943255420Z",
+          "deleteTime": null,
+          "chargeId": "",
+          "transactionId": "transactions/1e717aa3-a44b-43d2-b4fa-01c7afb787dc",
+          "installmentNumber": 3,
+          "dueDate": "2024-08-12T00:00:00Z",
+          "sendSms": false,
+          "priceId": "prices/8ec71598-4a02-4691-a10b-2ac187bd8e25"
+        },
+        "lead": {
+          "name": "leads/110db59d-05e0-4a76-bb9a-c5d64b6998d2",
+          "createTime": "2023-12-11T13:26:31.700832Z",
+          "updateTime": "2023-12-12T00:00:34.375197Z",
+          "deleteTime": null,
+          "createBy": "users/20d37cbe-feb6-44e9-9527-3d789a2949b8",
+          "product": "products/car-insurance",
+          "schema": "schemas/efce3390-8da6-44b3-9e4c-2c7b78ca2c9d",
+          "data": {
+            "carColor": [
+              "black"
+            ],
+            "carDashCam": false,
+            "carLicensePlate": "redplate",
+            "carModified": false,
+            "carSubModelYear": 47094,
+            "carUsageType": "personal",
+            "chassisNumber": "123",
+            "checkout": {
+              "installments": 3,
+              "package": "customPackages/554bc005-6169-4968-bbb1-356d8c8284fe",
+              "paymentMethod": "QR_CODE",
+              "paymentOption": "RABBIT_CARE_INSTALLMENT"
+            },
+            "customerBillingAddress": [
+              {
+                "address": "134",
+                "addressType": "personal",
+                "district": 100100,
+                "firstName": "Test",
+                "lastName": "Test",
+                "postCode": 10200,
+                "province": 100000,
+                "subDistrict": 100101
+              }
+            ],
+            "customerDOB": "2000-06-28",
+            "customerEmail": [
+              "natthapatp@rabbit.co.th"
+            ],
+            "customerFirstName": "Test",
+            "customerGender": "m",
+            "customerLastName": "Test",
+            "customerPhoneNumber": [
+              {
+                "phone": "+66999999999",
+                "status": "unverified"
+              }
+            ],
+            "customerPolicyAddress": [
+              {
+                "address": "134",
+                "addressType": "personal",
+                "district": 100100,
+                "firstName": "Test",
+                "lastName": "Test",
+                "postCode": 10200,
+                "province": 100000,
+                "subDistrict": 100101
+              }
+            ],
+            "customerShippingAddress": [
+              {
+                "address": "134",
+                "addressType": "personal",
+                "district": 100100,
+                "firstName": "Test",
+                "lastName": "Test",
+                "postCode": 10200,
+                "province": 100000,
+                "subDistrict": 100101
+              }
+            ],
+            "insuranceKind": "voluntary",
+            "locale": "th-th",
+            "numberOfFixedDriver": 0,
+            "policyHolderDOB": "2000-06-28",
+            "policyHolderFirstName": "Test",
+            "policyHolderLastName": "Test",
+            "policyHolderNationalId": "1234567890123",
+            "policyHolderType": "customer",
+            "policyStartDate": "2023-12-31",
+            "policyTitle": "MR",
+            "primaryPhoneIndex": 0,
+            "registeredProvince": 100000,
+            "vehicleIdNumber": "123",
+            "voluntaryInsuranceType": [
+              "type_1"
+            ]
+          },
+          "source": "sources/a7aa0b5c-60c3-4d9a-828f-b0d9d5c1449c",
+          "important": false,
+          "assignedTo": "",
+          "status": "LEAD_STATUS_PENDING_PAYMENT",
+          "humanId": "L9908505",
+          "root": "",
+          "type": "LEAD_TYPE_NEW",
+          "isRejected": false,
+          "reference": "123",
+          "annotations": null
+        },
+        "transaction": {
+          "name": "transactions/1e717aa3-a44b-43d2-b4fa-01c7afb787dc",
+          "createTime": "2023-12-12T00:00:32.322285Z",
+          "updateTime": "2023-12-12T00:20:43.073244Z",
+          "money": {
+            "currencyCode": "THB",
+            "amount": "2010450"
+          },
+          "installments": 3,
+          "lead": "leads/110db59d-05e0-4a76-bb9a-c5d64b6998d2",
+          "leadHumanId": "L9908505",
+          "order": "",
+          "gatewayReference": "gateway-references/ICO-L9908505-231212070032",
+          "statusCode": "SUCCESSFUL",
+          "paymentOption": "RABBIT_CARE_INSTALLMENT"
+        },
+        "assigned": null,
+        "team": null,
+        "charges": [
+          {
+            "name": "transactions/1e717aa3-a44b-43d2-b4fa-01c7afb787dc/charges/cb7c672c-ef65-4781-9916-535847ceaa74",
+            "createTime": "2023-12-12T00:20:42.366103Z",
+            "updateTime": "2023-12-12T00:20:42.564320Z",
+            "money": {
+              "currencyCode": "THB",
+              "amount": "670150"
+            },
+            "serviceProvider": "ICOLLECTION",
+            "paymentMethod": "QR_CODE",
+            "returnUri": "",
+            "authorizeUri": "",
+            "token": "",
+            "status": "SUCCESSFUL",
+            "thirdPartyId": "OR661200009146",
+            "sourceUri": "",
+            "errorCode": "",
+            "httpStatusCode": 200,
+            "errorMessage": "",
+            "installmentNumber": 3,
+            "cardToken": "",
+            "dueDate": "1970-01-01T00:00:00Z",
+            "slipIdResource": "",
+            "sendSms": false,
+            "paymentDate": null
+          }
+        ],
+        "attributes": {
+          "customerEmail": "natthapatp@rabbit.co.th",
+          "customerFullName": "Test Test",
+          "customerPhone": "+66999999999",
+          "licensePlate": "redplate"
+        },
+        "price": {
+          "name": "prices/8ec71598-4a02-4691-a10b-2ac187bd8e25",
+          "priceDetail": {
+            "resourceName": "packages/1354810",
+            "priceSummary": {
+              "interestRate": 3.45,
+              "interestAmount": "65499",
+              "processingFeeRate": 1.15,
+              "processingFeeAmount": "21850",
+              "feeRate": 4.6,
+              "feeAmount": "87349",
+              "discountRate": 0,
+              "discountAmount": "0",
+              "netDiscountRate": 4.45,
+              "netDiscountAmount": "87349",
+              "packagePriceAfterDiscount": "1964521",
+              "netPremiumAmount": "2051870",
+              "initialAmount": "561371",
+              "subsequentAmount": "165611",
+              "discount": null,
+              "shipmentFee": "0",
+              "feeAmountNoShip": "87349"
+            },
+            "installmentDetails": [
+              {
+                "period": 1,
+                "paymentAmount": "561371",
+                "principal": "475000",
+                "addOns": "64521",
+                "interest": "0",
+                "processingFee": "21850",
+                "principalBalance": "1425000",
+                "interestBalance": "65499",
+                "processingFeeBalance": "0",
+                "totalBalance": "1490499"
+              },
+              {
+                "period": 2,
+                "paymentAmount": "165611",
+                "principal": "152667",
+                "addOns": "0",
+                "interest": "12944",
+                "processingFee": "0",
+                "principalBalance": "1272333",
+                "interestBalance": "52555",
+                "processingFeeBalance": "0",
+                "totalBalance": "1324888"
+              },
+              {
+                "period": 3,
+                "paymentAmount": "165611",
+                "principal": "154054",
+                "addOns": "0",
+                "interest": "11557",
+                "processingFee": "0",
+                "principalBalance": "1118279",
+                "interestBalance": "40998",
+                "processingFeeBalance": "0",
+                "totalBalance": "1159277"
+              },
+              {
+                "period": 4,
+                "paymentAmount": "165611",
+                "principal": "155453",
+                "addOns": "0",
+                "interest": "10158",
+                "processingFee": "0",
+                "principalBalance": "962825",
+                "interestBalance": "30840",
+                "processingFeeBalance": "0",
+                "totalBalance": "993666"
+              },
+              {
+                "period": 5,
+                "paymentAmount": "165611",
+                "principal": "156865",
+                "addOns": "0",
+                "interest": "8746",
+                "processingFee": "0",
+                "principalBalance": "805960",
+                "interestBalance": "22095",
+                "processingFeeBalance": "0",
+                "totalBalance": "828055"
+              },
+              {
+                "period": 6,
+                "paymentAmount": "165611",
+                "principal": "158290",
+                "addOns": "0",
+                "interest": "7321",
+                "processingFee": "0",
+                "principalBalance": "647670",
+                "interestBalance": "14774",
+                "processingFeeBalance": "0",
+                "totalBalance": "662444"
+              },
+              {
+                "period": 7,
+                "paymentAmount": "165611",
+                "principal": "159728",
+                "addOns": "0",
+                "interest": "5883",
+                "processingFee": "0",
+                "principalBalance": "487942",
+                "interestBalance": "8891",
+                "processingFeeBalance": "0",
+                "totalBalance": "496833"
+              },
+              {
+                "period": 8,
+                "paymentAmount": "165611",
+                "principal": "161179",
+                "addOns": "0",
+                "interest": "4432",
+                "processingFee": "0",
+                "principalBalance": "326763",
+                "interestBalance": "4459",
+                "processingFeeBalance": "0",
+                "totalBalance": "331222"
+              },
+              {
+                "period": 9,
+                "paymentAmount": "165611",
+                "principal": "162643",
+                "addOns": "0",
+                "interest": "2968",
+                "processingFee": "0",
+                "principalBalance": "164120",
+                "interestBalance": "1491",
+                "processingFeeBalance": "0",
+                "totalBalance": "165611"
+              },
+              {
+                "period": 10,
+                "paymentAmount": "165611",
+                "principal": "164120",
+                "addOns": "0",
+                "interest": "1491",
+                "processingFee": "0",
+                "principalBalance": "0",
+                "interestBalance": "0",
+                "processingFeeBalance": "0",
+                "totalBalance": "0"
+              }
+            ]
+          },
+          "paymentOption": "RABBIT_CARE_INSTALLMENT",
+          "paymentMethod": "QR_CODE",
+          "numberOfInstallments": 10,
+          "cardProvider": "",
+          "createTime": "2023-12-12T04:08:48.139314417Z",
+          "updateTime": "2023-12-12T04:08:48.139314417Z",
+          "discountType": "",
+          "packageResource": {
+            "carPackage": {
+              "package": "packages/1354810",
+              "packagePrice": {
+                "voluntaryPrice": "1900000",
+                "compulsoryPrice": "64521",
+                "discount": {
+                  "type": "",
+                  "percentage": 0,
+                  "amount": "0"
+                }
+              },
+              "insurer": "insurers/27",
+              "insuranceType": "TYPE_1"
+            }
+          }
+        }
+      },
+      {
+        "followup": {
+          "name": "transactions/ba2e2d1f-6584-4bc4-83d8-9f06d8114682/followups/3282161a-3bc6-4854-9db9-b20850fc046f",
+          "createTime": "2023-12-15T06:41:35.349411296Z",
+          "updateTime": "2023-12-15T06:41:35.349411391Z",
+          "deleteTime": null,
+          "chargeId": "",
+          "transactionId": "transactions/ba2e2d1f-6584-4bc4-83d8-9f06d8114682",
+          "installmentNumber": 1,
+          "dueDate": "2024-08-12T00:00:00Z",
+          "sendSms": false,
+          "priceId": "prices/8ec71598-4a02-4691-a10b-2ac187bd8e25"
+        },
+        "lead": {
+          "name": "leads/8840e93d-dd3d-417c-b03a-eb567eeb52a9",
+          "createTime": "2022-03-07T10:02:01.407603Z",
+          "updateTime": "2023-12-14T09:58:33.038206Z",
+          "deleteTime": null,
+          "createBy": "",
+          "product": "products/car-insurance",
+          "schema": "schemas/efce3390-8da6-44b3-9e4c-2c7b78ca2c9d",
+          "data": {
+            "carDashCam": true,
+            "carModified": false,
+            "carSubModelYear": 47290,
+            "carUsageType": "personal",
+            "checkout": {
+              "package": "1346691"
+            },
+            "currentInsurer": 7,
+            "customerDOB": "1994-05-16",
+            "customerEmail": [
+              "mattanapornp@rabbit.com"
+            ],
+            "customerFirstName": "เตย",
+            "customerGender": "f",
+            "customerLastName": "ปิ่นทอง",
+            "customerPhoneNumber": [
+              {
+                "phone": "+66952483969",
+                "status": "unverified"
+              }
+            ],
+            "insuranceKind": "both",
+            "locale": "th-en",
+            "policyStartDate": "2023-12-15",
+            "primaryPhoneIndex": 0,
+            "registeredProvince": 130000,
+            "utm": {
+              "lead_source": "rabbit.co.th"
+            },
+            "voluntaryInsuranceType": [
+              "type_1"
+            ]
+          },
+          "source": "sources/9dc888b0-1676-4359-9186-2b368fcfe93f",
+          "important": false,
+          "assignedTo": "",
+          "status": "LEAD_STATUS_PURCHASED",
+          "humanId": "L9851326",
+          "root": "",
+          "type": "LEAD_TYPE_NEW",
+          "isRejected": false,
+          "reference": "",
+          "annotations": null
+        },
+        "transaction": {
+          "name": "transactions/ba2e2d1f-6584-4bc4-83d8-9f06d8114682",
+          "createTime": "2023-12-14T09:03:40.899251590Z",
+          "updateTime": "2023-12-14T09:03:40.899251590Z",
+          "money": {
+            "currencyCode": "THB",
+            "amount": "123465"
+          },
+          "installments": 1,
+          "lead": "leads/8840e93d-dd3d-417c-b03a-eb567eeb52a9",
+          "leadHumanId": "",
+          "order": "",
+          "gatewayReference": "",
+          "statusCode": "PENDING",
+          "paymentOption": "PAYMENT_OPTION_UNKNOWN"
+        },
+        "assigned": null,
+        "team": null,
+        "charges": [
+          {
+            "name": "transactions/ba2e2d1f-6584-4bc4-83d8-9f06d8114682/charges/17339944-ffc3-41a6-b66e-da8b49416f05",
+            "createTime": "2023-12-14T09:03:42.507326Z",
+            "updateTime": "2023-12-14T10:00:25.868906Z",
+            "money": {
+              "currencyCode": "THB",
+              "amount": "123465"
+            },
+            "serviceProvider": "OMISE",
+            "paymentMethod": "ONLINECARD",
+            "returnUri": "",
+            "authorizeUri": "https://api.omise.co/payments/paym_test_5y3emjc23fizlp9l1d6/authorize",
+            "token": "",
+            "status": "FAILED",
+            "thirdPartyId": "chrg_test_5y3emjc0gnd4dvfm26f",
+            "sourceUri": "",
+            "errorCode": "",
+            "httpStatusCode": 200,
+            "errorMessage": "",
+            "installmentNumber": 1,
+            "cardToken": "",
+            "dueDate": "1970-01-01T00:00:00Z",
+            "slipIdResource": "",
+            "sendSms": false,
+            "paymentDate": null
+          }
+        ],
+        "attributes": {
+          "customerEmail": "mattanapornp@rabbit.com",
+          "customerFullName": "เตย ปิ่นทอง",
+          "customerPhone": "+66952483969",
+          "licensePlate": "%{[@metadata][lead][data][carLicensePlate]}"
+        },
+        "price": {
+          "name": "prices/8ec71598-4a02-4691-a10b-2ac187bd8e25",
+          "priceDetail": {
+            "resourceName": "packages/1354810",
+            "priceSummary": {
+              "interestRate": 3.45,
+              "interestAmount": "65499",
+              "processingFeeRate": 1.15,
+              "processingFeeAmount": "21850",
+              "feeRate": 4.6,
+              "feeAmount": "87349",
+              "discountRate": 0,
+              "discountAmount": "0",
+              "netDiscountRate": 4.45,
+              "netDiscountAmount": "87349",
+              "packagePriceAfterDiscount": "1964521",
+              "netPremiumAmount": "2051870",
+              "initialAmount": "561371",
+              "subsequentAmount": "165611",
+              "discount": null,
+              "shipmentFee": "0",
+              "feeAmountNoShip": "87349"
+            },
+            "installmentDetails": [
+              {
+                "period": 1,
+                "paymentAmount": "561371",
+                "principal": "475000",
+                "addOns": "64521",
+                "interest": "0",
+                "processingFee": "21850",
+                "principalBalance": "1425000",
+                "interestBalance": "65499",
+                "processingFeeBalance": "0",
+                "totalBalance": "1490499"
+              },
+              {
+                "period": 2,
+                "paymentAmount": "165611",
+                "principal": "152667",
+                "addOns": "0",
+                "interest": "12944",
+                "processingFee": "0",
+                "principalBalance": "1272333",
+                "interestBalance": "52555",
+                "processingFeeBalance": "0",
+                "totalBalance": "1324888"
+              },
+              {
+                "period": 3,
+                "paymentAmount": "165611",
+                "principal": "154054",
+                "addOns": "0",
+                "interest": "11557",
+                "processingFee": "0",
+                "principalBalance": "1118279",
+                "interestBalance": "40998",
+                "processingFeeBalance": "0",
+                "totalBalance": "1159277"
+              },
+              {
+                "period": 4,
+                "paymentAmount": "165611",
+                "principal": "155453",
+                "addOns": "0",
+                "interest": "10158",
+                "processingFee": "0",
+                "principalBalance": "962825",
+                "interestBalance": "30840",
+                "processingFeeBalance": "0",
+                "totalBalance": "993666"
+              },
+              {
+                "period": 5,
+                "paymentAmount": "165611",
+                "principal": "156865",
+                "addOns": "0",
+                "interest": "8746",
+                "processingFee": "0",
+                "principalBalance": "805960",
+                "interestBalance": "22095",
+                "processingFeeBalance": "0",
+                "totalBalance": "828055"
+              },
+              {
+                "period": 6,
+                "paymentAmount": "165611",
+                "principal": "158290",
+                "addOns": "0",
+                "interest": "7321",
+                "processingFee": "0",
+                "principalBalance": "647670",
+                "interestBalance": "14774",
+                "processingFeeBalance": "0",
+                "totalBalance": "662444"
+              },
+              {
+                "period": 7,
+                "paymentAmount": "165611",
+                "principal": "159728",
+                "addOns": "0",
+                "interest": "5883",
+                "processingFee": "0",
+                "principalBalance": "487942",
+                "interestBalance": "8891",
+                "processingFeeBalance": "0",
+                "totalBalance": "496833"
+              },
+              {
+                "period": 8,
+                "paymentAmount": "165611",
+                "principal": "161179",
+                "addOns": "0",
+                "interest": "4432",
+                "processingFee": "0",
+                "principalBalance": "326763",
+                "interestBalance": "4459",
+                "processingFeeBalance": "0",
+                "totalBalance": "331222"
+              },
+              {
+                "period": 9,
+                "paymentAmount": "165611",
+                "principal": "162643",
+                "addOns": "0",
+                "interest": "2968",
+                "processingFee": "0",
+                "principalBalance": "164120",
+                "interestBalance": "1491",
+                "processingFeeBalance": "0",
+                "totalBalance": "165611"
+              },
+              {
+                "period": 10,
+                "paymentAmount": "165611",
+                "principal": "164120",
+                "addOns": "0",
+                "interest": "1491",
+                "processingFee": "0",
+                "principalBalance": "0",
+                "interestBalance": "0",
+                "processingFeeBalance": "0",
+                "totalBalance": "0"
+              }
+            ]
+          },
+          "paymentOption": "RABBIT_CARE_INSTALLMENT",
+          "paymentMethod": "QR_CODE",
+          "numberOfInstallments": 10,
+          "cardProvider": "",
+          "createTime": "2023-12-12T04:08:48.139314417Z",
+          "updateTime": "2023-12-12T04:08:48.139314417Z",
+          "discountType": "",
+          "packageResource": {
+            "carPackage": {
+              "package": "packages/1354810",
+              "packagePrice": {
+                "voluntaryPrice": "1900000",
+                "compulsoryPrice": "64521",
+                "discount": {
+                  "type": "",
+                  "percentage": 0,
+                  "amount": "0"
+                }
+              },
+              "insurer": "insurers/27",
+              "insuranceType": "TYPE_1"
+            }
+          }
+        }
+      },
+      {
+        "followup": {
+          "name": "transactions/76f9aa90-fa38-45c2-8840-54bda51f9bcb/followups/dd8197c5-ed69-4488-bec6-a9843baac19e",
+          "createTime": "2023-12-15T05:55:24.970187980Z",
+          "updateTime": "2023-12-15T05:55:24.970188091Z",
+          "deleteTime": null,
+          "chargeId": "",
+          "transactionId": "transactions/76f9aa90-fa38-45c2-8840-54bda51f9bcb",
+          "installmentNumber": 3,
+          "dueDate": "2024-08-12T00:00:00Z",
+          "sendSms": false,
+          "priceId": "prices/8ec71598-4a02-4691-a10b-2ac187bd8e25"
+        },
+        "lead": {
+          "name": "leads/3b341ffc-b64f-4511-b6e5-da80e5ecbfbb",
+          "createTime": "2023-12-11T10:39:51.267859Z",
+          "updateTime": "2023-12-12T00:28:01.453557Z",
+          "deleteTime": null,
+          "createBy": "users/f1696b37-f4fa-44ce-b4b3-03f76adc512c",
+          "product": "products/car-insurance",
+          "schema": "schemas/efce3390-8da6-44b3-9e4c-2c7b78ca2c9d",
+          "data": {
+            "carColor": [
+              "white"
+            ],
+            "carDashCam": false,
+            "carLicensePlate": "redplate",
+            "carModified": false,
+            "carSubModelYear": 46444,
+            "carUsageType": "personal",
+            "chassisNumber": "123",
+            "checkout": {
+              "installments": 10,
+              "package": "customPackages/af6441ce-29fa-47b7-bfd1-4632c2ea0f98",
+              "paymentMethod": "QR_CODE",
+              "paymentOption": "RABBIT_CARE_INSTALLMENT"
+            },
+            "customerBillingAddress": [],
+            "customerDOB": "1990-12-25",
+            "customerEmail": [],
+            "customerFirstName": "tetet",
+            "customerGender": "m",
+            "customerLastName": "etetetette",
+            "customerPhoneNumber": [
+              {
+                "phone": "+66923840733",
+                "status": "unverified"
+              }
+            ],
+            "customerPolicyAddress": [],
+            "customerShippingAddress": [],
+            "insuranceKind": "voluntary",
+            "locale": "th-th",
+            "numberOfFixedDriver": 0,
+            "policyHolderDOB": "1990-12-25",
+            "policyHolderFirstName": "tetet",
+            "policyHolderLastName": "etetetette",
+            "policyHolderType": "customer",
+            "policyStartDate": "2023-12-14",
+            "policyTitle": "MR",
+            "primaryPhoneIndex": 0,
+            "registeredProvince": 100000,
+            "vehicleIdNumber": "321",
+            "voluntaryInsuranceType": [
+              "type_1",
+              "type_2",
+              "type_3"
+            ]
+          },
+          "source": "sources/ef770f3e-de16-4cb4-8d49-445d30056a70",
+          "important": false,
+          "assignedTo": "",
+          "status": "LEAD_STATUS_PENDING_PAYMENT",
+          "humanId": "L9908502",
+          "root": "",
+          "type": "LEAD_TYPE_NEW",
+          "isRejected": false,
+          "reference": "",
+          "annotations": null
+        },
+        "transaction": {
+          "name": "transactions/76f9aa90-fa38-45c2-8840-54bda51f9bcb",
+          "createTime": "2023-12-12T00:27:59.409196307Z",
+          "updateTime": "2023-12-12T00:27:59.409196307Z",
+          "money": {
+            "currencyCode": "THB",
+            "amount": "1987349"
+          },
+          "installments": 10,
+          "lead": "leads/3b341ffc-b64f-4511-b6e5-da80e5ecbfbb",
+          "leadHumanId": "L9908502",
+          "order": "",
+          "gatewayReference": "gateway-references/ICO-L9908502-231212072759",
+          "statusCode": "PENDING",
+          "paymentOption": "RABBIT_CARE_INSTALLMENT"
+        },
+        "assigned": null,
+        "team": null,
+        "charges": [
+          {
+            "name": "transactions/76f9aa90-fa38-45c2-8840-54bda51f9bcb/charges/4b55253b-bad2-478d-82d7-e3beaf63977f",
+            "createTime": "2023-12-12T00:40:38.323347Z",
+            "updateTime": "2023-12-12T00:40:38.587216Z",
+            "money": {
+              "currencyCode": "THB",
+              "amount": "165611"
+            },
+            "serviceProvider": "ICOLLECTION",
+            "paymentMethod": "QR_CODE",
+            "returnUri": "",
+            "authorizeUri": "",
+            "token": "",
+            "status": "SUCCESSFUL",
+            "thirdPartyId": "OR6612000094666",
+            "sourceUri": "",
+            "errorCode": "",
+            "httpStatusCode": 200,
+            "errorMessage": "",
+            "installmentNumber": 3,
+            "cardToken": "",
+            "dueDate": "1970-01-01T00:00:00Z",
+            "slipIdResource": "",
+            "sendSms": false,
+            "paymentDate": null
+          }
+        ],
+        "attributes": {
+          "customerEmail": "",
+          "customerFullName": "tetet etetetette",
+          "customerPhone": "+66923840733",
+          "licensePlate": "redplate"
+        },
+        "price": {
+          "name": "prices/8ec71598-4a02-4691-a10b-2ac187bd8e25",
+          "priceDetail": {
+            "resourceName": "packages/1354810",
+            "priceSummary": {
+              "interestRate": 3.45,
+              "interestAmount": "65499",
+              "processingFeeRate": 1.15,
+              "processingFeeAmount": "21850",
+              "feeRate": 4.6,
+              "feeAmount": "87349",
+              "discountRate": 0,
+              "discountAmount": "0",
+              "netDiscountRate": 4.45,
+              "netDiscountAmount": "87349",
+              "packagePriceAfterDiscount": "1964521",
+              "netPremiumAmount": "2051870",
+              "initialAmount": "561371",
+              "subsequentAmount": "165611",
+              "discount": null,
+              "shipmentFee": "0",
+              "feeAmountNoShip": "87349"
+            },
+            "installmentDetails": [
+              {
+                "period": 1,
+                "paymentAmount": "561371",
+                "principal": "475000",
+                "addOns": "64521",
+                "interest": "0",
+                "processingFee": "21850",
+                "principalBalance": "1425000",
+                "interestBalance": "65499",
+                "processingFeeBalance": "0",
+                "totalBalance": "1490499"
+              },
+              {
+                "period": 2,
+                "paymentAmount": "165611",
+                "principal": "152667",
+                "addOns": "0",
+                "interest": "12944",
+                "processingFee": "0",
+                "principalBalance": "1272333",
+                "interestBalance": "52555",
+                "processingFeeBalance": "0",
+                "totalBalance": "1324888"
+              },
+              {
+                "period": 3,
+                "paymentAmount": "165611",
+                "principal": "154054",
+                "addOns": "0",
+                "interest": "11557",
+                "processingFee": "0",
+                "principalBalance": "1118279",
+                "interestBalance": "40998",
+                "processingFeeBalance": "0",
+                "totalBalance": "1159277"
+              },
+              {
+                "period": 4,
+                "paymentAmount": "165611",
+                "principal": "155453",
+                "addOns": "0",
+                "interest": "10158",
+                "processingFee": "0",
+                "principalBalance": "962825",
+                "interestBalance": "30840",
+                "processingFeeBalance": "0",
+                "totalBalance": "993666"
+              },
+              {
+                "period": 5,
+                "paymentAmount": "165611",
+                "principal": "156865",
+                "addOns": "0",
+                "interest": "8746",
+                "processingFee": "0",
+                "principalBalance": "805960",
+                "interestBalance": "22095",
+                "processingFeeBalance": "0",
+                "totalBalance": "828055"
+              },
+              {
+                "period": 6,
+                "paymentAmount": "165611",
+                "principal": "158290",
+                "addOns": "0",
+                "interest": "7321",
+                "processingFee": "0",
+                "principalBalance": "647670",
+                "interestBalance": "14774",
+                "processingFeeBalance": "0",
+                "totalBalance": "662444"
+              },
+              {
+                "period": 7,
+                "paymentAmount": "165611",
+                "principal": "159728",
+                "addOns": "0",
+                "interest": "5883",
+                "processingFee": "0",
+                "principalBalance": "487942",
+                "interestBalance": "8891",
+                "processingFeeBalance": "0",
+                "totalBalance": "496833"
+              },
+              {
+                "period": 8,
+                "paymentAmount": "165611",
+                "principal": "161179",
+                "addOns": "0",
+                "interest": "4432",
+                "processingFee": "0",
+                "principalBalance": "326763",
+                "interestBalance": "4459",
+                "processingFeeBalance": "0",
+                "totalBalance": "331222"
+              },
+              {
+                "period": 9,
+                "paymentAmount": "165611",
+                "principal": "162643",
+                "addOns": "0",
+                "interest": "2968",
+                "processingFee": "0",
+                "principalBalance": "164120",
+                "interestBalance": "1491",
+                "processingFeeBalance": "0",
+                "totalBalance": "165611"
+              },
+              {
+                "period": 10,
+                "paymentAmount": "165611",
+                "principal": "164120",
+                "addOns": "0",
+                "interest": "1491",
+                "processingFee": "0",
+                "principalBalance": "0",
+                "interestBalance": "0",
+                "processingFeeBalance": "0",
+                "totalBalance": "0"
+              }
+            ]
+          },
+          "paymentOption": "RABBIT_CARE_INSTALLMENT",
+          "paymentMethod": "QR_CODE",
+          "numberOfInstallments": 10,
+          "cardProvider": "",
+          "createTime": "2023-12-12T04:08:48.139314417Z",
+          "updateTime": "2023-12-12T04:08:48.139314417Z",
+          "discountType": "",
+          "packageResource": {
+            "carPackage": {
+              "package": "packages/1354810",
+              "packagePrice": {
+                "voluntaryPrice": "1900000",
+                "compulsoryPrice": "64521",
+                "discount": {
+                  "type": "",
+                  "percentage": 0,
+                  "amount": "0"
+                }
+              },
+              "insurer": "insurers/27",
+              "insuranceType": "TYPE_1"
+            }
+          }
+        }
+      },
+      {
+        "followup": {
+          "name": "transactions/76f9aa90-fa38-45c2-8840-54bda51f9bcb/followups/264b1040-1fdf-4706-9877-4c2e351a5490",
+          "createTime": "2023-12-15T05:47:23.224927043Z",
+          "updateTime": "2023-12-15T05:47:23.224927141Z",
+          "deleteTime": null,
+          "chargeId": "",
+          "transactionId": "transactions/76f9aa90-fa38-45c2-8840-54bda51f9bcb",
+          "installmentNumber": 2,
+          "dueDate": "2024-08-12T00:00:00Z",
+          "sendSms": false,
+          "priceId": "prices/8ec71598-4a02-4691-a10b-2ac187bd8e25"
+        },
+        "lead": {
+          "name": "leads/3b341ffc-b64f-4511-b6e5-da80e5ecbfbb",
+          "createTime": "2023-12-11T10:39:51.267859Z",
+          "updateTime": "2023-12-12T00:28:01.453557Z",
+          "deleteTime": null,
+          "createBy": "users/f1696b37-f4fa-44ce-b4b3-03f76adc512c",
+          "product": "products/car-insurance",
+          "schema": "schemas/efce3390-8da6-44b3-9e4c-2c7b78ca2c9d",
+          "data": {
+            "carColor": [
+              "white"
+            ],
+            "carDashCam": false,
+            "carLicensePlate": "redplate",
+            "carModified": false,
+            "carSubModelYear": 46444,
+            "carUsageType": "personal",
+            "chassisNumber": "123",
+            "checkout": {
+              "installments": 10,
+              "package": "customPackages/af6441ce-29fa-47b7-bfd1-4632c2ea0f98",
+              "paymentMethod": "QR_CODE",
+              "paymentOption": "RABBIT_CARE_INSTALLMENT"
+            },
+            "customerBillingAddress": [],
+            "customerDOB": "1990-12-25",
+            "customerEmail": [],
+            "customerFirstName": "tetet",
+            "customerGender": "m",
+            "customerLastName": "etetetette",
+            "customerPhoneNumber": [
+              {
+                "phone": "+66923840733",
+                "status": "unverified"
+              }
+            ],
+            "customerPolicyAddress": [],
+            "customerShippingAddress": [],
+            "insuranceKind": "voluntary",
+            "locale": "th-th",
+            "numberOfFixedDriver": 0,
+            "policyHolderDOB": "1990-12-25",
+            "policyHolderFirstName": "tetet",
+            "policyHolderLastName": "etetetette",
+            "policyHolderType": "customer",
+            "policyStartDate": "2023-12-14",
+            "policyTitle": "MR",
+            "primaryPhoneIndex": 0,
+            "registeredProvince": 100000,
+            "vehicleIdNumber": "321",
+            "voluntaryInsuranceType": [
+              "type_1",
+              "type_2",
+              "type_3"
+            ]
+          },
+          "source": "sources/ef770f3e-de16-4cb4-8d49-445d30056a70",
+          "important": false,
+          "assignedTo": "",
+          "status": "LEAD_STATUS_PENDING_PAYMENT",
+          "humanId": "L9908502",
+          "root": "",
+          "type": "LEAD_TYPE_NEW",
+          "isRejected": false,
+          "reference": "",
+          "annotations": null
+        },
+        "transaction": {
+          "name": "transactions/76f9aa90-fa38-45c2-8840-54bda51f9bcb",
+          "createTime": "2023-12-12T00:27:59.409196307Z",
+          "updateTime": "2023-12-12T00:27:59.409196307Z",
+          "money": {
+            "currencyCode": "THB",
+            "amount": "1987349"
+          },
+          "installments": 10,
+          "lead": "leads/3b341ffc-b64f-4511-b6e5-da80e5ecbfbb",
+          "leadHumanId": "L9908502",
+          "order": "",
+          "gatewayReference": "gateway-references/ICO-L9908502-231212072759",
+          "statusCode": "PENDING",
+          "paymentOption": "RABBIT_CARE_INSTALLMENT"
+        },
+        "assigned": null,
+        "team": null,
+        "charges": [
+          {
+            "name": "transactions/76f9aa90-fa38-45c2-8840-54bda51f9bcb/charges/1cd5e0be-bcd9-4d37-bfb2-0026cbc90dfc",
+            "createTime": "2023-12-12T00:35:07.777247Z",
+            "updateTime": "2023-12-12T00:35:07.974337Z",
+            "money": {
+              "currencyCode": "THB",
+              "amount": "165611"
+            },
+            "serviceProvider": "ICOLLECTION",
+            "paymentMethod": "QR_CODE",
+            "returnUri": "",
+            "authorizeUri": "",
+            "token": "",
+            "status": "SUCCESSFUL",
+            "thirdPartyId": "OR6612000093866",
+            "sourceUri": "",
+            "errorCode": "",
+            "httpStatusCode": 200,
+            "errorMessage": "",
+            "installmentNumber": 2,
+            "cardToken": "",
+            "dueDate": "1970-01-01T00:00:00Z",
+            "slipIdResource": "",
+            "sendSms": false,
+            "paymentDate": null
+          }
+        ],
+        "attributes": {
+          "customerEmail": "",
+          "customerFullName": "tetet etetetette",
+          "customerPhone": "+66923840733",
+          "licensePlate": "redplate"
+        },
+        "price": {
+          "name": "prices/8ec71598-4a02-4691-a10b-2ac187bd8e25",
+          "priceDetail": {
+            "resourceName": "packages/1354810",
+            "priceSummary": {
+              "interestRate": 3.45,
+              "interestAmount": "65499",
+              "processingFeeRate": 1.15,
+              "processingFeeAmount": "21850",
+              "feeRate": 4.6,
+              "feeAmount": "87349",
+              "discountRate": 0,
+              "discountAmount": "0",
+              "netDiscountRate": 4.45,
+              "netDiscountAmount": "87349",
+              "packagePriceAfterDiscount": "1964521",
+              "netPremiumAmount": "2051870",
+              "initialAmount": "561371",
+              "subsequentAmount": "165611",
+              "discount": null,
+              "shipmentFee": "0",
+              "feeAmountNoShip": "87349"
+            },
+            "installmentDetails": [
+              {
+                "period": 1,
+                "paymentAmount": "561371",
+                "principal": "475000",
+                "addOns": "64521",
+                "interest": "0",
+                "processingFee": "21850",
+                "principalBalance": "1425000",
+                "interestBalance": "65499",
+                "processingFeeBalance": "0",
+                "totalBalance": "1490499"
+              },
+              {
+                "period": 2,
+                "paymentAmount": "165611",
+                "principal": "152667",
+                "addOns": "0",
+                "interest": "12944",
+                "processingFee": "0",
+                "principalBalance": "1272333",
+                "interestBalance": "52555",
+                "processingFeeBalance": "0",
+                "totalBalance": "1324888"
+              },
+              {
+                "period": 3,
+                "paymentAmount": "165611",
+                "principal": "154054",
+                "addOns": "0",
+                "interest": "11557",
+                "processingFee": "0",
+                "principalBalance": "1118279",
+                "interestBalance": "40998",
+                "processingFeeBalance": "0",
+                "totalBalance": "1159277"
+              },
+              {
+                "period": 4,
+                "paymentAmount": "165611",
+                "principal": "155453",
+                "addOns": "0",
+                "interest": "10158",
+                "processingFee": "0",
+                "principalBalance": "962825",
+                "interestBalance": "30840",
+                "processingFeeBalance": "0",
+                "totalBalance": "993666"
+              },
+              {
+                "period": 5,
+                "paymentAmount": "165611",
+                "principal": "156865",
+                "addOns": "0",
+                "interest": "8746",
+                "processingFee": "0",
+                "principalBalance": "805960",
+                "interestBalance": "22095",
+                "processingFeeBalance": "0",
+                "totalBalance": "828055"
+              },
+              {
+                "period": 6,
+                "paymentAmount": "165611",
+                "principal": "158290",
+                "addOns": "0",
+                "interest": "7321",
+                "processingFee": "0",
+                "principalBalance": "647670",
+                "interestBalance": "14774",
+                "processingFeeBalance": "0",
+                "totalBalance": "662444"
+              },
+              {
+                "period": 7,
+                "paymentAmount": "165611",
+                "principal": "159728",
+                "addOns": "0",
+                "interest": "5883",
+                "processingFee": "0",
+                "principalBalance": "487942",
+                "interestBalance": "8891",
+                "processingFeeBalance": "0",
+                "totalBalance": "496833"
+              },
+              {
+                "period": 8,
+                "paymentAmount": "165611",
+                "principal": "161179",
+                "addOns": "0",
+                "interest": "4432",
+                "processingFee": "0",
+                "principalBalance": "326763",
+                "interestBalance": "4459",
+                "processingFeeBalance": "0",
+                "totalBalance": "331222"
+              },
+              {
+                "period": 9,
+                "paymentAmount": "165611",
+                "principal": "162643",
+                "addOns": "0",
+                "interest": "2968",
+                "processingFee": "0",
+                "principalBalance": "164120",
+                "interestBalance": "1491",
+                "processingFeeBalance": "0",
+                "totalBalance": "165611"
+              },
+              {
+                "period": 10,
+                "paymentAmount": "165611",
+                "principal": "164120",
+                "addOns": "0",
+                "interest": "1491",
+                "processingFee": "0",
+                "principalBalance": "0",
+                "interestBalance": "0",
+                "processingFeeBalance": "0",
+                "totalBalance": "0"
+              }
+            ]
+          },
+          "paymentOption": "RABBIT_CARE_INSTALLMENT",
+          "paymentMethod": "QR_CODE",
+          "numberOfInstallments": 10,
+          "cardProvider": "",
+          "createTime": "2023-12-12T04:08:48.139314417Z",
+          "updateTime": "2023-12-12T04:08:48.139314417Z",
+          "discountType": "",
+          "packageResource": {
+            "carPackage": {
+              "package": "packages/1354810",
+              "packagePrice": {
+                "voluntaryPrice": "1900000",
+                "compulsoryPrice": "64521",
+                "discount": {
+                  "type": "",
+                  "percentage": 0,
+                  "amount": "0"
+                }
+              },
+              "insurer": "insurers/27",
+              "insuranceType": "TYPE_1"
+            }
+          }
+        }
+      },
+      {
+        "followup": {
+          "name": "transactions/76f9aa90-fa38-45c2-8840-54bda51f9bcb/followups/27d421ff-e659-43d9-9270-b460128d5166",
+          "createTime": "2023-12-15T05:46:35.178215289Z",
+          "updateTime": "2023-12-15T05:46:35.178215425Z",
+          "deleteTime": null,
+          "chargeId": "",
+          "transactionId": "transactions/76f9aa90-fa38-45c2-8840-54bda51f9bcb",
+          "installmentNumber": 2,
+          "dueDate": "2024-08-12T00:00:00Z",
+          "sendSms": false,
+          "priceId": "prices/8ec71598-4a02-4691-a10b-2ac187bd8e25"
+        },
+        "lead": {
+          "name": "leads/3b341ffc-b64f-4511-b6e5-da80e5ecbfbb",
+          "createTime": "2023-12-11T10:39:51.267859Z",
+          "updateTime": "2023-12-12T00:28:01.453557Z",
+          "deleteTime": null,
+          "createBy": "users/f1696b37-f4fa-44ce-b4b3-03f76adc512c",
+          "product": "products/car-insurance",
+          "schema": "schemas/efce3390-8da6-44b3-9e4c-2c7b78ca2c9d",
+          "data": {
+            "carColor": [
+              "white"
+            ],
+            "carDashCam": false,
+            "carLicensePlate": "redplate",
+            "carModified": false,
+            "carSubModelYear": 46444,
+            "carUsageType": "personal",
+            "chassisNumber": "123",
+            "checkout": {
+              "installments": 10,
+              "package": "customPackages/af6441ce-29fa-47b7-bfd1-4632c2ea0f98",
+              "paymentMethod": "QR_CODE",
+              "paymentOption": "RABBIT_CARE_INSTALLMENT"
+            },
+            "customerBillingAddress": [],
+            "customerDOB": "1990-12-25",
+            "customerEmail": [],
+            "customerFirstName": "tetet",
+            "customerGender": "m",
+            "customerLastName": "etetetette",
+            "customerPhoneNumber": [
+              {
+                "phone": "+66923840733",
+                "status": "unverified"
+              }
+            ],
+            "customerPolicyAddress": [],
+            "customerShippingAddress": [],
+            "insuranceKind": "voluntary",
+            "locale": "th-th",
+            "numberOfFixedDriver": 0,
+            "policyHolderDOB": "1990-12-25",
+            "policyHolderFirstName": "tetet",
+            "policyHolderLastName": "etetetette",
+            "policyHolderType": "customer",
+            "policyStartDate": "2023-12-14",
+            "policyTitle": "MR",
+            "primaryPhoneIndex": 0,
+            "registeredProvince": 100000,
+            "vehicleIdNumber": "321",
+            "voluntaryInsuranceType": [
+              "type_1",
+              "type_2",
+              "type_3"
+            ]
+          },
+          "source": "sources/ef770f3e-de16-4cb4-8d49-445d30056a70",
+          "important": false,
+          "assignedTo": "",
+          "status": "LEAD_STATUS_PENDING_PAYMENT",
+          "humanId": "L9908502",
+          "root": "",
+          "type": "LEAD_TYPE_NEW",
+          "isRejected": false,
+          "reference": "",
+          "annotations": null
+        },
+        "transaction": {
+          "name": "transactions/76f9aa90-fa38-45c2-8840-54bda51f9bcb",
+          "createTime": "2023-12-12T00:27:59.409196307Z",
+          "updateTime": "2023-12-12T00:27:59.409196307Z",
+          "money": {
+            "currencyCode": "THB",
+            "amount": "1987349"
+          },
+          "installments": 10,
+          "lead": "leads/3b341ffc-b64f-4511-b6e5-da80e5ecbfbb",
+          "leadHumanId": "L9908502",
+          "order": "",
+          "gatewayReference": "gateway-references/ICO-L9908502-231212072759",
+          "statusCode": "PENDING",
+          "paymentOption": "RABBIT_CARE_INSTALLMENT"
+        },
+        "assigned": null,
+        "team": null,
+        "charges": [
+          {
+            "name": "transactions/76f9aa90-fa38-45c2-8840-54bda51f9bcb/charges/1cd5e0be-bcd9-4d37-bfb2-0026cbc90dfc",
+            "createTime": "2023-12-12T00:35:07.777247Z",
+            "updateTime": "2023-12-12T00:35:07.974337Z",
+            "money": {
+              "currencyCode": "THB",
+              "amount": "165611"
+            },
+            "serviceProvider": "ICOLLECTION",
+            "paymentMethod": "QR_CODE",
+            "returnUri": "",
+            "authorizeUri": "",
+            "token": "",
+            "status": "SUCCESSFUL",
+            "thirdPartyId": "OR6612000093866",
+            "sourceUri": "",
+            "errorCode": "",
+            "httpStatusCode": 200,
+            "errorMessage": "",
+            "installmentNumber": 2,
+            "cardToken": "",
+            "dueDate": "1970-01-01T00:00:00Z",
+            "slipIdResource": "",
+            "sendSms": false,
+            "paymentDate": null
+          }
+        ],
+        "attributes": {
+          "customerEmail": "",
+          "customerFullName": "tetet etetetette",
+          "customerPhone": "+66923840733",
+          "licensePlate": "redplate"
+        },
+        "price": {
+          "name": "prices/8ec71598-4a02-4691-a10b-2ac187bd8e25",
+          "priceDetail": {
+            "resourceName": "packages/1354810",
+            "priceSummary": {
+              "interestRate": 3.45,
+              "interestAmount": "65499",
+              "processingFeeRate": 1.15,
+              "processingFeeAmount": "21850",
+              "feeRate": 4.6,
+              "feeAmount": "87349",
+              "discountRate": 0,
+              "discountAmount": "0",
+              "netDiscountRate": 4.45,
+              "netDiscountAmount": "87349",
+              "packagePriceAfterDiscount": "1964521",
+              "netPremiumAmount": "2051870",
+              "initialAmount": "561371",
+              "subsequentAmount": "165611",
+              "discount": null,
+              "shipmentFee": "0",
+              "feeAmountNoShip": "87349"
+            },
+            "installmentDetails": [
+              {
+                "period": 1,
+                "paymentAmount": "561371",
+                "principal": "475000",
+                "addOns": "64521",
+                "interest": "0",
+                "processingFee": "21850",
+                "principalBalance": "1425000",
+                "interestBalance": "65499",
+                "processingFeeBalance": "0",
+                "totalBalance": "1490499"
+              },
+              {
+                "period": 2,
+                "paymentAmount": "165611",
+                "principal": "152667",
+                "addOns": "0",
+                "interest": "12944",
+                "processingFee": "0",
+                "principalBalance": "1272333",
+                "interestBalance": "52555",
+                "processingFeeBalance": "0",
+                "totalBalance": "1324888"
+              },
+              {
+                "period": 3,
+                "paymentAmount": "165611",
+                "principal": "154054",
+                "addOns": "0",
+                "interest": "11557",
+                "processingFee": "0",
+                "principalBalance": "1118279",
+                "interestBalance": "40998",
+                "processingFeeBalance": "0",
+                "totalBalance": "1159277"
+              },
+              {
+                "period": 4,
+                "paymentAmount": "165611",
+                "principal": "155453",
+                "addOns": "0",
+                "interest": "10158",
+                "processingFee": "0",
+                "principalBalance": "962825",
+                "interestBalance": "30840",
+                "processingFeeBalance": "0",
+                "totalBalance": "993666"
+              },
+              {
+                "period": 5,
+                "paymentAmount": "165611",
+                "principal": "156865",
+                "addOns": "0",
+                "interest": "8746",
+                "processingFee": "0",
+                "principalBalance": "805960",
+                "interestBalance": "22095",
+                "processingFeeBalance": "0",
+                "totalBalance": "828055"
+              },
+              {
+                "period": 6,
+                "paymentAmount": "165611",
+                "principal": "158290",
+                "addOns": "0",
+                "interest": "7321",
+                "processingFee": "0",
+                "principalBalance": "647670",
+                "interestBalance": "14774",
+                "processingFeeBalance": "0",
+                "totalBalance": "662444"
+              },
+              {
+                "period": 7,
+                "paymentAmount": "165611",
+                "principal": "159728",
+                "addOns": "0",
+                "interest": "5883",
+                "processingFee": "0",
+                "principalBalance": "487942",
+                "interestBalance": "8891",
+                "processingFeeBalance": "0",
+                "totalBalance": "496833"
+              },
+              {
+                "period": 8,
+                "paymentAmount": "165611",
+                "principal": "161179",
+                "addOns": "0",
+                "interest": "4432",
+                "processingFee": "0",
+                "principalBalance": "326763",
+                "interestBalance": "4459",
+                "processingFeeBalance": "0",
+                "totalBalance": "331222"
+              },
+              {
+                "period": 9,
+                "paymentAmount": "165611",
+                "principal": "162643",
+                "addOns": "0",
+                "interest": "2968",
+                "processingFee": "0",
+                "principalBalance": "164120",
+                "interestBalance": "1491",
+                "processingFeeBalance": "0",
+                "totalBalance": "165611"
+              },
+              {
+                "period": 10,
+                "paymentAmount": "165611",
+                "principal": "164120",
+                "addOns": "0",
+                "interest": "1491",
+                "processingFee": "0",
+                "principalBalance": "0",
+                "interestBalance": "0",
+                "processingFeeBalance": "0",
+                "totalBalance": "0"
+              }
+            ]
+          },
+          "paymentOption": "RABBIT_CARE_INSTALLMENT",
+          "paymentMethod": "QR_CODE",
+          "numberOfInstallments": 10,
+          "cardProvider": "",
+          "createTime": "2023-12-12T04:08:48.139314417Z",
+          "updateTime": "2023-12-12T04:08:48.139314417Z",
+          "discountType": "",
+          "packageResource": {
+            "carPackage": {
+              "package": "packages/1354810",
+              "packagePrice": {
+                "voluntaryPrice": "1900000",
+                "compulsoryPrice": "64521",
+                "discount": {
+                  "type": "",
+                  "percentage": 0,
+                  "amount": "0"
+                }
+              },
+              "insurer": "insurers/27",
+              "insuranceType": "TYPE_1"
+            }
+          }
+        }
+      },
+      {
+        "followup": {
+          "name": "transactions/da8b6e92-e406-4923-a602-ca7754642e25/followups/c1379daf-6627-47ae-b572-22f620b0ae42",
+          "createTime": "2023-12-15T05:44:28.890601295Z",
+          "updateTime": "2023-12-15T05:44:28.890601395Z",
+          "deleteTime": null,
+          "chargeId": "",
+          "transactionId": "transactions/da8b6e92-e406-4923-a602-ca7754642e25",
+          "installmentNumber": 2,
+          "dueDate": "2024-08-12T00:00:00Z",
+          "sendSms": false,
+          "priceId": "prices/8ec71598-4a02-4691-a10b-2ac187bd8e25"
+        },
+        "lead": {
+          "name": "leads/850f0587-5228-4c1a-a1c3-19db2b0923d2",
+          "createTime": "2023-12-12T06:15:51.741233Z",
+          "updateTime": "2023-12-12T06:22:03.421843Z",
+          "deleteTime": null,
+          "createBy": "users/20d37cbe-feb6-44e9-9527-3d789a2949b8",
+          "product": "products/car-insurance",
+          "schema": "schemas/efce3390-8da6-44b3-9e4c-2c7b78ca2c9d",
+          "data": {
+            "carColor": [
+              "black"
+            ],
+            "carDashCam": false,
+            "carLicensePlate": "redplate",
+            "carModified": false,
+            "carSubModelYear": 47094,
+            "carUsageType": "personal",
+            "chassisNumber": "123",
+            "checkout": {
+              "installments": 3,
+              "package": "customPackages/cbe79ab1-5a8d-4d21-b715-bf7a285525bd",
+              "paymentMethod": "QR_CODE",
+              "paymentOption": "RABBIT_CARE_INSTALLMENT"
+            },
+            "customerBillingAddress": [
+              {
+                "address": "134",
+                "addressType": "personal",
+                "district": 100100,
+                "firstName": "Miw",
+                "lastName": "TestCharges",
+                "postCode": 10200,
+                "province": 100000,
+                "subDistrict": 100101
+              }
+            ],
+            "customerDOB": "2000-09-17",
+            "customerEmail": [
+              "natthapatp@rabbit.co.th"
+            ],
+            "customerFirstName": "Miw",
+            "customerGender": "f",
+            "customerLastName": "TestCharges",
+            "customerPhoneNumber": [
+              {
+                "phone": "+66999999999",
+                "status": "unverified"
+              }
+            ],
+            "customerPolicyAddress": [
+              {
+                "address": "134",
+                "addressType": "personal",
+                "district": 100100,
+                "firstName": "Miw",
+                "lastName": "TestCharges",
+                "postCode": 10200,
+                "province": 100000,
+                "subDistrict": 100101
+              }
+            ],
+            "customerShippingAddress": [
+              {
+                "address": "134",
+                "addressType": "personal",
+                "district": 100100,
+                "firstName": "Miw",
+                "lastName": "TestCharges",
+                "postCode": 10200,
+                "province": 100000,
+                "subDistrict": 100101
+              }
+            ],
+            "insuranceKind": "voluntary",
+            "locale": "th-th",
+            "numberOfFixedDriver": 0,
+            "policyHolderDOB": "2000-09-17",
+            "policyHolderFirstName": "Miw",
+            "policyHolderLastName": "TestCharges",
+            "policyHolderNationalId": "1234567890123",
+            "policyHolderType": "customer",
+            "policyStartDate": "2023-12-31",
+            "policyTitle": "MISS",
+            "primaryPhoneIndex": 0,
+            "registeredProvince": 100000,
+            "vehicleIdNumber": "123",
+            "voluntaryInsuranceType": [
+              "type_1"
+            ]
+          },
+          "source": "sources/a7aa0b5c-60c3-4d9a-828f-b0d9d5c1449c",
+          "important": false,
+          "assignedTo": "",
+          "status": "LEAD_STATUS_PENDING_PAYMENT",
+          "humanId": "L9908532",
+          "root": "",
+          "type": "LEAD_TYPE_NEW",
+          "isRejected": false,
+          "reference": "123",
+          "annotations": null
+        },
+        "transaction": {
+          "name": "transactions/da8b6e92-e406-4923-a602-ca7754642e25",
+          "createTime": "2023-12-12T06:22:01.476067884Z",
+          "updateTime": "2023-12-12T06:22:01.476067884Z",
+          "money": {
+            "currencyCode": "THB",
+            "amount": "2010450"
+          },
+          "installments": 3,
+          "lead": "leads/850f0587-5228-4c1a-a1c3-19db2b0923d2",
+          "leadHumanId": "L9908532",
+          "order": "",
+          "gatewayReference": "gateway-references/ICO-L9908532-231212132200",
+          "statusCode": "PENDING",
+          "paymentOption": "RABBIT_CARE_INSTALLMENT"
+        },
+        "assigned": null,
+        "team": null,
+        "charges": [
+          {
+            "name": "transactions/da8b6e92-e406-4923-a602-ca7754642e25/charges/0babd294-68d1-4a92-9a31-49f84e19d3f6",
+            "createTime": "2023-12-12T06:53:15.322035Z",
+            "updateTime": "2023-12-12T06:53:15.495667Z",
+            "money": {
+              "currencyCode": "THB",
+              "amount": "670150"
+            },
+            "serviceProvider": "ICOLLECTION",
+            "paymentMethod": "QR_CODE",
+            "returnUri": "",
+            "authorizeUri": "",
+            "token": "",
+            "status": "SUCCESSFUL",
+            "thirdPartyId": "OR6612000111765",
+            "sourceUri": "",
+            "errorCode": "",
+            "httpStatusCode": 200,
+            "errorMessage": "",
+            "installmentNumber": 2,
+            "cardToken": "",
+            "dueDate": "1970-01-01T00:00:00Z",
+            "slipIdResource": "",
+            "sendSms": false,
+            "paymentDate": null
+          }
+        ],
+        "attributes": {
+          "customerEmail": "natthapatp@rabbit.co.th",
+          "customerFullName": "Miw TestCharges",
+          "customerPhone": "+66999999999",
+          "licensePlate": "redplate"
+        },
+        "price": null
+      },
+      {
+        "followup": {
+          "name": "transactions/305a7cbb-6391-4ad2-83df-92f7243cb3b6/followups/10d1475a-3a7b-4d77-9363-b31fa92dcfee",
+          "createTime": "2023-12-14T04:44:51.846583Z",
+          "updateTime": "2023-12-15T08:42:24.803585Z",
+          "deleteTime": null,
+          "chargeId": "transactions/69ef468c-0f83-4d06-b5dd-262160e3e65d/charges/ce6b5dd1-a988-4a64-a29d-ebf980c968e0",
+          "transactionId": "transactions/305a7cbb-6391-4ad2-83df-92f7243cb3b6",
+          "installmentNumber": 9,
+          "dueDate": "2023-12-12T00:00:00Z",
+          "sendSms": false,
+          "priceId": "prices/8ec71598-4a02-4691-a10b-2ac187bd8e25"
+        },
+        "lead": {
+          "name": "leads/a644805b-be84-4f12-932d-a1c7623fb9ec",
+          "createTime": "2023-12-12T04:04:17.257109Z",
+          "updateTime": "2023-12-12T04:09:13.060598Z",
+          "deleteTime": null,
+          "createBy": "users/20d37cbe-feb6-44e9-9527-3d789a2949b8",
+          "product": "products/car-insurance",
+          "schema": "schemas/efce3390-8da6-44b3-9e4c-2c7b78ca2c9d",
+          "data": {
+            "carColor": [
+              "white"
+            ],
+            "carDashCam": false,
+            "carLicensePlate": "redplate",
+            "carModified": false,
+            "carSubModelYear": 46444,
+            "carUsageType": "personal",
+            "chassisNumber": "123",
+            "checkout": {
+              "installments": 10,
+              "package": "customPackages/b2ec7d43-e22f-4535-8984-3ab7b7515cd2",
+              "paymentMethod": "QR_CODE",
+              "paymentOption": "RABBIT_CARE_INSTALLMENT"
+            },
+            "customerBillingAddress": [],
+            "customerDOB": "1990-11-25",
+            "customerEmail": [
+              "alexandera@rabbit.co.th"
+            ],
+            "customerFirstName": "Alexander",
+            "customerGender": "m",
+            "customerLastName": "AdhyatmaMMIV",
+            "customerPhoneNumber": [
+              {
+                "phone": "+66900000000",
+                "status": "unverified"
+              }
+            ],
+            "customerPolicyAddress": [],
+            "customerShippingAddress": [],
+            "insuranceKind": "both",
+            "locale": "th-en",
+            "numberOfFixedDriver": 0,
+            "policyHolderDOB": "1990-11-25",
+            "policyHolderFirstName": "Alexander",
+            "policyHolderLastName": "AdhyatmaMMIV",
+            "policyHolderType": "customer",
+            "policyStartDate": "2023-12-13",
+            "policyTitle": "MR",
+            "preferredSumInsured": 1400,
+            "primaryPhoneIndex": 0,
+            "registeredProvince": 100000,
+            "vehicleIdNumber": "321",
+            "voluntaryInsuranceType": [
+              "type_1",
+              "type_2",
+              "type_3"
+            ]
+          },
+          "source": "sources/287cf90d-f15c-4f1d-94ee-e6f10f2be0a0",
+          "important": false,
+          "assignedTo": "",
+          "status": "LEAD_STATUS_PENDING_PAYMENT",
+          "humanId": "L9908522",
+          "root": "",
+          "type": "LEAD_TYPE_NEW",
+          "isRejected": false,
+          "reference": "a",
+          "annotations": null
+        },
+        "transaction": {
+          "name": "transactions/305a7cbb-6391-4ad2-83df-92f7243cb3b6",
+          "createTime": "2023-12-12T04:09:11.118092236Z",
+          "updateTime": "2023-12-12T04:09:11.118092236Z",
+          "money": {
+            "currencyCode": "THB",
+            "amount": "2051870"
+          },
+          "installments": 10,
+          "lead": "leads/a644805b-be84-4f12-932d-a1c7623fb9ec",
+          "leadHumanId": "L9908522",
+          "order": "",
+          "gatewayReference": "gateway-references/ICO-L9908522-231212110910",
+          "statusCode": "PENDING",
+          "paymentOption": "RABBIT_CARE_INSTALLMENT"
+        },
+        "assigned": null,
+        "team": null,
+        "charges": [],
+        "attributes": {
+          "customerEmail": "alexandera@rabbit.co.th",
+          "customerFullName": "Alexander AdhyatmaMMIV",
+          "customerPhone": "+66900000000",
+          "licensePlate": "redplate"
+        },
+        "price": {
+          "name": "prices/8ec71598-4a02-4691-a10b-2ac187bd8e25",
+          "priceDetail": {
+            "resourceName": "packages/1354810",
+            "priceSummary": {
+              "interestRate": 3.45,
+              "interestAmount": "65499",
+              "processingFeeRate": 1.15,
+              "processingFeeAmount": "21850",
+              "feeRate": 4.6,
+              "feeAmount": "87349",
+              "discountRate": 0,
+              "discountAmount": "0",
+              "netDiscountRate": 4.45,
+              "netDiscountAmount": "87349",
+              "packagePriceAfterDiscount": "1964521",
+              "netPremiumAmount": "2051870",
+              "initialAmount": "561371",
+              "subsequentAmount": "165611",
+              "discount": null,
+              "shipmentFee": "0",
+              "feeAmountNoShip": "87349"
+            },
+            "installmentDetails": [
+              {
+                "period": 1,
+                "paymentAmount": "561371",
+                "principal": "475000",
+                "addOns": "64521",
+                "interest": "0",
+                "processingFee": "21850",
+                "principalBalance": "1425000",
+                "interestBalance": "65499",
+                "processingFeeBalance": "0",
+                "totalBalance": "1490499"
+              },
+              {
+                "period": 2,
+                "paymentAmount": "165611",
+                "principal": "152667",
+                "addOns": "0",
+                "interest": "12944",
+                "processingFee": "0",
+                "principalBalance": "1272333",
+                "interestBalance": "52555",
+                "processingFeeBalance": "0",
+                "totalBalance": "1324888"
+              },
+              {
+                "period": 3,
+                "paymentAmount": "165611",
+                "principal": "154054",
+                "addOns": "0",
+                "interest": "11557",
+                "processingFee": "0",
+                "principalBalance": "1118279",
+                "interestBalance": "40998",
+                "processingFeeBalance": "0",
+                "totalBalance": "1159277"
+              },
+              {
+                "period": 4,
+                "paymentAmount": "165611",
+                "principal": "155453",
+                "addOns": "0",
+                "interest": "10158",
+                "processingFee": "0",
+                "principalBalance": "962825",
+                "interestBalance": "30840",
+                "processingFeeBalance": "0",
+                "totalBalance": "993666"
+              },
+              {
+                "period": 5,
+                "paymentAmount": "165611",
+                "principal": "156865",
+                "addOns": "0",
+                "interest": "8746",
+                "processingFee": "0",
+                "principalBalance": "805960",
+                "interestBalance": "22095",
+                "processingFeeBalance": "0",
+                "totalBalance": "828055"
+              },
+              {
+                "period": 6,
+                "paymentAmount": "165611",
+                "principal": "158290",
+                "addOns": "0",
+                "interest": "7321",
+                "processingFee": "0",
+                "principalBalance": "647670",
+                "interestBalance": "14774",
+                "processingFeeBalance": "0",
+                "totalBalance": "662444"
+              },
+              {
+                "period": 7,
+                "paymentAmount": "165611",
+                "principal": "159728",
+                "addOns": "0",
+                "interest": "5883",
+                "processingFee": "0",
+                "principalBalance": "487942",
+                "interestBalance": "8891",
+                "processingFeeBalance": "0",
+                "totalBalance": "496833"
+              },
+              {
+                "period": 8,
+                "paymentAmount": "165611",
+                "principal": "161179",
+                "addOns": "0",
+                "interest": "4432",
+                "processingFee": "0",
+                "principalBalance": "326763",
+                "interestBalance": "4459",
+                "processingFeeBalance": "0",
+                "totalBalance": "331222"
+              },
+              {
+                "period": 9,
+                "paymentAmount": "165611",
+                "principal": "162643",
+                "addOns": "0",
+                "interest": "2968",
+                "processingFee": "0",
+                "principalBalance": "164120",
+                "interestBalance": "1491",
+                "processingFeeBalance": "0",
+                "totalBalance": "165611"
+              },
+              {
+                "period": 10,
+                "paymentAmount": "165611",
+                "principal": "164120",
+                "addOns": "0",
+                "interest": "1491",
+                "processingFee": "0",
+                "principalBalance": "0",
+                "interestBalance": "0",
+                "processingFeeBalance": "0",
+                "totalBalance": "0"
+              }
+            ]
+          },
+          "paymentOption": "RABBIT_CARE_INSTALLMENT",
+          "paymentMethod": "QR_CODE",
+          "numberOfInstallments": 10,
+          "cardProvider": "",
+          "createTime": "2023-12-12T04:08:48.139314417Z",
+          "updateTime": "2023-12-12T04:08:48.139314417Z",
+          "discountType": "",
+          "packageResource": {
+            "carPackage": {
+              "package": "packages/1354810",
+              "packagePrice": {
+                "voluntaryPrice": "1900000",
+                "compulsoryPrice": "64521",
+                "discount": {
+                  "type": "",
+                  "percentage": 0,
+                  "amount": "0"
+                }
+              },
+              "insurer": "insurers/27",
+              "insuranceType": "TYPE_1"
+            }
+          }
+        }
+      }
+    ],
+    "total": "13"
+}

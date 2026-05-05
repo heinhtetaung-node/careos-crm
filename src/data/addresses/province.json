@@ -1,0 +1,392 @@
+{
+	"100000": {
+		"nameEn": "Bangkok",
+		"nameTh": "กรุงเทพมหานคร",
+		"abbreviation": "กท"
+	},
+	"110000": {
+		"nameEn": "Samut Prakan",
+		"nameTh": "สมุทรปราการ",
+		"abbreviation": "สป"
+	},
+	"120000": {
+		"nameEn": "Nonthaburi",
+		"nameTh": "นนทบุรี",
+		"abbreviation": "นบ"
+	},
+	"130000": {
+		"nameEn": "Pathum Thani",
+		"nameTh": "ปทุมธานี",
+		"abbreviation": "ปท"
+	},
+	"140000": {
+		"nameEn": "Phra Nakhon Si Ayutthaya",
+		"nameTh": "พระนครศรีอยุธยา",
+		"abbreviation": "อย"
+	},
+	"150000": {
+		"nameEn": "Ang Thong",
+		"nameTh": "อ่างทอง",
+		"abbreviation": "อท"
+	},
+	"160000": {
+		"nameEn": "Lop Buri",
+		"nameTh": "ลพบุรี",
+		"abbreviation": "ลบ"
+	},
+	"170000": {
+		"nameEn": "Sing Buri",
+		"nameTh": "สิงห์บุรี",
+		"abbreviation": "สห"
+	},
+	"180000": {
+		"nameEn": "Chai Nat",
+		"nameTh": "ชัยนาท",
+		"abbreviation": "ชน"
+	},
+	"190000": {
+		"nameEn": "Saraburi",
+		"nameTh": "สระบุรี",
+		"abbreviation": "สบ"
+	},
+	"200000": {
+		"nameEn": "Chon Buri",
+		"nameTh": "ชลบุรี",
+		"abbreviation": "ชบ"
+	},
+	"210000": {
+		"nameEn": "Rayong",
+		"nameTh": "ระยอง",
+		"abbreviation": "รย"
+	},
+	"220000": {
+		"nameEn": "Chanthaburi",
+		"nameTh": "จันทบุรี",
+		"abbreviation": "จบ"
+	},
+	"230000": {
+		"nameEn": "Trat",
+		"nameTh": "ตราด",
+		"abbreviation": "ตร"
+	},
+	"240000": {
+		"nameEn": "Chachoengsao",
+		"nameTh": "ฉะเชิงเทรา",
+		"abbreviation": "ฉช"
+	},
+	"250000": {
+		"nameEn": "Prachin Buri",
+		"nameTh": "ปราจีนบุรี",
+		"abbreviation": "ปจ"
+	},
+	"260000": {
+		"nameEn": "Nakhon Nayok",
+		"nameTh": "นครนายก",
+		"abbreviation": "นย"
+	},
+	"270000": {
+		"nameEn": "Sa Kaeo",
+		"nameTh": "สระแก้ว",
+		"abbreviation": "สก"
+	},
+	"300000": {
+		"nameEn": "Nakhon Ratchasima",
+		"nameTh": "นครราชสีมา",
+		"abbreviation": "นม"
+	},
+	"310000": {
+		"nameEn": "Buri Ram",
+		"nameTh": "บุรีรัมย์",
+		"abbreviation": "บร"
+	},
+	"320000": {
+		"nameEn": "Surin",
+		"nameTh": "สุรินทร์",
+		"abbreviation": "สร"
+	},
+	"330000": {
+		"nameEn": "Si Sa Ket",
+		"nameTh": "ศรีสะเกษ",
+		"abbreviation": "ศก"
+	},
+	"340000": {
+		"nameEn": "Ubon Ratchathani",
+		"nameTh": "อุบลราชธานี",
+		"abbreviation": "อบ"
+	},
+	"350000": {
+		"nameEn": "Yasothon",
+		"nameTh": "ยโสธร",
+		"abbreviation": "ยส"
+	},
+	"360000": {
+		"nameEn": "Chaiyaphum",
+		"nameTh": "ชัยภูมิ",
+		"abbreviation": "ชย"
+	},
+	"370000": {
+		"nameEn": "Amnat Charoen",
+		"nameTh": "อำนาจเจริญ",
+		"abbreviation": "อจ"
+	},
+	"380000": {
+		"nameEn": "Bueng Kan",
+		"nameTh": "บึงกาฬ",
+		"abbreviation": "บก"
+	},
+	"390000": {
+		"nameEn": "Nong Bua Lam Phu",
+		"nameTh": "หนองบัวลำภู",
+		"abbreviation": "นภ"
+	},
+	"400000": {
+		"nameEn": "Khon Kaen",
+		"nameTh": "ขอนแก่น",
+		"abbreviation": "ขก"
+	},
+	"410000": {
+		"nameEn": "Udon Thani",
+		"nameTh": "อุดรธานี",
+		"abbreviation": "อด"
+	},
+	"420000": {
+		"nameEn": "Loei",
+		"nameTh": "เลย",
+		"abbreviation": "ลย"
+	},
+	"430000": {
+		"nameEn": "Nong Khai",
+		"nameTh": "หนองคาย",
+		"abbreviation": "นค"
+	},
+	"440000": {
+		"nameEn": "Maha Sarakham",
+		"nameTh": "มหาสารคาม",
+		"abbreviation": "มค"
+	},
+	"450000": {
+		"nameEn": "Roi Et",
+		"nameTh": "ร้อยเอ็ด",
+		"abbreviation": "รอ"
+	},
+	"460000": {
+		"nameEn": "Kalasin",
+		"nameTh": "กาฬสินธุ์",
+		"abbreviation": "กส"
+	},
+	"470000": {
+		"nameEn": "Sakon Nakhon",
+		"nameTh": "สกลนคร",
+		"abbreviation": "สน"
+	},
+	"480000": {
+		"nameEn": "Nakhon Phanom",
+		"nameTh": "นครพนม",
+		"abbreviation": "นพ"
+	},
+	"490000": {
+		"nameEn": "Mukdahan",
+		"nameTh": "มุกดาหาร",
+		"abbreviation": "มห"
+	},
+	"500000": {
+		"nameEn": "Chiang Mai",
+		"nameTh": "เชียงใหม่",
+		"abbreviation": "ชม"
+	},
+	"510000": {
+		"nameEn": "Lamphun",
+		"nameTh": "ลำพูน",
+		"abbreviation": "ลพ"
+	},
+	"520000": {
+		"nameEn": "Lampang",
+		"nameTh": "ลำปาง",
+		"abbreviation": "ลป"
+	},
+	"530000": {
+		"nameEn": "Uttaradit",
+		"nameTh": "อุตรดิตถ์",
+		"abbreviation": "อต"
+	},
+	"540000": {
+		"nameEn": "Phrae",
+		"nameTh": "แพร่",
+		"abbreviation": "พร"
+	},
+	"550000": {
+		"nameEn": "Nan",
+		"nameTh": "น่าน",
+		"abbreviation": "นน"
+	},
+	"560000": {
+		"nameEn": "Phayao",
+		"nameTh": "พะเยา",
+		"abbreviation": "พย"
+	},
+	"570000": {
+		"nameEn": "Chiang Rai",
+		"nameTh": "เชียงราย",
+		"abbreviation": "ชร"
+	},
+	"580000": {
+		"nameEn": "Mae Hong Son",
+		"nameTh": "แม่ฮ่องสอน",
+		"abbreviation": "มส"
+	},
+	"600000": {
+		"nameEn": "Nakhon Sawan",
+		"nameTh": "นครสวรรค์",
+		"abbreviation": "นว"
+	},
+	"610000": {
+		"nameEn": "Uthai Thani",
+		"nameTh": "อุทัยธานี",
+		"abbreviation": "อน"
+	},
+	"620000": {
+		"nameEn": "Kamphaeng Phet",
+		"nameTh": "กำแพงเพชร",
+		"abbreviation": "กพ"
+	},
+	"630000": {
+		"nameEn": "Tak",
+		"nameTh": "ตาก",
+		"abbreviation": "ตก"
+	},
+	"640000": {
+		"nameEn": "Sukhothai",
+		"nameTh": "สุโขทัย",
+		"abbreviation": "สท"
+	},
+	"650000": {
+		"nameEn": "Phitsanulok",
+		"nameTh": "พิษณุโลก",
+		"abbreviation": "พล"
+	},
+	"660000": {
+		"nameEn": "Phichit",
+		"nameTh": "พิจิตร",
+		"abbreviation": "พจ"
+	},
+	"670000": {
+		"nameEn": "Phetchabun",
+		"nameTh": "เพชรบูรณ์",
+		"abbreviation": "พช"
+	},
+	"700000": {
+		"nameEn": "Ratchaburi",
+		"nameTh": "ราชบุรี",
+		"abbreviation": "รบ"
+	},
+	"710000": {
+		"nameEn": "Kanchanaburi",
+		"nameTh": "กาญจนบุรี",
+		"abbreviation": "กจ"
+	},
+	"720000": {
+		"nameEn": "Suphan Buri",
+		"nameTh": "สุพรรณบุรี",
+		"abbreviation": "สพ"
+	},
+	"730000": {
+		"nameEn": "Nakhon Pathom",
+		"nameTh": "นครปฐม",
+		"abbreviation": "นฐ"
+	},
+	"740000": {
+		"nameEn": "Samut Sakhon",
+		"nameTh": "สมุทรสาคร",
+		"abbreviation": "สค"
+	},
+	"750000": {
+		"nameEn": "Samut Songkhram",
+		"nameTh": "สมุทรสงคราม",
+		"abbreviation": "สส"
+	},
+	"760000": {
+		"nameEn": "Phetchaburi",
+		"nameTh": "เพชรบุรี",
+		"abbreviation": "พบ"
+	},
+	"770000": {
+		"nameEn": "Prachuap Khiri Khan",
+		"nameTh": "ประจวบคีรีขันธ์",
+		"abbreviation": "ปข"
+	},
+	"800000": {
+		"nameEn": "Nakhon Si Thammarat",
+		"nameTh": "นครศรีธรรมราช",
+		"abbreviation": "นศ"
+	},
+	"810000": {
+		"nameEn": "Krabi",
+		"nameTh": "กระบี่",
+		"abbreviation": "กบ"
+	},
+	"820000": {
+		"nameEn": "Phangnga",
+		"nameTh": "พังงา",
+		"abbreviation": "พง"
+	},
+	"830000": {
+		"nameEn": "Phuket",
+		"nameTh": "ภูเก็ต",
+		"abbreviation": "ภก"
+	},
+	"840000": {
+		"nameEn": "Surat Thani",
+		"nameTh": "สุราษฎร์ธานี",
+		"abbreviation": "สฎ"
+	},
+	"850000": {
+		"nameEn": "Ranong",
+		"nameTh": "ระนอง",
+		"abbreviation": "รน"
+	},
+	"860000": {
+		"nameEn": "Chumphon",
+		"nameTh": "ชุมพร",
+		"abbreviation": "ชพ"
+	},
+	"900000": {
+		"nameEn": "Songkhla",
+		"nameTh": "สงขลา",
+		"abbreviation": "สข"
+	},
+	"910000": {
+		"nameEn": "Satun",
+		"nameTh": "สตูล",
+		"abbreviation": "สต"
+	},
+	"920000": {
+		"nameEn": "Trang",
+		"nameTh": "ตรัง",
+		"abbreviation": "ตง"
+	},
+	"930000": {
+		"nameEn": "Phatthalung",
+		"nameTh": "พัทลุง",
+		"abbreviation": "พท"
+	},
+	"940000": {
+		"nameEn": "Pattani",
+		"nameTh": "ปัตตานี",
+		"abbreviation": "ปน"
+	},
+	"950000": {
+		"nameEn": "Yala",
+		"nameTh": "ยะลา",
+		"abbreviation": "ยล"
+	},
+	"960000": {
+		"nameEn": "Narathiwat",
+		"nameTh": "นราธิวาส",
+		"abbreviation": "นธ"
+	},
+	"970000": {
+		"nameEn": "Betong",
+		"nameTh": "เบตง",
+		"abbreviation": "บต"
+	}
+}

@@ -1,0 +1,16 @@
+# Ignore artifacts:
+build
+coverage
+.cache
+.turbo
+node_modules
+public
+
+# Ignore old files
+**/*.json
+**/*.html
+**/*.css
+
+# Ignore localization files
+src/**/en.ts
+src/**/th.ts

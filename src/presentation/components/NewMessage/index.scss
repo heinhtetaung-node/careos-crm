@@ -1,0 +1,91 @@
+@import '../../../scss/reuse-mixin.scss';
+
+.new-message-section {
+  min-height: 100%;
+  text-align: left;
+  padding: 0 20px;
+
+  .MuiInputLabel-shrink {
+    background: none;
+  }
+
+  .MuiInputBase-root {
+    .MuiSelect-select {
+      background: #fff;
+    }
+  }
+
+  &__tab {
+    .tab-item {
+      padding: 8px;
+    }
+
+    .MuiTabs-indicator {
+      display: none;
+    }
+
+    .MuiTabs-flexContainer {
+      justify-content: flex-start;
+    }
+
+    .MuiTab-root {
+      border: 1px solid #005098;
+      color: #005098;
+      min-width: inherit;
+      flex-grow: 1;
+      border-radius: 4px;
+      max-width: 100px;
+      min-height: 24px;
+
+      &.Mui-selected {
+        background: #005098;
+        color: white;
+      }
+
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+
+      .MuiTab-wrapper {
+        flex-direction: row;
+
+        .MuiSvgIcon-root {
+          margin: 0 10px 0 0;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    &__buttons {
+      display: flex;
+      flex-basis: auto;
+    }
+  }
+
+  .modal-button-container {
+    .MuiButton-containedSizeLarge {
+      background: white;
+      border: 1px solid;
+      flex-grow: 1;
+      width: 100%;
+
+      &.active {
+        background: black;
+      }
+    }
+  }
+
+  .MuiOutlinedInput-input {
+    padding: 12.5px 14px;
+  }
+
+  .MuiGrid-grid-xs-12,
+  .MuiGrid-grid-md-12 {
+    margin: 10px 0;
+  }
+
+  .MuiTab-textColorInherit {
+    opacity: 1;
+  }
+}

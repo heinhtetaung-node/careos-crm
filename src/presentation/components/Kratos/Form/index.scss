@@ -1,0 +1,27 @@
+@import '../../../../scss/reuse-mixin.scss';
+
+.c-signin-frm {
+  .MuiFormLabel-root {
+    margin: 12px;
+
+    &.MuiFormLabel-filled,
+    &.Mui-focused {
+      margin: 0;
+    }
+  }
+
+  input {
+    padding: 11px 16px;
+    border: 1px solid $bg-color-blue-5;
+    height: 42px;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    &:hover,
+    &:focus {
+      transition: 0.2s;
+      border: 1px solid $text-color-blue-6;
+      box-shadow: 0 7px 15px 0 $box-shadow-field;
+    }
+  }
+}

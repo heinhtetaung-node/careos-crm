@@ -1,0 +1,53 @@
+.pagination-wrapper {
+  margin-right: 40px;
+
+  .pagination-select-wrapper {
+    display: inline-flex;
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 10px;
+
+    .pagination-label {
+      padding: 0 5px;
+    }
+  }
+
+  .pagination-button {
+    text-transform: none;
+    border-radius: 0;
+    border: 1px solid #0000003b;
+    border-right-width: 0;
+  }
+
+  .shared-button {
+    &:first-child {
+      .pagination-button {
+        border-radius: 4px 0 0 4px !important;
+      }
+    }
+
+    &:last-child {
+      .pagination-button {
+        border-right-width: 1px;
+        border-radius: 0 4px 4px 0 !important;
+      }
+    }
+
+    &__matbutton {
+      color: #000;
+    }
+  }
+
+  .pagination-arrow-button {
+    padding: 11px 5px;
+  }
+
+  .MuiOutlinedInput-input.MuiSelect-outlined.MuiSelect-outlined {
+    padding: 11px 32px 11px 12.5px;
+  }
+
+  .reverse-img {
+    transform: scaleX(-1);
+  }
+}

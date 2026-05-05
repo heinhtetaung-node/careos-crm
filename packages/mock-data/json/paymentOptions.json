@@ -1,0 +1,1396 @@
+{
+  "paymentOptions": {
+    "fullPayment": {
+      "packagePrice": {
+        "voluntaryPrice": "1850000",
+        "compulsoryPrice": "64521",
+        "totalPrice": "1914521"
+      },
+      "paymentDetails": [
+        {
+          "paymentMethod": "BANK_TRANSFER",
+          "priceSummary": {
+            "interestRate": 0,
+            "interestAmount": "0",
+            "processingFeeRate": 0,
+            "processingFeeAmount": "0",
+            "feeRate": 0,
+            "feeAmount": "0",
+            "discountRate": 0.33,
+            "discountAmount": "6105",
+            "netDiscountRate": -0.32,
+            "netDiscountAmount": "-6105",
+            "packagePriceAfterDiscount": "1908416",
+            "netPremiumAmount": "1908416",
+            "initialAmount": "0",
+            "subsequentAmount": "0",
+            "discount": {
+              "type": "car_discount",
+              "percentage": 33,
+              "amount": "6105"
+            },
+            "shipmentFee": "0"
+          },
+          "installmentDetail": []
+        },
+        {
+          "paymentMethod": "DIRECT_PAYMENT",
+          "priceSummary": {
+            "interestRate": 0,
+            "interestAmount": "0",
+            "processingFeeRate": 0,
+            "processingFeeAmount": "0",
+            "feeRate": 0,
+            "feeAmount": "0",
+            "discountRate": 0.33,
+            "discountAmount": "6105",
+            "netDiscountRate": -0.32,
+            "netDiscountAmount": "-6105",
+            "packagePriceAfterDiscount": "1908416",
+            "netPremiumAmount": "1908416",
+            "initialAmount": "0",
+            "subsequentAmount": "0",
+            "discount": {
+              "type": "car_discount",
+              "percentage": 33,
+              "amount": "6105"
+            },
+            "shipmentFee": "0"
+          },
+          "installmentDetail": []
+        },
+        {
+          "paymentMethod": "EDC",
+          "priceSummary": {
+            "interestRate": 0,
+            "interestAmount": "0",
+            "processingFeeRate": 0,
+            "processingFeeAmount": "0",
+            "feeRate": 0,
+            "feeAmount": "0",
+            "discountRate": 0.33,
+            "discountAmount": "6105",
+            "netDiscountRate": -0.32,
+            "netDiscountAmount": "-6105",
+            "packagePriceAfterDiscount": "1908416",
+            "netPremiumAmount": "1908416",
+            "initialAmount": "0",
+            "subsequentAmount": "0",
+            "discount": {
+              "type": "car_discount",
+              "percentage": 33,
+              "amount": "6105"
+            },
+            "shipmentFee": "0"
+          },
+          "installmentDetail": []
+        },
+        {
+          "paymentMethod": "ONLINECARD",
+          "priceSummary": {
+            "interestRate": 0,
+            "interestAmount": "0",
+            "processingFeeRate": 0,
+            "processingFeeAmount": "0",
+            "feeRate": 0,
+            "feeAmount": "0",
+            "discountRate": 0.33,
+            "discountAmount": "6105",
+            "netDiscountRate": -0.32,
+            "netDiscountAmount": "-6105",
+            "packagePriceAfterDiscount": "1908416",
+            "netPremiumAmount": "1908416",
+            "initialAmount": "0",
+            "subsequentAmount": "0",
+            "discount": {
+              "type": "car_discount",
+              "percentage": 33,
+              "amount": "6105"
+            },
+            "shipmentFee": "0"
+          },
+          "installmentDetail": []
+        },
+        {
+          "paymentMethod": "QR_CODE",
+          "priceSummary": {
+            "interestRate": 0,
+            "interestAmount": "0",
+            "processingFeeRate": 0,
+            "processingFeeAmount": "0",
+            "feeRate": 0,
+            "feeAmount": "0",
+            "discountRate": 0.33,
+            "discountAmount": "6105",
+            "netDiscountRate": -0.32,
+            "netDiscountAmount": "-6105",
+            "packagePriceAfterDiscount": "1908416",
+            "netPremiumAmount": "1908416",
+            "initialAmount": "0",
+            "subsequentAmount": "0",
+            "discount": {
+              "type": "car_discount",
+              "percentage": 33,
+              "amount": "6105"
+            },
+            "shipmentFee": "0"
+          },
+          "installmentDetail": []
+        }
+      ]
+    },
+    "rabbitCareInstallment": {
+      "packagePrice": {
+        "voluntaryPrice": "1850000",
+        "compulsoryPrice": "64521",
+        "totalPrice": "1914521"
+      },
+      "availablePlans": [
+        3,
+        6,
+        8,
+        10
+      ],
+      "installmentPlans": [
+        {
+          "numberOfInstallment": 3,
+          "paymentDetails": [
+            {
+              "paymentMethod": "QR_CODE",
+              "priceSummary": {
+                "interestRate": 1.33,
+                "interestAmount": "23680",
+                "processingFeeRate": 0.67,
+                "processingFeeAmount": "11841",
+                "feeRate": 2,
+                "feeAmount": "35521",
+                "discountRate": 4,
+                "discountAmount": "74000",
+                "netDiscountRate": -2.01,
+                "netDiscountAmount": "-38479",
+                "packagePriceAfterDiscount": "1840521",
+                "netPremiumAmount": "1876042",
+                "initialAmount": "668362",
+                "subsequentAmount": "603840",
+                "discount": {
+                  "type": "DISCOUNT_TYPE_RCL",
+                  "percentage": 400,
+                  "amount": "74000"
+                },
+                "shipmentFee": "0"
+              },
+              "installmentDetail": [
+                {
+                  "period": 1,
+                  "paymentAmount": "668362",
+                  "principal": "592000",
+                  "addOns": "64521",
+                  "interest": "0",
+                  "processingFee": "11841",
+                  "principalBalance": "1184000",
+                  "interestBalance": "23680",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "1207680"
+                },
+                {
+                  "period": 2,
+                  "paymentAmount": "603840",
+                  "principal": "588088",
+                  "addOns": "0",
+                  "interest": "15752",
+                  "processingFee": "0",
+                  "principalBalance": "595912",
+                  "interestBalance": "7928",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "603840"
+                },
+                {
+                  "period": 3,
+                  "paymentAmount": "603840",
+                  "principal": "595912",
+                  "addOns": "0",
+                  "interest": "7928",
+                  "processingFee": "0",
+                  "principalBalance": "0",
+                  "interestBalance": "0",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "numberOfInstallment": 6,
+          "paymentDetails": [
+            {
+              "paymentMethod": "QR_CODE",
+              "priceSummary": {
+                "interestRate": 5,
+                "interestAmount": "86951",
+                "processingFeeRate": 1,
+                "processingFeeAmount": "17390",
+                "feeRate": 6,
+                "feeAmount": "104341",
+                "discountRate": 6,
+                "discountAmount": "111000",
+                "netDiscountRate": -0.35,
+                "netDiscountAmount": "-6659",
+                "packagePriceAfterDiscount": "1803521",
+                "netPremiumAmount": "1907864",
+                "initialAmount": "371744",
+                "subsequentAmount": "307224",
+                "discount": {
+                  "type": "DISCOUNT_TYPE_RCL",
+                  "percentage": 600,
+                  "amount": "111000"
+                },
+                "shipmentFee": "0"
+              },
+              "installmentDetail": [
+                {
+                  "period": 1,
+                  "paymentAmount": "371744",
+                  "principal": "289833",
+                  "addOns": "64521",
+                  "interest": "0",
+                  "processingFee": "17390",
+                  "principalBalance": "1449167",
+                  "interestBalance": "86951",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "1536118"
+                },
+                {
+                  "period": 2,
+                  "paymentAmount": "307224",
+                  "principal": "278613",
+                  "addOns": "0",
+                  "interest": "28611",
+                  "processingFee": "0",
+                  "principalBalance": "1170554",
+                  "interestBalance": "58340",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "1228894"
+                },
+                {
+                  "period": 3,
+                  "paymentAmount": "307224",
+                  "principal": "284113",
+                  "addOns": "0",
+                  "interest": "23110",
+                  "processingFee": "0",
+                  "principalBalance": "886441",
+                  "interestBalance": "35230",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "921671"
+                },
+                {
+                  "period": 4,
+                  "paymentAmount": "307224",
+                  "principal": "289723",
+                  "addOns": "0",
+                  "interest": "17501",
+                  "processingFee": "0",
+                  "principalBalance": "596718",
+                  "interestBalance": "17729",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "614447"
+                },
+                {
+                  "period": 5,
+                  "paymentAmount": "307224",
+                  "principal": "295443",
+                  "addOns": "0",
+                  "interest": "11781",
+                  "processingFee": "0",
+                  "principalBalance": "301275",
+                  "interestBalance": "5948",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "307224"
+                },
+                {
+                  "period": 6,
+                  "paymentAmount": "307224",
+                  "principal": "301275",
+                  "addOns": "0",
+                  "interest": "5948",
+                  "processingFee": "0",
+                  "principalBalance": "0",
+                  "interestBalance": "0",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "numberOfInstallment": 8,
+          "paymentDetails": [
+            {
+              "paymentMethod": "QR_CODE",
+              "priceSummary": {
+                "interestRate": 7.44,
+                "interestAmount": "132090",
+                "processingFeeRate": 1.06,
+                "processingFeeAmount": "18870",
+                "feeRate": 8.5,
+                "feeAmount": "150960",
+                "discountRate": 4,
+                "discountAmount": "74000",
+                "netDiscountRate": 4.02,
+                "netDiscountAmount": "76960",
+                "packagePriceAfterDiscount": "1840521",
+                "netPremiumAmount": "1991481",
+                "initialAmount": "305391",
+                "subsequentAmount": "240870",
+                "discount": {
+                  "type": "DISCOUNT_TYPE_RCL",
+                  "percentage": 400,
+                  "amount": "74000"
+                },
+                "shipmentFee": "0"
+              },
+              "installmentDetail": [
+                {
+                  "period": 1,
+                  "paymentAmount": "305391",
+                  "principal": "222000",
+                  "addOns": "64521",
+                  "interest": "0",
+                  "processingFee": "18870",
+                  "principalBalance": "1554000",
+                  "interestBalance": "132090",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "1686090"
+                },
+                {
+                  "period": 2,
+                  "paymentAmount": "240870",
+                  "principal": "208514",
+                  "addOns": "0",
+                  "interest": "32356",
+                  "processingFee": "0",
+                  "principalBalance": "1345486",
+                  "interestBalance": "99734",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "1445220"
+                },
+                {
+                  "period": 3,
+                  "paymentAmount": "240870",
+                  "principal": "212856",
+                  "addOns": "0",
+                  "interest": "28014",
+                  "processingFee": "0",
+                  "principalBalance": "1132630",
+                  "interestBalance": "71720",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "1204350"
+                },
+                {
+                  "period": 4,
+                  "paymentAmount": "240870",
+                  "principal": "217287",
+                  "addOns": "0",
+                  "interest": "23583",
+                  "processingFee": "0",
+                  "principalBalance": "915343",
+                  "interestBalance": "48137",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "963480"
+                },
+                {
+                  "period": 5,
+                  "paymentAmount": "240870",
+                  "principal": "221812",
+                  "addOns": "0",
+                  "interest": "19058",
+                  "processingFee": "0",
+                  "principalBalance": "693531",
+                  "interestBalance": "29079",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "722610"
+                },
+                {
+                  "period": 6,
+                  "paymentAmount": "240870",
+                  "principal": "226430",
+                  "addOns": "0",
+                  "interest": "14440",
+                  "processingFee": "0",
+                  "principalBalance": "467102",
+                  "interestBalance": "14638",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "481740"
+                },
+                {
+                  "period": 7,
+                  "paymentAmount": "240870",
+                  "principal": "231144",
+                  "addOns": "0",
+                  "interest": "9726",
+                  "processingFee": "0",
+                  "principalBalance": "235957",
+                  "interestBalance": "4913",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "240870"
+                },
+                {
+                  "period": 8,
+                  "paymentAmount": "240870",
+                  "principal": "235957",
+                  "addOns": "0",
+                  "interest": "4913",
+                  "processingFee": "0",
+                  "principalBalance": "0",
+                  "interestBalance": "0",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "numberOfInstallment": 10,
+          "paymentDetails": [
+            {
+              "paymentMethod": "QR_CODE",
+              "priceSummary": {
+                "interestRate": 8.25,
+                "interestAmount": "143492",
+                "processingFeeRate": 2.75,
+                "processingFeeAmount": "47823",
+                "feeRate": 11,
+                "feeAmount": "191315",
+                "discountRate": 6,
+                "discountAmount": "111000",
+                "netDiscountRate": 4.2,
+                "netDiscountAmount": "80315",
+                "packagePriceAfterDiscount": "1803521",
+                "netPremiumAmount": "1994834",
+                "initialAmount": "547094",
+                "subsequentAmount": "160860",
+                "discount": {
+                  "type": "DISCOUNT_TYPE_RCL",
+                  "percentage": 600,
+                  "amount": "111000"
+                },
+                "shipmentFee": "0"
+              },
+              "installmentDetail": [
+                {
+                  "period": 1,
+                  "paymentAmount": "547094",
+                  "principal": "434750",
+                  "addOns": "64521",
+                  "interest": "0",
+                  "processingFee": "47823",
+                  "principalBalance": "1304250",
+                  "interestBalance": "143492",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "1447742"
+                },
+                {
+                  "period": 2,
+                  "paymentAmount": "160860",
+                  "principal": "132949",
+                  "addOns": "0",
+                  "interest": "27911",
+                  "processingFee": "0",
+                  "principalBalance": "1171301",
+                  "interestBalance": "115581",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "1286882"
+                },
+                {
+                  "period": 3,
+                  "paymentAmount": "160860",
+                  "principal": "135794",
+                  "addOns": "0",
+                  "interest": "25066",
+                  "processingFee": "0",
+                  "principalBalance": "1035506",
+                  "interestBalance": "90516",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "1126022"
+                },
+                {
+                  "period": 4,
+                  "paymentAmount": "160860",
+                  "principal": "138700",
+                  "addOns": "0",
+                  "interest": "22160",
+                  "processingFee": "0",
+                  "principalBalance": "896806",
+                  "interestBalance": "68356",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "965162"
+                },
+                {
+                  "period": 5,
+                  "paymentAmount": "160860",
+                  "principal": "141669",
+                  "addOns": "0",
+                  "interest": "19192",
+                  "processingFee": "0",
+                  "principalBalance": "755137",
+                  "interestBalance": "49164",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "804301"
+                },
+                {
+                  "period": 6,
+                  "paymentAmount": "160860",
+                  "principal": "144700",
+                  "addOns": "0",
+                  "interest": "16160",
+                  "processingFee": "0",
+                  "principalBalance": "610437",
+                  "interestBalance": "33004",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "643441"
+                },
+                {
+                  "period": 7,
+                  "paymentAmount": "160860",
+                  "principal": "147797",
+                  "addOns": "0",
+                  "interest": "13063",
+                  "processingFee": "0",
+                  "principalBalance": "462640",
+                  "interestBalance": "19941",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "482581"
+                },
+                {
+                  "period": 8,
+                  "paymentAmount": "160860",
+                  "principal": "150960",
+                  "addOns": "0",
+                  "interest": "9900",
+                  "processingFee": "0",
+                  "principalBalance": "311680",
+                  "interestBalance": "10040",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "321721"
+                },
+                {
+                  "period": 9,
+                  "paymentAmount": "160860",
+                  "principal": "154190",
+                  "addOns": "0",
+                  "interest": "6670",
+                  "processingFee": "0",
+                  "principalBalance": "157490",
+                  "interestBalance": "3370",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "160860"
+                },
+                {
+                  "period": 10,
+                  "paymentAmount": "160860",
+                  "principal": "157490",
+                  "addOns": "0",
+                  "interest": "3370",
+                  "processingFee": "0",
+                  "principalBalance": "0",
+                  "interestBalance": "0",
+                  "processingFeeBalance": "0",
+                  "totalBalance": "0"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "creditCardInstallment": {
+      "packagePrice": {
+        "voluntaryPrice": "1850000",
+        "compulsoryPrice": "64521",
+        "totalPrice": "1914521"
+      },
+      "cardProviders": [
+        {
+          "name": "card-providers/BAY",
+          "shortName": "BAY",
+          "displayNameTh": "ธนาคารกรุงศรี",
+          "displayNameEn": "Bank of Ayudhya Public Company Limited",
+          "minimumAmount": "0",
+          "availablePlans": [
+            3,
+            6
+          ],
+          "installmentPlans": [
+            {
+              "numberOfInstallment": 3,
+              "paymentDetails": [
+                {
+                  "paymentMethod": "EDC",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "638173",
+                    "subsequentAmount": "638173",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                },
+                {
+                  "paymentMethod": "ONLINECARD",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "638173",
+                    "subsequentAmount": "638173",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                }
+              ]
+            },
+            {
+              "numberOfInstallment": 6,
+              "paymentDetails": [
+                {
+                  "paymentMethod": "EDC",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "319086",
+                    "subsequentAmount": "319086",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                },
+                {
+                  "paymentMethod": "ONLINECARD",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "319086",
+                    "subsequentAmount": "319086",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "card-providers/BBL",
+          "shortName": "BBL",
+          "displayNameTh": "ธนาคารกรุงเทพ",
+          "displayNameEn": "Bangkok Bank Public Company Limited",
+          "minimumAmount": "0",
+          "availablePlans": [
+            4,
+            6
+          ],
+          "installmentPlans": [
+            {
+              "numberOfInstallment": 4,
+              "paymentDetails": [
+                {
+                  "paymentMethod": "EDC",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "478630",
+                    "subsequentAmount": "478630",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                },
+                {
+                  "paymentMethod": "ONLINECARD",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "478630",
+                    "subsequentAmount": "478630",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                }
+              ]
+            },
+            {
+              "numberOfInstallment": 6,
+              "paymentDetails": [
+                {
+                  "paymentMethod": "EDC",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "319086",
+                    "subsequentAmount": "319086",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                },
+                {
+                  "paymentMethod": "ONLINECARD",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "319086",
+                    "subsequentAmount": "319086",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "card-providers/FIRST_CHOICE",
+          "shortName": "FIRST_CHOICE",
+          "displayNameTh": "กรุงศรีเฟิร์สช้อยส์",
+          "displayNameEn": "Krungsri First Choice",
+          "minimumAmount": "0",
+          "availablePlans": [
+            3,
+            6
+          ],
+          "installmentPlans": [
+            {
+              "numberOfInstallment": 3,
+              "paymentDetails": [
+                {
+                  "paymentMethod": "EDC",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "638173",
+                    "subsequentAmount": "638173",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                },
+                {
+                  "paymentMethod": "ONLINECARD",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "638173",
+                    "subsequentAmount": "638173",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                }
+              ]
+            },
+            {
+              "numberOfInstallment": 6,
+              "paymentDetails": [
+                {
+                  "paymentMethod": "EDC",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "319086",
+                    "subsequentAmount": "319086",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                },
+                {
+                  "paymentMethod": "ONLINECARD",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "319086",
+                    "subsequentAmount": "319086",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "card-providers/KBANK",
+          "shortName": "KBANK",
+          "displayNameTh": "ธนาคารกสิกร",
+          "displayNameEn": "Kasikornbank Public Company Limited",
+          "minimumAmount": "0",
+          "availablePlans": [
+            3,
+            6
+          ],
+          "installmentPlans": [
+            {
+              "numberOfInstallment": 3,
+              "paymentDetails": [
+                {
+                  "paymentMethod": "EDC",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "638173",
+                    "subsequentAmount": "638173",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                },
+                {
+                  "paymentMethod": "ONLINECARD",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "638173",
+                    "subsequentAmount": "638173",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                }
+              ]
+            },
+            {
+              "numberOfInstallment": 6,
+              "paymentDetails": [
+                {
+                  "paymentMethod": "EDC",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "319086",
+                    "subsequentAmount": "319086",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                },
+                {
+                  "paymentMethod": "ONLINECARD",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "319086",
+                    "subsequentAmount": "319086",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "card-providers/KTC",
+          "shortName": "KTC",
+          "displayNameTh": "บัตรกรุงไทย",
+          "displayNameEn": "Krungthai Card",
+          "minimumAmount": "0",
+          "availablePlans": [
+            3,
+            6
+          ],
+          "installmentPlans": [
+            {
+              "numberOfInstallment": 3,
+              "paymentDetails": [
+                {
+                  "paymentMethod": "EDC",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "638173",
+                    "subsequentAmount": "638173",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                },
+                {
+                  "paymentMethod": "ONLINECARD",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "638173",
+                    "subsequentAmount": "638173",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                }
+              ]
+            },
+            {
+              "numberOfInstallment": 6,
+              "paymentDetails": [
+                {
+                  "paymentMethod": "EDC",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "319086",
+                    "subsequentAmount": "319086",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                },
+                {
+                  "paymentMethod": "ONLINECARD",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "319086",
+                    "subsequentAmount": "319086",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "card-providers/SCB",
+          "shortName": "SCB",
+          "displayNameTh": "ธนาคารไทยพาณิชย์",
+          "displayNameEn": "The Siam Commercial Bank Public Company Limited",
+          "minimumAmount": "0",
+          "availablePlans": [
+            3,
+            6
+          ],
+          "installmentPlans": [
+            {
+              "numberOfInstallment": 3,
+              "paymentDetails": [
+                {
+                  "paymentMethod": "EDC",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "638173",
+                    "subsequentAmount": "638173",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                },
+                {
+                  "paymentMethod": "ONLINECARD",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "638173",
+                    "subsequentAmount": "638173",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                }
+              ]
+            },
+            {
+              "numberOfInstallment": 6,
+              "paymentDetails": [
+                {
+                  "paymentMethod": "EDC",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "319086",
+                    "subsequentAmount": "319086",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                },
+                {
+                  "paymentMethod": "ONLINECARD",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "319086",
+                    "subsequentAmount": "319086",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "card-providers/TTB",
+          "shortName": "TTB",
+          "displayNameTh": "ธนาคารทหารไทยธนชาต",
+          "displayNameEn": "TMBThanachart",
+          "minimumAmount": "0",
+          "availablePlans": [
+            3,
+            6
+          ],
+          "installmentPlans": [
+            {
+              "numberOfInstallment": 3,
+              "paymentDetails": [
+                {
+                  "paymentMethod": "EDC",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "638173",
+                    "subsequentAmount": "638173",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                },
+                {
+                  "paymentMethod": "ONLINECARD",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "638173",
+                    "subsequentAmount": "638173",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                }
+              ]
+            },
+            {
+              "numberOfInstallment": 6,
+              "paymentDetails": [
+                {
+                  "paymentMethod": "EDC",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "319086",
+                    "subsequentAmount": "319086",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                },
+                {
+                  "paymentMethod": "ONLINECARD",
+                  "priceSummary": {
+                    "interestRate": 0,
+                    "interestAmount": "0",
+                    "processingFeeRate": 0,
+                    "processingFeeAmount": "0",
+                    "feeRate": 0,
+                    "feeAmount": "0",
+                    "discountRate": 0,
+                    "discountAmount": "0",
+                    "netDiscountRate": 0,
+                    "netDiscountAmount": "0",
+                    "packagePriceAfterDiscount": "1914521",
+                    "netPremiumAmount": "1914521",
+                    "initialAmount": "319086",
+                    "subsequentAmount": "319086",
+                    "discount": null,
+                    "shipmentFee": "0"
+                  },
+                  "installmentDetail": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

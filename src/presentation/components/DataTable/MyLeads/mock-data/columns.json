@@ -1,0 +1,155 @@
+[
+  {
+    "id": "unreadMessage",
+    "field": "unreadMessage",
+    "label": "text.unreadMessage",
+    "minWidth": 125,
+    "sorting": "none",
+    "sortingField": "",
+    "disabled": true
+  },
+  {
+    "id": "leadId",
+    "field": "leadId",
+    "label": "text.leadId",
+    "minWidth": 120,
+    "sorting": "none",
+    "sortingField": "lead.humanId"
+  },
+  {
+    "id": "name",
+    "field": "name",
+    "label": "text.name",
+    "minWidth": 150,
+    "sorting": "none",
+    "sortingField": "",
+    "disabled": true
+  },
+  {
+    "id": "leadStatus",
+    "field": "leadStatus",
+    "label": "text.leadStatus",
+    "minWidth": 150,
+    "breakSpace": true,
+    "sorting": "none",
+    "sortingField": "lead.status"
+  },
+  {
+    "id": "leadType",
+    "field": "leadType",
+    "label": "text.leadType",
+    "minWidth": 150,
+    "sorting": "none",
+    "sortingField": "lead.type"
+  },
+  {
+    "id": "licensePlate",
+    "field": "licensePlate",
+    "label": "text.licensePlate",
+    "minWidth": 150,
+    "sorting": "none",
+    "sortingField": "car.licensePlate"
+  },
+  {
+    "id": "remark",
+    "field": "remark",
+    "label": "text.remark",
+    "minWidth": 100,
+    "noTooltip": true,
+    "sorting": "none",
+    "sortingField": "",
+    "disabled": true
+  },
+  {
+    "id": "policyStartDate",
+    "field": "policyStartDate",
+    "label": "text.policyStartDate",
+    "format": "date",
+    "minWidth": 200,
+    "sorting": "none",
+    "sortingField": "lead.data.policyStartDate"
+  },
+  {
+    "id": "appointmentDate",
+    "field": "appointmentDate",
+    "label": "text.appointmentDate",
+    "format": "date",
+    "minWidth": 200,
+    "sorting": "none",
+    "sortingField": "appointments.startTime"
+  },
+  {
+    "id": "sumInsured",
+    "field": "sumInsured",
+    "label": "text.preferredSumInsured",
+    "minWidth": 150,
+    "sorting": "none",
+    "sortingField": "car.sumInsured"
+  },
+  {
+    "id": "sundayContactable",
+    "field": "sundayContactable",
+    "label": "text.sundayContactable",
+    "minWidth": 150,
+    "sorting": "none",
+    "sortingField": "",
+    "disabled": true
+  },
+  {
+    "id": "createdOn",
+    "field": "createdOn",
+    "label": "text.createdOn",
+    "format": "date",
+    "minWidth": 150,
+    "breakSpace": true,
+    "sorting": "none",
+    "sortingField": "lead.createTime"
+  },
+  {
+    "id": "updatedOn",
+    "field": "updatedOn",
+    "label": "text.updatedOn",
+    "format": "date",
+    "minWidth": 150,
+    "breakSpace": true,
+    "sorting": "none",
+    "sortingField": "lead.updateTime"
+  },
+  {
+    "id": "assignedOn",
+    "field": "assignedOn",
+    "label": "text.assignOn",
+    "format": "date",
+    "minWidth": 150,
+    "breakSpace": true,
+    "sorting": "none",
+    "sortingField": "assigned.createTime"
+  },
+  {
+    "id": "carBrand",
+    "field": "carBrand",
+    "label": "text.carBrand",
+    "minWidth": 150,
+    "sorting": "none",
+    "sortingField": "",
+    "disabled": true
+  },
+  {
+    "id": "carModel",
+    "field": "carModel",
+    "label": "text.carModel",
+    "minWidth": 150,
+    "sorting": "none",
+    "sortingField": "",
+    "disabled": true
+  },
+  {
+    "id": "carYear",
+    "field": "carYear",
+    "label": "text.carYear",
+    "minWidth": 150,
+    "sorting": "none",
+    "sortingField": "",
+    "disabled": true
+  }
+]

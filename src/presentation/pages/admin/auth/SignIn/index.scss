@@ -1,0 +1,23 @@
+.sign-in-page {
+  .btn-submit {
+    margin-top: 15px;
+  }
+
+  .btn-toggle-password {
+    position: absolute;
+    right: 5px;
+    bottom: 2px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+
+    &:hover {
+      background: none;
+    }
+  }
+
+  .input-password {
+    padding-right: 65px;
+  }
+}

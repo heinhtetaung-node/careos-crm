@@ -1,0 +1,175 @@
+{
+  "vouchers": [
+    {
+      "name": "vouchers/76368",
+      "createTime": "2023-01-31T06:47:27Z",
+      "updateTime": "2023-01-31T06:47:27Z",
+      "deleteTime": null,
+      "createBy": "users/8c748759-bd15-4ed8-8697-cec40cb9cbad",
+      "startTime": "2023-02-01T00:00:00Z",
+      "endTime": "2023-04-10T00:00:00Z",
+      "price": 69000,
+      "percentDiscount": 1000,
+      "voucherType": "percent",
+      "code": "voucherAD56",
+      "quantity": 10,
+      "active": false,
+      "usageCount": 0,
+      "humanName": "voucherAD56"
+    }
+  ],
+  "campaigns": [
+    {
+      "name": "campaigns/f016c4f1-f6f4-4d77-baab-1e9f50cf22be",
+      "createTime": "2023-02-03T08:48:47.581418Z",
+      "updateTime": "2023-02-03T08:48:47.581418Z",
+      "deleteTime": null,
+      "product": "products/car-insurance",
+      "campaignCode": "Campaign1y3t",
+      "discountPercentage": "175",
+      "startDate": "2023-02-03T00:00:00Z",
+      "endDate": "2023-03-31T00:00:00Z",
+      "approver": "roles/manager",
+      "description": "kerry express"
+    },
+    {
+      "name": "campaigns/f016c4f1-f6f4-4d77-baab-1e9f50cf22be",
+      "createTime": "2023-02-03T08:48:47.581418Z",
+      "updateTime": "2023-02-03T08:48:47.581418Z",
+      "deleteTime": "2023-02-03T08:48:47.581418Z",
+      "product": "products/car-insurance",
+      "campaignCode": "Campaign1y3t12",
+      "discountPercentage": "175",
+      "startDate": "2023-02-03T00:00:00Z",
+      "endDate": "2023-03-31T00:00:00Z",
+      "approver": "roles/manager",
+      "description": "kerry express"
+    }
+  ],
+  "discounts": [
+    {
+      "request": {
+          "name": "leads/79e8b6f2-4766-4262-8a19-1cc2ab800c72/renewalPackages/e6cdc351-ea65-4716-afcc-324edca4b035/requests/a532d5ed-f5cb-4458-b9a3-4df6ea315dc2",
+          "deleteTime": null,
+          "status": "PENDING",
+          "createBy": "users/ee139ec2-5c0d-4877-83d1-174ade5f932e",
+          "decideBy": "",
+          "percentage": 690,
+          "maxPercentage": 800,
+          "source": "product/products/car-insurance/carmodel/brands/24/models/181/insurer/insurers/27/premium/5000/repairtype/GARAGE/leadtype/LEAD_TYPE_NEW",
+          "approver": "users/89fd9ac7-7162-456f-b472-c80c247acd54",
+          "remark": "test discount",
+          "type": "Campaign",
+          "approverRemark": "test discount",
+          "package": {
+            "price": 1200,
+            "type": "STANDARD"
+          }
+      },
+      "user": {
+          "name": "users/ee139ec2-5c0d-4877-83d1-174ade5f932e",
+          "createTime": "2022-01-07T12:42:17.710859Z",
+          "updateTime": "2023-02-27T06:54:30.604067Z",
+          "deleteTime": null,
+          "createBy": "users/6f35b998-c1e0-4dea-bd0b-ee3a008242f9",
+          "humanId": "Salesagent@rabbit.co.th",
+          "role": "roles/sales",
+          "firstName": "SalesAgentRole",
+          "lastName": "-",
+          "annotations": {
+              "daily_limit": "2",
+              "score": "2",
+              "total_limit": "2"
+          },
+          "loginTime": "2023-02-27T06:54:30.602107Z"
+      },
+      "team": {
+          "name": "teams/a63ae43f-2996-4c18-b391-8bb0022a8ebf",
+          "createTime": "2022-01-08T04:33:40.679413Z",
+          "updateTime": "2022-12-09T09:26:40.536079Z",
+          "deleteTime": null,
+          "createBy": "users/1d8b07d6-224e-444b-9409-baff32b5866b",
+          "displayName": "Car Team Test 8",
+          "productType": "products/car-insurance",
+          "leadType": "new",
+          "manager": "users/89fd9ac7-7162-456f-b472-c80c247acd54",
+          "supervisor": "users/bb7a1306-5b20-4a30-b279-0a499976d261",
+          "insurers": [],
+          "role": ""
+      },
+      "lead": {
+          "name": "leads/79e8b6f2-4766-4262-8a19-1cc2ab800c72",
+          "createTime": "2023-02-23T07:55:14.541077Z",
+          "updateTime": "2023-02-23T10:16:19.321952Z",
+          "deleteTime": null,
+          "createBy": "",
+          "product": "products/car-insurance",
+          "schema": "schemas/efce3390-8da6-44b3-9e4c-2c7b78ca2c9d",
+          "data": {
+              "carDashCam": true,
+              "carLicensePlate": "123-123 กท",
+              "carModified": true,
+              "carSubModelYear": 47118,
+              "carUsageType": "personal",
+              "chassisNumber": "12345",
+              "checkout": {
+                  "package": "renewalPackages/e6cdc351-ea65-4716-afcc-324edca4b035"
+              },
+              "currentInsurer": 27,
+              "customerDOB": "1998-12-22",
+              "customerEmail": [
+                  "citrap@rabbit.co.th"
+              ],
+              "customerFirstName": "Kiki",
+              "customerGender": "f",
+              "customerLastName": "Test",
+              "customerPhoneNumber": [
+                  {
+                      "phone": "+66999999999",
+                      "status": "valid"
+                  }
+              ],
+              "customerPolicyAddress": [],
+              "customerShippingAddress": [],
+              "insuranceKind": "voluntary",
+              "locale": "th-en",
+              "numberOfFixedDriver": 0,
+              "policyExpiryDate": "2023-12-25",
+              "policyStartDate": "2023-09-19",
+              "preferredInsurer": 27,
+              "primaryPhoneIndex": 0,
+              "registeredProvince": 100000,
+              "vehicleIdNumber": "1245",
+              "voluntaryInsuranceType": [
+                  "type_1"
+              ]
+          },
+          "source": "",
+          "important": false,
+          "assignedTo": "",
+          "status": "LEAD_STATUS_NEW",
+          "humanId": "L9898200",
+          "root": "leads/9abdb7c1-da24-4b7e-82c9-4a71e2f36e7b",
+          "type": "LEAD_TYPE_RENEWAL",
+          "isRejected": false,
+          "reference": "O1229929",
+          "annotations": {
+              "@immutable/product-car/last-discount": 1900,
+              "@immutable/product-car/last-invoice-price": 17746,
+              "@immutable/product-car/last-package-price": 19646,
+              "@immutable/product-car/origin-order-id": 167878,
+              "@immutable/product-car/origin-order-short-id": "L9892765",
+              "@immutable/product-car/original-order": "https://staging-nana2.rabbitinternet.com/car-insurance/orders/read-only/167878",
+              "migrated-as-non-purchased-renewal": true,
+              "product-car/insurer-accepted": "ACCEPTED"
+          }
+      },
+      "discountType": "match-price",
+      "approver": {
+        "firstName": "first",
+        "lastName": "last"
+      }
+    }
+  ],
+  "nextPageToken": ""
+}

@@ -1,0 +1,244 @@
+[
+	{
+		"hasData": true,
+		"title": "Package Price",
+		"packages": [
+			1346042
+		],
+		"items": [
+			{
+				"label": "Voluntary price",
+				"values": {
+					"1346042": {
+						"text": "<boldGreen>Included</boldGreen><lineBreak/> {{value}} THB/Year",
+						"text_values": {
+							"value": "15,035"
+						}
+					}
+				},
+				"isEmpty": false
+			},
+			{
+				"label": "Mandatory price",
+				"values": {
+					"1346042": {
+						"text": "<boldGreen>Included</boldGreen><lineBreak/> {{value}} THB/Year",
+						"text_values": {
+							"value": "646"
+						}
+					}
+				},
+				"isEmpty": false
+			},
+			{
+				"label": "Total price",
+				"values": {
+					"1346042": {
+						"text": "{{value}} THB",
+						"text_values": {
+							"value": "15,681"
+						}
+					}
+				},
+				"isEmpty": false
+			}
+		]
+	},
+	{
+		"hasData": true,
+		"title": "Package Details",
+		"packages": [
+			1346042
+		],
+		"items": [
+			{
+				"label": "Insurance type",
+				"values": {
+					"1346042": {
+						"text": "Type 1"
+					}
+				},
+				"isEmpty": false
+			},
+			{
+				"label": "Repair type",
+				"values": {
+					"1346042": {
+						"text": "repair",
+						"text_values": {
+							"value": "Garage"
+						}
+					}
+				},
+				"isEmpty": false
+			},
+			{
+				"label": "Deductible",
+				"values": {
+					"1346042": {
+						"text": "No deductible"
+					}
+				},
+				"isEmpty": false
+			},
+			{
+				"label": "Dash cam",
+				"values": {
+					"1346042": {
+						"text": "Not Required"
+					}
+				},
+				"isEmpty": false
+			}
+		]
+	},
+	{
+		"hasData": true,
+		"title": "Own Car Damage Coverage",
+		"packages": [
+			1346042
+		],
+		"items": [
+			{
+				"label": "Own Car Damage",
+				"values": {
+					"1346042": {
+						"text": "<boldGreen>{{value}} THB</boldGreen>",
+						"text_values": {
+							"value": "390,000"
+						}
+					}
+				},
+				"isEmpty": false
+			},
+			{
+				"label": "Fire and Theft",
+				"values": {
+					"1346042": {
+						"text": "{{value}} THB",
+						"text_values": {
+							"value": "390,000"
+						}
+					}
+				},
+				"isEmpty": false
+			},
+			{
+				"label": "Flood",
+				"values": {
+					"1346042": {
+						"text": "<boldGreen>Included</boldGreen>"
+					}
+				},
+				"isEmpty": false
+			}
+		]
+	},
+	{
+		"hasData": true,
+		"title": "Personal Coverage",
+		"packages": [
+			1346042
+		],
+		"items": [
+			{
+				"label": "Personal Injury",
+				"values": {
+					"1346042": {
+						"text": "{{value}} THB",
+						"text_values": {
+							"value": "50,000"
+						}
+					}
+				},
+				"isEmpty": false
+			},
+			{
+				"label": "Medical Expense",
+				"values": {
+					"1346042": {
+						"text": "{{value}} THB",
+						"text_values": {
+							"value": "50,000"
+						}
+					}
+				},
+				"isEmpty": false
+			},
+			{
+				"label": "Bail Bond",
+				"values": {
+					"1346042": {
+						"text": "{{value}} THB",
+						"text_values": {
+							"value": "250,000"
+						}
+					}
+				},
+				"isEmpty": false
+			}
+		]
+	},
+	{
+		"hasData": true,
+		"title": "Third Party Coverage",
+		"packages": [
+			1346042
+		],
+		"items": [
+			{
+				"label": "Property Damage",
+				"values": {
+					"1346042": {
+						"text": "{{value}} THB",
+						"text_values": {
+							"value": "2,500,000"
+						}
+					}
+				},
+				"isEmpty": false
+			},
+			{
+				"label": "Death per Person",
+				"values": {
+					"1346042": {
+						"text": "{{value}} THB",
+						"text_values": {
+							"value": "1,000,000"
+						}
+					}
+				},
+				"isEmpty": false
+			},
+			{
+				"label": "Max. Death",
+				"values": {
+					"1346042": {
+						"text": "{{value}} THB",
+						"text_values": {
+							"value": "10,000,000"
+						}
+					}
+				},
+				"isEmpty": false
+			}
+		]
+	},
+	{
+		"hasData": true,
+		"title": "Terms and conditions",
+		"packages": [
+			1346042
+		],
+		"items": [
+			{
+				"values": {
+					"1346042": {
+						"text": "1.รถยต์กลุ่ม 5\n 2ช่วงอายุของผู้เอาประกัน 35-45 ปี (แต่ไม่ต้องระบุผู้ขับขี่)\n 3.ตรวจสภาพรถก่อนเข้ารับประกันภัย\n 4.คุ้มครองภัยก่อการร้าย"
+					}
+				},
+				"isEmpty": false
+			}
+		]
+	}
+]

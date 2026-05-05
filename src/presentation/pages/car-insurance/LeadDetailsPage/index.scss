@@ -1,0 +1,176 @@
+@import '../../../../scss/reuse-mixin.scss';
+
+$lead-background-color: #fff;
+
+.lead-detail-page {
+  background-color: $lead-background-color;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 10px;
+
+  .MuiInputBase-root.MuiInput-root.MuiInputBase-formControl.MuiInput-formControl {
+    background: $lead-background-color;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+  }
+
+  .shared-button {
+    margin-left: 0;
+
+    &__matbutton {
+      min-height: 40px;
+    }
+  }
+
+  &__header {
+    &__call-action-btn {
+      display: flex;
+      white-space: nowrap;
+
+      .nowrap-btn {
+        min-width: fit-content;
+        white-space: nowrap;
+      }
+    }
+
+    &__summary-buttons {
+      display: flex;
+      justify-content: flex-start;
+      padding: 0 0 0 10px;
+
+      @include min-md {
+        justify-content: flex-end;
+      }
+
+      @include max-md {
+        padding: 10px 0 0 10px;
+      }
+
+      @include max-xxl-detail {
+        .detail-header__summary {
+          margin-bottom: 10px;
+        }
+      }
+
+      .detail-header__buttons {
+        @include max-md {
+          display: flex;
+        }
+
+        @include min-md {
+          justify-content: flex-end;
+          display: flex;
+        }
+
+        svg {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  &__boards {
+    padding: 10px;
+
+    &__item {
+      @include max-md {
+        min-height: 650px;
+
+        &:not(:first-child) {
+          padding-top: 20px;
+        }
+      }
+
+      @include min-md {
+        &:not(:first-child) {
+          padding-left: 10px;
+        }
+      }
+    }
+
+    &__activity {
+      padding-left: 10px;
+      padding-top: 10px;
+
+      @include max-md {
+        padding-left: 0;
+        padding-top: 10px;
+      }
+
+      @include min-lg {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .lead-detail-page__icon {
+    position: relative;
+    text-align: center;
+  }
+
+  .lead-detail-page__icons {
+    color: #aaa;
+    position: absolute;
+    transform: rotate(180deg) scaleX(-1);
+    top: -16px;
+    left: 300px;
+  }
+
+  .asterisk {
+    color: #ff0000;
+  }
+
+  .MuiGrid-grid-md-6,
+  .MuiGrid-grid-md-3 {
+    padding-left: 10px;
+  }
+
+  .mt-pl-10 {
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+
+  .btn-multiline {
+    padding: 3px 22px;
+
+    &__label {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .MuiButton-label {
+      white-space: break-spaces;
+      line-height: 18px;
+    }
+  }
+
+  .pl-10 {
+    padding-left: 10px;
+  }
+
+  #mui-component-select-paymentSchedule {
+    height: 40px;
+    padding: 16px 16px 0;
+    border: 1px solid $bg-color-blue-5;
+    border-radius: 6px;
+  }
+}
+
+.modal-lead-call .MuiDialog-paper {
+  border-radius: 10px;
+
+  .modal-header {
+    background-color: #005098;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}

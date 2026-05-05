@@ -1,0 +1,137 @@
+@import '../../../../scss/reuse-mixin.scss';
+
+.email-form {
+  textarea.MuiOutlinedInput-input {
+    padding: 0;
+  }
+
+  .email-list-items {
+    .MuiChip-root {
+      margin-right: 5px;
+      margin-top: 10px;
+    }
+  }
+
+  .invalid {
+    color: #ff6347;
+    margin-bottom: 0;
+  }
+
+  .email-form__cc {
+    .MuiInputBase-input {
+      margin-top: 0;
+      flex: 0 0 100%;
+    }
+
+    .MuiOutlinedInput-adornedStart {
+      padding: 5px 0 0 0;
+    }
+
+    .MuiChip-root {
+      float: left;
+      margin: 0 0 5px 5px;
+    }
+
+    input {
+      height: 42px;
+      padding: 11px 16px;
+      border: 1px solid $bg-color-blue-5;
+      border-radius: 10px;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+
+      &:hover,
+      &:focus {
+        transition: 0.2s;
+        border: 1px solid $text-color-blue-6;
+        box-shadow: 0 7px 15px 0 $box-shadow-field;
+      }
+    }
+  }
+
+  .email-form__attachment {
+    min-height: 52px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    & + .MuiGrid-container {
+      display: none;
+    }
+
+    &__text {
+      @include max-laptop {
+        font-size: 12px;
+        margin-left: 50px;
+      }
+
+      @include min-laptop {
+        font-size: 12px;
+        margin-left: 50px;
+      }
+    }
+
+    svg {
+      color: #909090;
+      width: 32px;
+      height: 32px;
+      display: block;
+      margin-top: -36px;
+    }
+  }
+
+  .shared-input {
+    .MuiInputLabel-animated {
+      color: #4f4b66;
+      font-size: 14px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    input {
+      height: 42px;
+      background-color: #fff;
+    }
+
+    input,
+    textarea {
+      padding: 11px 16px;
+      border: 1px solid $bg-color-blue-5;
+      border-radius: 10px;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+
+      &:hover,
+      &:focus {
+        transition: 0.2s;
+        border: 1px solid $text-color-blue-6;
+        box-shadow: 0 7px 15px 0 $box-shadow-field;
+      }
+    }
+  }
+
+  .ql-container {
+    padding: 11px 16px;
+    border: 1px solid $bg-color-blue-5;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+
+    &:hover,
+    &:focus {
+      transition: 0.2s;
+      border: 1px solid $text-color-blue-6 !important;
+      box-shadow: 0 7px 15px 0 $box-shadow-field;
+    }
+  }
+
+  .ql-input-label {
+    font-size: 11px;
+    padding: 0 5px 5px;
+  }
+}

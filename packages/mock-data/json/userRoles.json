@@ -1,0 +1,114 @@
+[
+   {
+      "name": "roles/admin",
+      "createTime": "2020-08-01T00:00:00Z",
+      "updateTime": "2020-08-01T00:00:00Z",
+      "deleteTime": null,
+      "createBy": "users/builtin",
+      "displayName": "Admin"
+   },
+   {
+      "name": "roles/manager",
+      "createTime": "2020-08-01T00:00:00Z",
+      "updateTime": "2020-08-01T00:00:00Z",
+      "deleteTime": null,
+      "createBy": "users/builtin",
+      "displayName": "Manager"
+   },
+   {
+      "name": "roles/supervisor",
+      "createTime": "2020-08-01T00:00:00Z",
+      "updateTime": "2020-08-01T00:00:00Z",
+      "deleteTime": null,
+      "createBy": "users/builtin",
+      "displayName": "Supervisor"
+   },
+   {
+      "name": "roles/sales",
+      "createTime": "2020-08-01T00:00:00Z",
+      "updateTime": "2020-08-01T00:00:00Z",
+      "deleteTime": null,
+      "createBy": "users/builtin",
+      "displayName": "Sales agent"
+   },
+   {
+      "name": "roles/inbound",
+      "createTime": "2020-08-01T00:00:00Z",
+      "updateTime": "2020-08-01T00:00:00Z",
+      "deleteTime": null,
+      "createBy": "users/builtin",
+      "displayName": "Inbound agent"
+   },
+   {
+      "name": "roles/customer-service",
+      "createTime": "2020-08-01T00:00:00Z",
+      "updateTime": "2020-08-01T00:00:00Z",
+      "deleteTime": null,
+      "createBy": "users/builtin",
+      "displayName": "Customer Service Agent"
+   },
+   {
+      "name": "roles/documents-collection",
+      "createTime": "2020-08-01T00:00:00Z",
+      "updateTime": "2020-08-01T00:00:00Z",
+      "deleteTime": null,
+      "createBy": "users/builtin",
+      "displayName": "Documents Collection Agent"
+   },
+   {
+      "name": "roles/quality-control",
+      "createTime": "2020-08-01T00:00:00Z",
+      "updateTime": "2020-08-01T00:00:00Z",
+      "deleteTime": null,
+      "createBy": "users/builtin",
+      "displayName": "Quality Control Agent"
+   },
+   {
+      "name": "roles/submission",
+      "createTime": "2020-08-01T00:00:00Z",
+      "updateTime": "2020-08-01T00:00:00Z",
+      "deleteTime": null,
+      "createBy": "users/builtin",
+      "displayName": "Submission Agent"
+   },
+   {
+      "name": "roles/problem-case",
+      "createTime": "2020-08-01T00:00:00Z",
+      "updateTime": "2020-08-01T00:00:00Z",
+      "deleteTime": null,
+      "createBy": "users/builtin",
+      "displayName": "Problem Case Agent"
+   },
+   {
+      "name": "roles/backoffice-supervisor",
+      "createTime": "2020-08-01T00:00:00Z",
+      "updateTime": "2020-08-01T00:00:00Z",
+      "deleteTime": null,
+      "createBy": "users/builtin",
+      "displayName": "Back Office Supervisor"
+   },
+   {
+      "name": "roles/shipment-agent",
+      "createTime": "2020-08-01T00:00:00Z",
+      "updateTime": "2020-08-01T00:00:00Z",
+      "deleteTime": null,
+      "createBy": "users/builtin",
+      "displayName": "Shipment Agent"
+   },
+   {
+      "name": "roles/accounting",
+      "createTime": "2020-08-01T00:00:00Z",
+      "updateTime": "2020-08-01T00:00:00Z",
+      "deleteTime": null,
+      "createBy": "users/builtin",
+      "displayName": "Accounting Agent"
+   },
+   {
+      "name": "roles/migrated",
+      "createTime": "2020-08-01T00:00:00Z",
+      "updateTime": "2020-08-01T00:00:00Z",
+      "deleteTime": null,
+      "createBy": "users/builtin",
+      "displayName": "Migrated Agent"
+   }
+]

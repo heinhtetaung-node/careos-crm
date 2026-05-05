@@ -1,0 +1,168 @@
+@import '../../../scss/reuse-mixin.scss';
+
+.shared-insurer-info {
+  &__group-button {
+    margin: 0;
+    padding: 3px 10px;
+
+    &__item {
+      width: 50%;
+      display: flex;
+      align-items: center;
+
+      &__button {
+        width: 50%;
+        padding: 0 5px 0 5px;
+        display: inline-block;
+        justify-content: center;
+
+        .shared-button {
+          width: 100%;
+        }
+
+        .button-quotes {
+          @include min-md {
+            font-size: small;
+            height: 32px;
+          }
+
+          @include min-xl-1 {
+            font-size: medium;
+            height: 32px;
+          }
+        }
+
+        .MuiButton-root {
+          width: 100%;
+
+          span {
+            width: 100%;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+
+  .add-payslip,
+  .add-coupon {
+    padding: 0;
+  }
+
+  .add-payslip,
+  .view-purchase {
+    margin-top: 9px;
+    margin-bottom: 9px;
+
+    .button-quotes {
+      @include min-lg {
+        font-size: small;
+        height: 32px;
+      }
+
+      @include min-xl-1 {
+        font-size: medium;
+        height: 32px;
+      }
+    }
+  }
+
+  &__button {
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .shared-button {
+      width: 100%;
+    }
+
+    .MuiButton-root {
+      width: 100%;
+
+      span {
+        width: 100%;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .shared-button {
+    margin: 0;
+
+    .MuiButton-root {
+      margin: 0;
+      padding: 10px 2.25px;
+      min-width: 50px;
+
+      span {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .shared-autocomplete {
+    .shared-input {
+      border-radius: 6px;
+
+      &:hover,
+      &:focus {
+        border: none !important;
+      }
+
+      .MuiInputBase-root {
+        border: 1px solid $bg-color-blue-5 !important;
+        border-radius: 6px;
+
+        &.Mui-focused {
+          border: 1px solid $text-color-blue-6 !important;
+          border-bottom: 0;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+      }
+    }
+  }
+
+  .add-top-space {
+    margin-top: 2px;
+  }
+
+  .include-asterisk {
+    display: block !important;
+  }
+
+  .MuiFormHelperText-root {
+    color: $text-color-pink-3;
+  }
+}
+
+.insurer-info-story {
+  .shared-insurer-info__button {
+    width: auto;
+    margin-top: 7px;
+  }
+
+  .shared-insurer-info__group-button {
+    display: flex;
+  }
+
+  .shared-insurer-info {
+    padding-bottom: 10px;
+  }
+
+  .shared-select {
+    width: 100%;
+  }
+
+  .MuiOutlinedInput-input {
+    padding: 12px 14px;
+    width: 100%;
+  }
+
+  .MuiOutlinedInput-root {
+    border-radius: 0;
+    width: 100%;
+  }
+}

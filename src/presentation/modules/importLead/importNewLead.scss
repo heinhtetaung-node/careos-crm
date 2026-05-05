@@ -1,0 +1,47 @@
+.lead-import-new-lead {
+  .lead-title {
+    font-weight: bold;
+    padding: 10px 0;
+  }
+
+  .text-error {
+    color: red;
+    overflow-wrap: anywhere;
+    padding: 5px 0;
+  }
+
+  .active {
+    background-color: black;
+    color: white;
+  }
+
+  .button-create {
+    background-color: black;
+    color: white;
+  }
+
+  .button-group {
+    padding: 30px 0;
+  }
+
+  .failure-text {
+    text-align: left;
+    margin: 24px 0 5px;
+    color: red;
+  }
+
+  &__filename-container {
+    display: flex;
+    padding: 24px 0 0;
+
+    &__title {
+      text-align: left;
+      color: black;
+    }
+
+    &__value {
+      text-align: left;
+      color: #5fb15c;
+    }
+  }
+}

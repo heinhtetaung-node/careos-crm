@@ -1,0 +1,25 @@
+{
+  "deliveryOptions":  [
+    {
+      "name":  "deliveryOptions/digital-delivery",
+      "displayName":  "Digital Delivery",
+      "shipmentProvider":  "SHIPMENT_PROVIDER_UNSPECIFIED",
+      "shipmentMethod":  "SHIPMENT_METHOD_EMAIL",
+      "shipmentFee":  "0"
+    },
+    {
+      "name":  "deliveryOptions/kerry-standard",
+      "displayName":  "Kerry Standard",
+      "shipmentProvider":  "SHIPMENT_PROVIDER_KERRY",
+      "shipmentMethod":  "SHIPMENT_METHOD_COURIER",
+      "shipmentFee":  "0"
+    },
+    {
+      "name":  "deliveryOptions/kerry-express",
+      "displayName":  "Kerry Express",
+      "shipmentProvider":  "SHIPMENT_PROVIDER_KERRY",
+      "shipmentMethod":  "SHIPMENT_METHOD_COURIER",
+      "shipmentFee":  "4900"
+    }
+  ]
+}

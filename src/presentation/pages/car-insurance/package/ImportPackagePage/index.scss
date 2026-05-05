@@ -1,0 +1,37 @@
+@import '../../../../../scss/reuse-mixin.scss';
+
+.package-import-page {
+  &__control-btn {
+    display: flex;
+    justify-content: space-between;
+
+    .control-btn-group {
+      display: flex;
+    }
+  }
+
+  .paging {
+    float: right;
+    margin: 20px 0;
+  }
+
+  .MuiCard-root {
+    width: 100%;
+  }
+
+  .MuiCardContent-root {
+    padding: 16px 0;
+  }
+
+  td:first-child {
+    text-align: center;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  .MuiInputLabel-outlined.MuiInputLabel-shrink {
+    transform: translate(14px, -3px) scale(0.75);
+  }
+}

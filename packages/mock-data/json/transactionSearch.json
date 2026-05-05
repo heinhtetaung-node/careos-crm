@@ -1,0 +1,126 @@
+{
+  "followups": [],
+  "lead": {
+    "name": "leads/bcbad36a-3c80-41ed-bcd3-08ca23f545a9",
+    "createTime": "2024-01-15T06:43:38.165222Z",
+    "updateTime": "2024-01-15T06:53:24.592488Z",
+    "deleteTime": null,
+    "createBy": "users/20d37cbe-feb6-44e9-9527-3d789a2949b8",
+    "product": "products/car-insurance",
+    "schema": "schemas/efce3390-8da6-44b3-9e4c-2c7b78ca2c9d",
+    "data": {
+      "carColor": ["white"],
+      "carDashCam": false,
+      "carLicensePlate": "redplate",
+      "carModified": false,
+      "carSubModelYear": 47094,
+      "carUsageType": "personal",
+      "chassisNumber": "123",
+      "checkout": {
+        "installments": 10,
+        "package": "customPackages/956d8e43-0fe9-4cf2-8a12-6b8b05bb6f3b",
+        "paymentMethod": "QR_CODE",
+        "paymentOption": "RABBIT_CARE_INSTALLMENT"
+      },
+      "customerBillingAddress": [
+        {
+          "address": "134",
+          "addressType": "personal",
+          "district": 101500,
+          "firstName": "Test",
+          "lastName": "Test",
+          "postCode": 10600,
+          "province": 100000,
+          "subDistrict": 101502
+        }
+      ],
+      "customerDOB": "2000-06-28",
+      "customerEmail": ["natthapatp@rabbit.co.th"],
+      "customerFirstName": "Test",
+      "customerGender": "m",
+      "customerLastName": "Test",
+      "customerPhoneNumber": [
+        {
+          "phone": "+66999999999",
+          "status": "unverified"
+        }
+      ],
+      "customerPolicyAddress": [
+        {
+          "address": "134",
+          "addressType": "personal",
+          "district": 101500,
+          "firstName": "Test",
+          "lastName": "Test",
+          "postCode": 10600,
+          "province": 100000,
+          "subDistrict": 101502
+        }
+      ],
+      "customerShippingAddress": [
+        {
+          "address": "134",
+          "addressType": "personal",
+          "district": 101500,
+          "firstName": "Test",
+          "lastName": "Test",
+          "postCode": 10600,
+          "province": 100000,
+          "subDistrict": 101502
+        }
+      ],
+      "insuranceKind": "voluntary",
+      "locale": "th-th",
+      "numberOfFixedDriver": 0,
+      "policyHolderDOB": "2000-06-28",
+      "policyHolderFirstName": "Test",
+      "policyHolderLastName": "Test",
+      "policyHolderNationalId": "1234567890123",
+      "policyHolderType": "customer",
+      "policyStartDate": "2024-01-31",
+      "policyTitle": "MR",
+      "primaryPhoneIndex": 0,
+      "registeredProvince": 100000,
+      "vehicleIdNumber": "123",
+      "voluntaryInsuranceType": []
+    },
+    "source": "sources/86670f83-23da-4322-b349-848dac7e0dba",
+    "important": false,
+    "assignedTo": "",
+    "status": "LEAD_STATUS_PENDING_PAYMENT",
+    "humanId": "L9909216",
+    "root": "",
+    "type": "LEAD_TYPE_NEW",
+    "isRejected": false,
+    "reference": "123",
+    "annotations": null
+  },
+  "transaction": {
+    "name": "transactions/0be04bcf-84d6-42e8-9d7f-4925b531efe1",
+    "createTime": "2024-01-15T11:40:29.618823437Z",
+    "updateTime": "2024-01-15T11:40:29.618823437Z",
+    "money": {
+      "currencyCode": "THB",
+      "amount": "2614931"
+    },
+    "installments": 10,
+    "lead": "leads/bcbad36a-3c80-41ed-bcd3-08ca23f545a9",
+    "leadHumanId": "L9909216",
+    "order": "",
+    "gatewayReference": "gateway-references/ICO-L9909216-240115184029",
+    "statusCode": "PENDING",
+    "paymentOption": "RABBIT_CARE_INSTALLMENT"
+  },
+  "attributes": {
+    "customerEmail": "natthapatp@rabbit.co.th",
+    "customerFullName": "Test Test",
+    "customerPhone": "+66999999999",
+    "licensePlate": "redplate",
+    "lead": {
+      "customerFirstname": "Test",
+      "customerLastname": "Test",
+      "customerPhone": "+66999999999",
+      "carLicensePlate": "redplate"
+    }
+  }
+}

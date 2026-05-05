@@ -1,0 +1,31 @@
+@import '../../../scss/reuse-mixin.scss';
+
+.container-datepicker {
+  width: 100%;
+
+  .MuiInputBase-input {
+    width: 80%;
+  }
+
+  .MuiOutlinedInput-adornedEnd {
+    padding-right: 0 !important;
+  }
+
+  .react-datepicker {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .MuiOutlinedInput-input {
+    padding: 2px !important;
+  }
+
+  .MuiOutlinedInput-notchedOutline {
+    border: none !important;
+  }
+
+  .calendar-icon {
+    cursor: pointer;
+    color: #005098;
+  }
+}

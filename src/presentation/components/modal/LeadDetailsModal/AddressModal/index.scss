@@ -1,0 +1,194 @@
+@import '../../../../../scss/reuse-mixin.scss';
+
+.scroll-address-modal {
+  .MuiDialogContent-root {
+    overflow-y: scroll;
+  }
+}
+
+.address-modal {
+  padding-bottom: 10px;
+  padding-top: 8px;
+
+  .line {
+    border-bottom: 1px solid $box-shadow-field;
+  }
+
+  &__label {
+    margin-block-start: 20px;
+    margin-block-end: 10px;
+
+    &__bold {
+      font-weight: bold;
+
+      &.line {
+        padding-bottom: 8px;
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__tab {
+    margin-bottom: 10px;
+
+    .MuiTabs-indicator {
+      display: none;
+    }
+
+    .MuiTabs-flexContainer {
+      justify-content: space-between;
+    }
+
+    .MuiTab-root {
+      border: 1px solid black;
+      min-width: inherit;
+      flex-grow: 1;
+      padding-top: 0;
+      padding-bottom: 0;
+      min-height: 42px;
+      border-radius: 4px;
+
+      &.Mui-selected {
+        background: black;
+        color: white;
+      }
+
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  .radio-group {
+    margin: 10px auto;
+    flex-direction: row;
+
+    .MuiFormControlLabel-root {
+      width: 100%;
+      height: 42px;
+      margin-left: 0;
+      border-radius: 4px;
+      border: 1px solid;
+      flex-grow: 1;
+      justify-content: center;
+      font-weight: 600;
+
+      .MuiRadio-root {
+        opacity: 0;
+        position: fixed;
+        width: 0;
+      }
+
+      &.radio-button-checked {
+        background-color: #005098;
+        color: #fff !important;
+      }
+    }
+  }
+
+  .modal-button-container {
+    .MuiButton-containedSizeLarge {
+      background: white;
+      border: 1px solid;
+      flex-grow: 1;
+      width: 100%;
+
+      &.active {
+        background: black;
+      }
+    }
+  }
+
+  .multiselect-form-label {
+    width: 100%;
+  }
+
+  .MuiOutlinedInput-input {
+    padding: 12.5px 14px;
+  }
+
+  .MuiGrid-grid-xs-12,
+  .MuiGrid-grid-md-12 {
+    margin: 10px 0;
+  }
+
+  .MuiTab-textColorInherit {
+    opacity: 1;
+  }
+
+  .form-input {
+    margin-bottom: 20px;
+
+    &:first-child {
+      margin-top: 20px;
+    }
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  .button-group {
+    &__btn {
+      text-transform: uppercase;
+    }
+
+    .shared-button {
+      &:last-child {
+        .button-group__btn {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .MuiInputLabel-animated {
+    color: #4f4b66;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  input {
+    padding: 11px 16px;
+    border: 1px solid $bg-color-blue-5;
+    border-radius: 6px;
+    height: 42px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+    &:hover,
+    &:focus {
+      transition: 0.2s;
+      border: 1px solid $text-color-blue-6;
+      box-shadow: 0 7px 15px 0 $box-shadow-field;
+    }
+  }
+
+  .MuiSelect-root {
+    color: $color-selected;
+    border: 1px solid $bg-color-blue-5;
+    border-radius: 10px;
+    padding: 12px;
+
+    &[aria-expanded='true'] {
+      border: 1px solid $text-color-blue-6;
+      border-bottom: 0;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &.Mui-disabled {
+      cursor: not-allowed;
+      color: rgba(0, 0, 0, 0.38);
+
+      &:hover {
+        border: 1px solid $bg-color-blue-5;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .MuiSelect-icon {
+    color: $text-color-blue-6;
+    margin-right: 6px;
+  }
+}

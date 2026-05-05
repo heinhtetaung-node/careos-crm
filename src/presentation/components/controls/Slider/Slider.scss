@@ -1,0 +1,50 @@
+@import '../../../../scss/reuse-mixin';
+
+.shared-slider {
+  .MuiSlider-valueLabel {
+    top: -20px;
+
+    span:nth-child(1) {
+      border-radius: 0;
+      background-color: transparent;
+      color: #1976d2;
+    }
+  }
+
+  .user-count-slider {
+    min-width: 500px;
+
+    @include max-xl {
+      min-width: 350px;
+    }
+
+    @include max-md {
+      min-width: 250px;
+    }
+
+    background-color: white;
+    min-height: 100px;
+    margin-top: 24px;
+    padding: 20px 30px;
+
+    button {
+      float: right;
+      margin-right: 0;
+    }
+  }
+
+  .sum-insured-count-slider {
+    z-index: 1000;
+  }
+}
+
+.shared-range-slider {
+  .MuiInputBase-root {
+    border: 1px solid $bg-color-blue-5;
+    height: 42px;
+    padding: 3px 20px 3px 16px;
+    box-sizing: border-box;
+    background: $bg-color-primary;
+    border-radius: 10px;
+  }
+}

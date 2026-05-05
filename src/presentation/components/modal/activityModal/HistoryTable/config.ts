@@ -1,0 +1,60 @@
+import { Column } from 'presentation/HOCs/WithTableList';
+
+export const tableColumns: Column[] = [
+  {
+    id: 'timestamp',
+    field: 'timestamp',
+    label: 'text.timestamp',
+    minWidth: 50,
+    sorting: 'none',
+    disabled: true,
+  },
+  {
+    id: 'name',
+    field: 'name',
+    label: 'text.name',
+    minWidth: 100,
+    sorting: 'none',
+    disabled: true,
+  },
+  {
+    id: 'action',
+    field: 'action',
+    label: 'text.action',
+    minWidth: 50,
+    sorting: 'none',
+    disabled: true,
+  },
+  {
+    id: 'resource',
+    field: 'resource',
+    label: 'Resource',
+    minWidth: 50,
+    sorting: 'none',
+    disabled: true,
+  },
+  {
+    id: 'attribute',
+    field: 'attribute',
+    label: 'text.attribute',
+    minWidth: 75,
+    sorting: 'none',
+    disabled: true,
+  },
+  {
+    id: 'oldValue',
+    field: 'oldValue',
+    label: 'text.oldValue',
+    minWidth: 400,
+    sorting: 'none',
+    disabled: true,
+  },
+  {
+    id: 'newValue',
+    field: 'newValue',
+    label: 'text.newValue',
+    minWidth: 400,
+    sorting: 'none',
+    disabled: true,
+  },
+];

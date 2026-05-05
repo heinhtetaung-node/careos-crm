@@ -1,0 +1,31 @@
+.assign-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px;
+
+  &__icon-wrapper {
+    display: flex;
+    background: #d4d4d4;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-basis: auto !important;
+
+    svg {
+      font-size: 50px;
+      color: #969696;
+    }
+  }
+
+  &__btn {
+    display: flex;
+  }
+
+  &__content {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,19 @@
+.shared-leads-filter {
+  .share-btn {
+    cursor: pointer;
+  }
+
+  .remove-btn {
+    right: 0;
+  }
+
+  .user-count-slider {
+    right: 0;
+    z-index: 10;
+  }
+
+  &__date-range__container {
+    display: flex;
+    align-items: center;
+  }
+}

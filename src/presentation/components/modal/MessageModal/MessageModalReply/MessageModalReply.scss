@@ -1,0 +1,84 @@
+.reply-message-section {
+  min-height: 100%;
+  text-align: left;
+  padding: 0 20px;
+
+  &__header {
+    border-bottom: 1px solid #000;
+
+    &__tab {
+      .tab-item {
+        padding: 8px;
+      }
+
+      .MuiTabs-indicator {
+        display: none;
+      }
+
+      .MuiTabs-flexContainer {
+        justify-content: flex-start;
+      }
+
+      .MuiTab-root {
+        border: 1px solid black;
+        min-width: inherit;
+        flex-grow: 1;
+        border-radius: 4px;
+        max-width: 100px;
+        min-height: 24px;
+
+        &.Mui-selected {
+          background: black;
+          color: white;
+        }
+
+        &:not(:last-child) {
+          margin-right: 16px;
+        }
+
+        .MuiTab-wrapper {
+          flex-direction: row;
+
+          .MuiSvgIcon-root {
+            margin: 0 10px 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__footer {
+    border-top: 1px solid #000;
+
+    &__buttons {
+      display: flex;
+      flex-basis: auto;
+    }
+  }
+
+  .modal-button-container {
+    .MuiButton-containedSizeLarge {
+      background: white;
+      border: 1px solid;
+      flex-grow: 1;
+      width: 100%;
+
+      &.active {
+        background: black;
+      }
+    }
+  }
+
+  .MuiOutlinedInput-input {
+    padding: 12.5px 14px;
+  }
+
+  .MuiGrid-grid-xs-12,
+  .MuiGrid-grid-md-12 {
+    margin: 10px 0;
+  }
+
+  .MuiTab-textColorInherit {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,121 @@
+@import '../../../../../scss/reuse-mixin.scss';
+
+.customer-section-container {
+  .online-icon {
+    width: 0.8em;
+    height: 0.8em;
+    background-color: #00ff14;
+    border: 1px solid;
+    border-radius: 50%;
+    position: absolute;
+    float: left;
+    margin-top: 5px;
+  }
+
+  .offline-icon {
+    @extend .online-icon;
+
+    background-color: grey;
+  }
+
+  .custom-info-icon {
+    float: right;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  .custom-text {
+    margin-left: 15px;
+  }
+
+  .MuiPaper-elevation3 {
+    border-radius: 0;
+  }
+
+  .shared-info {
+    height: 100%;
+  }
+
+  .field-title {
+    width: 40% !important;
+  }
+
+  .shared-select {
+    .MuiSelect-select {
+      padding: 5px 5px 5px 0;
+      height: 25px;
+      border: 0 !important;
+    }
+  }
+
+  .field-item {
+    width: 60% !important;
+    display: flex;
+    justify-content: flex-start;
+
+    img {
+      cursor: pointer;
+    }
+
+    .MuiFormControl-root,
+    .MuiInputBase-formControl {
+      border-left: 0 !important;
+      border-right: 0 !important;
+    }
+
+    .MuiFormControl-root {
+      margin-left: unset;
+    }
+
+    & > .MuiButtonBase-root {
+      height: 26px;
+      padding-top: 5px;
+    }
+
+    .date-time {
+      input {
+        border: 1px solid $bg-color-blue-5;
+        border-radius: 6px;
+        padding: 3px 8px;
+        height: 26px;
+      }
+    }
+
+    & > span {
+      width: 100% !important;
+    }
+
+    .MuiFormHelperText-filled {
+      margin-left: 5px;
+      color: $text-color-pink-3;
+    }
+
+    .field-value {
+      margin-left: 10px;
+    }
+
+    &.add-top-padding {
+      margin-top: 10px;
+    }
+  }
+
+  .include-asterisk {
+    display: block !important;
+  }
+
+  .MuiSelect-select:focus {
+    background-color: $bg-color-primary;
+  }
+
+  .customer-section {
+    & > span {
+      width: 100% !important;
+    }
+
+    &__error {
+      color: red;
+      font-size: 0.65rem;
+      margin-left: 5px;
+    }
+  }
+}

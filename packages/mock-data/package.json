@@ -1,0 +1,9 @@
+{
+  "name": "@alphafounders/mock-data",
+  "version": "0.0.0",
+  "private": true,
+  "module": ".",
+  "publishConfig": {
+    "access": "public"
+  }
+}

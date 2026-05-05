@@ -1,0 +1,435 @@
+.pitch-checklist-panel {
+  --pitch-ink: #183451;
+  --pitch-muted: #69829b;
+  --pitch-border: #f2b279;
+  --pitch-border-soft: #eadccf;
+  --pitch-surface: #fffdfa;
+  --pitch-surface-muted: #fbf7f1;
+  --pitch-card: #fcfdff;
+  --pitch-card-border: #dfe8f3;
+  --pitch-pill-start: #204f77;
+  --pitch-pill-end: #13656c;
+  --pitch-progress: #43c48c;
+  --pitch-progress-soft: #e7f6ee;
+  --pitch-shadow: 0 18px 32px rgba(31, 57, 85, 0.14);
+
+  position: fixed;
+  right: 12px;
+  bottom: 0;
+  z-index: 25;
+  pointer-events: none;
+
+  @media (min-width: 960px) {
+    right: 24px;
+  }
+
+  @media (min-width: 1280px) {
+    right: 220px;
+  }
+
+  &:not(.pitch-checklist-panel--expanded) {
+    @media (min-width: 1280px) {
+      right: calc(var(--chatwoot-toggle-clearance, 222px) + 18px);
+    }
+  }
+
+  &--expanded {
+    left: 12px;
+    right: 12px;
+    bottom: 10px;
+
+    @media (min-width: 960px) {
+      left: 24px;
+      right: 24px;
+    }
+  }
+
+  &__surface {
+    pointer-events: auto;
+    background: var(--pitch-surface);
+    border: 1px solid var(--pitch-border);
+    border-radius: 16px;
+    box-shadow: var(--pitch-shadow);
+    overflow: hidden;
+  }
+
+  &__collapsed-toggle {
+    pointer-events: auto;
+    border: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    width: min(calc(100vw - 24px), 19rem);
+    min-height: 44px;
+    padding: 4px 10px 3px 10px;
+    border-radius: 12px 12px 0 0;
+    background: linear-gradient(
+      135deg,
+      #1d486f 0%,
+      var(--pitch-pill-start) 52%,
+      var(--pitch-pill-end) 100%
+    );
+    color: #ffffff;
+    box-shadow: 0 12px 22px rgba(22, 63, 93, 0.18);
+  }
+
+  &__collapsed-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.16);
+    flex-shrink: 0;
+  }
+
+  &__collapsed-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+    flex: 1;
+  }
+
+  &__collapsed-title {
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+
+  &__collapsed-progress {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+
+  &__collapsed-progress-track {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__collapsed-progress-track .MuiCircularProgress-root {
+    position: absolute;
+    inset: 0;
+  }
+
+  &__collapsed-progress-track .MuiCircularProgress-root:first-child {
+    color: rgba(255, 255, 255, 0.22);
+  }
+
+  &__collapsed-progress-track .MuiCircularProgress-root:last-child {
+    color: #ffffff;
+  }
+
+  &__collapsed-progress-text {
+    color: #ffffff;
+    font-size: 9.5px;
+    font-weight: 800;
+    min-width: 28px;
+    text-align: right;
+  }
+
+  &__toggle-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: currentColor;
+    flex-shrink: 0;
+  }
+
+  &__toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 14px 8px;
+    border-bottom: 1px solid #efe3d6;
+    background: linear-gradient(180deg, #fffdfa 0%, #fbf7f1 100%);
+  }
+
+  &__toolbar-main {
+    min-width: 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  &__title-row {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 0;
+    flex-shrink: 0;
+  }
+
+  &__title {
+    color: var(--pitch-ink);
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+
+  &__info-trigger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    cursor: help;
+  }
+
+  &__info-icon {
+    color: #8fa1b4;
+    font-size: 16px;
+  }
+
+  &__summary {
+    color: #3a5573;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  &__progress-bar {
+    min-width: 160px;
+    width: 100%;
+    flex: 1 1 auto;
+  }
+
+  &__progress-bar .MuiLinearProgress-root {
+    height: 7px;
+    border-radius: 999px;
+    background: #e8edf3;
+  }
+
+  &__progress-bar .MuiLinearProgress-barColorPrimary {
+    background: linear-gradient(90deg, #46ca91 0%, #28a868 100%);
+  }
+
+  &__header-actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+  }
+
+  &__header-actions .MuiIconButton-root {
+    padding: 5px;
+    color: #677f98;
+    border: 1px solid #dde6ef;
+    border-radius: 10px;
+    background: #ffffff;
+  }
+
+  &__content {
+    padding: 7px 10px 5px;
+    height: clamp(158px, 22vh, 204px);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  &__body {
+    flex: 1;
+    min-height: 0;
+  }
+
+  &__state {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--pitch-muted);
+    font-size: 13px;
+    padding: 0 16px;
+  }
+
+  &__sections {
+    height: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(154px, 178px);
+    gap: 6px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 2px;
+    scrollbar-width: thin;
+    scrollbar-color: #b9c4d2 #eef2f6;
+  }
+
+  &__sections::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  &__sections::-webkit-scrollbar-track {
+    background: #eef2f6;
+    border-radius: 999px;
+  }
+
+  &__sections::-webkit-scrollbar-thumb {
+    background: #b9c4d2;
+    border-radius: 999px;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background: var(--pitch-card);
+    border: 1px solid var(--pitch-card-border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  &__section--complete {
+    background: #f7fdf9;
+    border-color: #86d5ae;
+    box-shadow:
+      inset 0 0 0 1px rgba(70, 186, 117, 0.12),
+      0 4px 10px rgba(62, 171, 109, 0.06);
+  }
+
+  &__section--complete .pitch-checklist-panel__section-header {
+    background: linear-gradient(180deg, #f5fcf7 0%, #edf8f1 100%);
+    border-bottom-color: #d6efe1;
+  }
+
+  &__section--complete .pitch-checklist-panel__section-title {
+    color: #214e39;
+  }
+
+  &__section-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 6px;
+    padding: 7px 8px 6px;
+    border-bottom: 1px solid #e8eef5;
+    background: #f9fbfd;
+  }
+
+  &__section-title {
+    color: var(--pitch-ink);
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.25;
+    min-width: 0;
+  }
+
+  &__section-count {
+    color: #35b577;
+    font-size: 10px;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+
+  &__section-items {
+    flex: 1;
+    overflow-y: auto;
+    padding: 6px 8px 7px;
+    scrollbar-width: thin;
+    scrollbar-color: #c4ceda transparent;
+  }
+
+  &__section-items::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &__section-items::-webkit-scrollbar-thumb {
+    background: #d0d8e3;
+    border-radius: 999px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    margin-bottom: 2px;
+    color: #344f6b;
+    font-size: 11px;
+    line-height: 1.24;
+    cursor: pointer;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__item--disabled {
+    cursor: default;
+    opacity: 0.74;
+  }
+
+  &__item .MuiCheckbox-root {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  &__item .MuiCheckbox-root .MuiSvgIcon-root {
+    font-size: 1.15rem;
+  }
+
+  &__item .MuiCheckbox-colorPrimary.Mui-checked {
+    color: #23a96a;
+  }
+
+  &__item-label {
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__dock-toggle {
+    align-self: center;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    border: 0;
+    background: transparent;
+    color: #607995;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0 8px 2px;
+  }
+
+  @media (max-width: 959px) {
+    &__toolbar {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    &__toolbar-main {
+      flex-wrap: wrap;
+    }
+
+    &__header-actions {
+      justify-content: flex-end;
+    }
+
+    &__progress-bar {
+      min-width: 100%;
+    }
+  }
+}
+
+// Reserve scroll space under the fixed dock (only when this panel is mounted).
+.lead-detail-page:has(.pitch-checklist-panel) {
+  padding-bottom: 12px;
+}
+
+.lead-detail-page:has(.pitch-checklist-panel--expanded) {
+  padding-bottom: clamp(214px, 29vh, 266px);
+}

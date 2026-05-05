@@ -1,0 +1,46 @@
+const leadDetail = {
+  name: 'leads/00000000-0000-0000-0000-000000000000',
+  createTime: '2022-04-21T02:37:24.541678Z',
+  updateTime: '2022-04-21T02:37:29.955896Z',
+  deleteTime: null,
+  createBy: '',
+  product: 'products/car-insurance',
+  schema: 'schemas/efce3390-8da6-44b3-9e4c-2c7b78ca2c9d',
+  data: {
+    carDashCam: true,
+    carModified: false,
+    carSubModelYear: 46444,
+    carUsageType: 'personal',
+    customerBillingAddress: [],
+    customerEmail: [],
+    customerFirstName: 'Maleena',
+    customerLastName: 'Nateerin',
+    customerPhoneNumber: [
+      {
+        phone: '+66999999999',
+        status: 'unverified',
+      },
+    ],
+    customerPolicyAddress: [],
+    customerShippingAddress: [],
+    locale: 'th-en',
+    marketingConsent: false,
+    registeredProvince: 100000,
+    utm: {
+      lead_source: 'rabbit.co.th',
+    },
+    voluntaryInsuranceType: [],
+  },
+  source: 'sources/435621b4-e6da-441a-aa87-5d4c63faefe2',
+  important: false,
+  assignedTo: '',
+  status: 'LEAD_STATUS_NEW',
+  humanId: 'L9854558',
+  root: '',
+  type: 'LEAD_TYPE_NEW',
+  isRejected: false,
+  reference: '',
+  annotations: null,
+};
+
+export default leadDetail;

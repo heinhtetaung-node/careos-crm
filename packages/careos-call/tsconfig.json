@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "declaration": true,
+    "declarationMap": true,
+    "target": "ESNext",
+    "lib": ["esnext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "noFallthroughCasesInSwitch": true,
+    "importHelpers": true,
+    "incremental": false
+  },
+  "include": ["./src/*"],
+  "exclude": [
+    "node_modules",
+    "build",
+    "__tests__/*",
+    "**/*.test.ts",
+    "**/*.test.tsx"
+  ]
+}

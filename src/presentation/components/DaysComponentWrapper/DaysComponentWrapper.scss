@@ -1,0 +1,51 @@
+@import '../../../scss/reuse-mixin.scss';
+
+.shared-days-wrapper {
+  position: relative;
+  width: 100%;
+
+  &__container {
+    @include min-sm {
+      margin: 0;
+    }
+
+    @include min-md {
+      margin: 0 50px;
+    }
+
+    @include min-xl {
+      margin: 0 100px;
+    }
+
+    overflow: hidden;
+  }
+
+  .shared-days-wrapper-component {
+    display: none;
+    margin-right: -100%;
+    width: 100%;
+    float: left;
+  }
+
+  .shared-days-wrapper-component.active,
+  .shared-days-wrapper-component-next,
+  .shared-days-wrapper-component-prev {
+    display: block;
+  }
+
+  .shared-days-wrapper-component-next:not(.shared-days-wrapper-component-left),
+  .active.shared-days-wrapper-component-right {
+    transform: translateX(100%);
+  }
+
+  .shared-days-wrapper-component-prev:not(.shared-days-wrapper-component-right),
+  .active.shared-days-wrapper-component-left {
+    transform: translateX(-100%);
+  }
+
+  .disable {
+    pointer-events: none;
+    cursor: not-allowed;
+    color: #ccc;
+  }
+}

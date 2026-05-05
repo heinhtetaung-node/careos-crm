@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/Users/hein/rabbit/careos-frontend/packages/careos-call/src/utils/ws-utils.test.ts">
+    <testCase name="ws-utils should warn and complete when websocket errors" duration="3014"/>
+  </file>
+</testExecutions>

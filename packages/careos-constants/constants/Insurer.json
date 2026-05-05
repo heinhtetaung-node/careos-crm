@@ -1,0 +1,128 @@
+{
+  "JaymartInsurance": {
+    "id":  "insurers/44"
+  },
+  "SompoInsurance": {
+    "id":  "insurers/43"
+  },
+  "FPGInsurance": {
+    "id":  "insurers/42"
+  },
+  "ChubbSamaggiInsurance": {
+    "id":  "insurers/40"
+  },
+  "RoojaiInsurance": {
+    "id":  "insurers/38"
+  },
+  "AIGInsurance": {
+    "id":  "insurers/37"
+  },
+  "SriAyudhyaGeneralInsurance": {
+    "id":  "insurers/36"
+  },
+  "TokioMarineSafetyInsurance": {
+    "id":  "insurers/35"
+  },
+  "MSIGInsurance": {
+    "id":  "insurers/34"
+  },
+  "LMGInsurance": {
+    "id":  "insurers/33"
+  },
+  "KrungthaiPanichInsurance": {
+    "id":  "insurers/32"
+  },
+  "NavakijInsurance": {
+    "id":  "insurers/31"
+  },
+  "GeneraliInsurance": {
+    "id":  "insurers/30"
+  },
+  "SamaggiInsurance": {
+    "id":  "insurers/29"
+  },
+  "ThanachartInsurance": {
+    "id":  "insurers/28"
+  },
+  "ViriyahInsurance": {
+    "id":  "insurers/27"
+  },
+  "TokioMarineInsurance": {
+    "id":  "insurers/26"
+  },
+  "ThaivivatInsurance": {
+    "id":  "insurers/25"
+  },
+  "ERGOInsurance": {
+    "id":  "insurers/24"
+  },
+  "ThaiSetakijInsurance": {
+    "id":  "insurers/23"
+  },
+  "iCare": {
+    "id":  "insurers/22"
+  },
+  "ThaiInsurance": {
+    "id":  "insurers/21"
+  },
+  "SynMunKongInsurance": {
+    "id":  "insurers/20"
+  },
+  "SoutheastInsurance": {
+    "id":  "insurers/19"
+  },
+  "NamSengInsurance": {
+    "id":  "insurers/18"
+  },
+  "MuangThaiInsurance": {
+    "id":  "insurers/17"
+  },
+  "MittareInsurance": {
+    "id":  "insurers/16"
+  },
+  "KSKInsurance": {
+    "id":  "insurers/15"
+  },
+  "KamolInsurance": {
+    "id":  "insurers/14"
+  },
+  "IndaraInsurance": {
+    "id":  "insurers/13"
+  },
+  "ErawanInsurance": {
+    "id":  "insurers/12"
+  },
+  "DhipayaInsurance": {
+    "id":  "insurers/11"
+  },
+  "DevesInsurance": {
+    "id":  "insurers/10"
+  },
+  "CharanInsurance": {
+    "id":  "insurers/9"
+  },
+  "ChaoPhayaInsurance": {
+    "id":  "insurers/8"
+  },
+  "BangkokInsurance": {
+    "id":  "insurers/7"
+  },
+  "AXAInsurance": {
+    "id":  "insurers/6"
+  },
+  "AssetsInsurance": {
+    "id":  "insurers/5"
+  },
+  "AsiaInsurance": {
+    "id":  "insurers/4"
+  },
+  "AioiBangkokInsurance": {
+    "id":  "insurers/3"
+  },
+  "ThaiPaiboonInsurance": {
+    "id":  "insurers/2"
+  },
+  "AllianzCP":{
+    "id":  "insurers/1"
+  }
+}

@@ -1,0 +1,1308 @@
+{
+  "sections": [
+    {
+      "last": 14,
+      "title": "Car"
+    },
+    {
+      "last": 21,
+      "title": "Driver"
+    },
+    {
+      "last": 25,
+      "title": "Insurance"
+    },
+    {
+      "title": "Quotes"
+    }
+  ],
+  "questions": {
+    "car_brand": {
+      "order": 1,
+      "title": "What is your car brand?",
+      "dynamic_fetch": "car",
+      "dynamic_fetch_groups": [
+        "car"
+      ],
+      "placeholder": "Select other car brands",
+      "type": "singlechoice",
+      "singlechoice": {
+        "choices": [
+          {
+            "label": "Toyota",
+            "value": "54"
+          },
+          {
+            "label": "Honda",
+            "value": "24"
+          },
+          {
+            "label": "Isuzu",
+            "value": "26"
+          },
+          {
+            "label": "Mazda",
+            "value": "33"
+          },
+          {
+            "label": "Nissan",
+            "value": "38"
+          },
+          {
+            "label": "Mitsubishi",
+            "value": "35"
+          },
+          {
+            "label": "Alfa Romeo",
+            "value": "9"
+          },
+          {
+            "label": "Aston Martin",
+            "value": "1"
+          },
+          {
+            "label": "Audi",
+            "value": "10"
+          },
+          {
+            "label": "Bentley",
+            "value": "2"
+          },
+          {
+            "label": "BMW",
+            "value": "3"
+          },
+          {
+            "label": "BYD",
+            "value": "64"
+          },
+          {
+            "label": "Chery",
+            "value": "11"
+          },
+          {
+            "label": "Chevrolet",
+            "value": "12"
+          },
+          {
+            "label": "Chrysler",
+            "value": "13"
+          },
+          {
+            "label": "Citroen",
+            "value": "14"
+          },
+          {
+            "label": "Daewoo",
+            "value": "15"
+          },
+          {
+            "label": "Daihatsu",
+            "value": "16"
+          },
+          {
+            "label": "DFM",
+            "value": "17"
+          },
+          {
+            "label": "Ferrari",
+            "value": "18"
+          },
+          {
+            "label": "Fiat",
+            "value": "19"
+          },
+          {
+            "label": "Ford",
+            "value": "20"
+          },
+          {
+            "label": "Foton",
+            "value": "23"
+          },
+          {
+            "label": "Holden",
+            "value": "21"
+          },
+          {
+            "label": "Hummer",
+            "value": "22"
+          },
+          {
+            "label": "Hyundai",
+            "value": "4"
+          },
+          {
+            "label": "Jaguar",
+            "value": "25"
+          },
+          {
+            "label": "Jeep",
+            "value": "27"
+          },
+          {
+            "label": "Kia",
+            "value": "5"
+          },
+          {
+            "label": "Lamborghini",
+            "value": "28"
+          },
+          {
+            "label": "Land Rover",
+            "value": "29"
+          },
+          {
+            "label": "Lexus",
+            "value": "30"
+          },
+          {
+            "label": "Lotus",
+            "value": "31"
+          },
+          {
+            "label": "Maserati",
+            "value": "32"
+          },
+          {
+            "label": "Maxus",
+            "value": "58"
+          },
+          {
+            "label": "McLaren",
+            "value": "59"
+          },
+          {
+            "label": "Mercedes-Benz",
+            "value": "6"
+          },
+          {
+            "label": "MG",
+            "value": "60"
+          },
+          {
+            "label": "Mini",
+            "value": "34"
+          },
+          {
+            "label": "Mitsuoka",
+            "value": "36"
+          },
+          {
+            "label": "Naza",
+            "value": "37"
+          },
+          {
+            "label": "Opel",
+            "value": "39"
+          },
+          {
+            "label": "Peugeot",
+            "value": "40"
+          },
+          {
+            "label": "Polarsun",
+            "value": "41"
+          },
+          {
+            "label": "Porsche",
+            "value": "42"
+          },
+          {
+            "label": "Proton",
+            "value": "7"
+          },
+          {
+            "label": "Renault",
+            "value": "43"
+          },
+          {
+            "label": "Rolls-Royce",
+            "value": "44"
+          },
+          {
+            "label": "Rover",
+            "value": "45"
+          },
+          {
+            "label": "Saab",
+            "value": "46"
+          },
+          {
+            "label": "Seat",
+            "value": "47"
+          },
+          {
+            "label": "Skoda",
+            "value": "48"
+          },
+          {
+            "label": "Smart",
+            "value": "49"
+          },
+          {
+            "label": "Spyker",
+            "value": "50"
+          },
+          {
+            "label": "Ssangyong",
+            "value": "51"
+          },
+          {
+            "label": "Subaru",
+            "value": "52"
+          },
+          {
+            "label": "Suzuki",
+            "value": "8"
+          },
+          {
+            "label": "Tata",
+            "value": "53"
+          },
+          {
+            "label": "testBrand",
+            "value": "62"
+          },
+          {
+            "label": "testing",
+            "value": "63"
+          },
+          {
+            "label": "TR",
+            "value": "55"
+          },
+          {
+            "label": "Volkswagen",
+            "value": "56"
+          },
+          {
+            "label": "Volvo",
+            "value": "57"
+          }
+        ],
+        "popularcount": 6
+      },
+      "annotations": {
+        "rf/buttons-per-row": "3",
+        "rf/order": "asc",
+        "rf/popular-choice-img-srcset-template": "/qflow/static/car-brands/__value__.png?2 1x, /qflow/static/car-brands/__value__@2x.png?2 2x",
+        "rf/tip-text": "Please select the manufacturer of your car. In case you are not sure who your car manufaturer is, check your car registration document.",
+        "rf/translation-label": "motor:questions.labels.brand",
+        "rf/translation-placeholder": "motor:questions.placeholders.brand",
+        "rf/translation-tooltip": "motor:questions.tooltips.brand"
+      }
+    },
+    "car_cab_type": {
+      "order": 8,
+      "title": "What is the cab type?",
+      "dynamic_fetch": "car",
+      "dynamic_fetch_groups": [
+        "car"
+      ],
+      "type": "singlechoice",
+      "annotations": {
+        "rf/tip-text": "Please select one of cab type.",
+        "rf/translation-choice-prefix": "motor:questions.choices.cabtype.",
+        "rf/translation-label": "motor:questions.labels.cabtype",
+        "rf/translation-tooltip": "motor:questions.tooltips.cabtype"
+      }
+    },
+    "car_dashcam": {
+      "order": 11,
+      "title": "Do you have a dashboard camera?",
+      "type": "singlechoice",
+      "singlechoice": {
+        "choices": [
+          {
+            "label": "Yes",
+            "value": "1"
+          },
+          {
+            "label": "No",
+            "value": "0"
+          }
+        ],
+        "popularcount": 0
+      },
+      "annotations": {
+        "rf/tip-text": "Please select whether your car is equipped with a dashboard camera that records your ride and potential accidents. Insurers give up to 10% discount if your car is equipped with such a camera. You can purchase a dashboard camera from Rabbit Finance as an add-on during the checkout process in order to be eligible for the discount.",
+        "rf/translation-choice-prefix": "motor:questions.choices.dashcam.",
+        "rf/translation-label": "motor:questions.labels.dashcam",
+        "rf/translation-tooltip": "motor:questions.tooltips.dashcam"
+      }
+    },
+    "car_driving_purpose": {
+      "order": 12,
+      "title": "What is your driving purpose?",
+      "dynamic_fetch": "car",
+      "dynamic_fetch_groups": [
+        "car"
+      ],
+      "type": "singlechoice",
+      "annotations": {
+        "rf/tip-text": "Please select whether you use your vehicle for commercial or personal driving purposes.",
+        "rf/translation-choice-prefix": "motor:questions.choices.purpose.",
+        "rf/translation-label": "motor:questions.labels.purpose",
+        "rf/translation-tooltip": "motor:questions.tooltips.purpose"
+      }
+    },
+    "car_enginedescription": {
+      "order": 6,
+      "title": "What is the engine size?",
+      "dynamic_fetch": "car",
+      "dynamic_fetch_groups": [
+        "car"
+      ],
+      "type": "singlechoice",
+      "annotations": {
+        "rf/buttons-per-row": "4",
+        "rf/tip-text": "Please select the engine size of your car. The engine size for cars running on fuel, diesel or CNG is depicted in cubic capacity(cc). Electric vehicles' engine size is depicted in kilowats (KW). In case you are not sure what your car's engine size is, check your car registration document.",
+        "rf/translation-choice-template": "motor:questions.choices.enginedescription",
+        "rf/translation-label": "motor:questions.labels.enginedescription",
+        "rf/translation-tooltip": "motor:questions.tooltips.enginedescription"
+      }
+    },
+    "car_fuel": {
+      "order": 4,
+      "title": "What fuel does your car run on?",
+      "dynamic_fetch": "car",
+      "dynamic_fetch_groups": [
+        "car"
+      ],
+      "type": "singlechoice",
+      "annotations": {
+        "rf/buttons-per-row": "2",
+        "rf/highlight-on-select": "true",
+        "rf/popular-choice-icon-srcset-template": "/qflow/static/fueltypes/__value__.svg?0",
+        "rf/tip-text": "Please select the engine type of your car. In case you have a electric car, select electric engine. For a car using CNG gas, select CNG engine.",
+        "rf/translation-choice-prefix": "motor:questions.choices.fuel.",
+        "rf/translation-label": "motor:questions.labels.fuel",
+        "rf/translation-placeholder": "motor:questions.placeholders.fuel",
+        "rf/translation-tooltip": "motor:questions.tooltips.fuel"
+      }
+    },
+    "car_model": {
+      "order": 2,
+      "title": "What is your car model?",
+      "dynamic_fetch": "car",
+      "dynamic_fetch_groups": [
+        "car"
+      ],
+      "placeholder": "Select other car models",
+      "type": "singlechoice",
+      "annotations": {
+        "rf/buttons-per-row": "3",
+        "rf/order": "asc",
+        "rf/tip-text": "Please select the model of your car. In case you are not sure what your car model is, check your car registration document.",
+        "rf/translation-label": "motor:questions.labels.model",
+        "rf/translation-placeholder": "motor:questions.placeholders.model",
+        "rf/translation-tooltip": "motor:questions.tooltips.model"
+      }
+    },
+    "car_modify": {
+      "order": 10,
+      "title": "Did you modify your car?",
+      "type": "singlechoice",
+      "singlechoice": {
+        "choices": [
+          {
+            "label": "Yes",
+            "value": "1"
+          },
+          {
+            "label": "No",
+            "value": "0"
+          }
+        ],
+        "popularcount": 0
+      },
+      "annotations": {
+        "rf/tip-text": "If you or a previous owner has made a change from the manufacturer's original specification, such as alloy wheels, air conditioning, bodywork, exhaust system, suspension or tinted windows, add it here. Insurers cover up to 20,000 THB worth of car modifications.",
+        "rf/translation-choice-prefix": "motor:questions.choices.modify.",
+        "rf/translation-label": "motor:questions.labels.modify",
+        "rf/translation-tooltip": "motor:questions.tooltips.modify"
+      }
+    },
+    "car_number_of_doors": {
+      "order": 7,
+      "title": "What is the number of doors?",
+      "dynamic_fetch": "car",
+      "dynamic_fetch_groups": [
+        "car"
+      ],
+      "type": "singlechoice",
+      "annotations": {
+        "rf/tip-text": "Please select one of number of doors.",
+        "rf/translation-choice-prefix": "motor:questions.choices.numberofdoors.",
+        "rf/translation-label": "motor:questions.labels.numberofdoors",
+        "rf/translation-tooltip": "motor:questions.tooltips.numberofdoors"
+      }
+    },
+    "car_province": {
+      "order": 14,
+      "title": "In which province is your car registered?",
+      "placeholder": "Select other province",
+      "type": "singlechoice",
+      "singlechoice": {
+        "choices": [
+          {
+            "label": "Bangkok",
+            "value": "100000"
+          },
+          {
+            "label": "Nonthaburi",
+            "value": "120000"
+          },
+          {
+            "label": "Samut Prakan",
+            "value": "110000"
+          },
+          {
+            "label": "Phuket",
+            "value": "830000"
+          },
+          {
+            "label": "Pathum Thani",
+            "value": "130000"
+          },
+          {
+            "label": "Samut Sakhon",
+            "value": "740000"
+          },
+          {
+            "label": "Amnat Charoen",
+            "value": "370000"
+          },
+          {
+            "label": "Ang Thong",
+            "value": "150000"
+          },
+          {
+            "label": "Bueng Kan",
+            "value": "380000"
+          },
+          {
+            "label": "Buriram",
+            "value": "310000"
+          },
+          {
+            "label": "Chachoengsao",
+            "value": "240000"
+          },
+          {
+            "label": "Chainat",
+            "value": "180000"
+          },
+          {
+            "label": "Chaiyaphum",
+            "value": "360000"
+          },
+          {
+            "label": "Chanthaburi",
+            "value": "220000"
+          },
+          {
+            "label": "Chiang Mai",
+            "value": "500000"
+          },
+          {
+            "label": "Chiang Rai",
+            "value": "570000"
+          },
+          {
+            "label": "Chonburi",
+            "value": "200000"
+          },
+          {
+            "label": "Chumphon",
+            "value": "860000"
+          },
+          {
+            "label": "Kalasin",
+            "value": "460000"
+          },
+          {
+            "label": "Kamphaeng Phet",
+            "value": "620000"
+          },
+          {
+            "label": "Kanchanaburi",
+            "value": "710000"
+          },
+          {
+            "label": "Khon Kaen",
+            "value": "400000"
+          },
+          {
+            "label": "Krabi",
+            "value": "810000"
+          },
+          {
+            "label": "Lampang",
+            "value": "520000"
+          },
+          {
+            "label": "Lamphun",
+            "value": "510000"
+          },
+          {
+            "label": "Loei",
+            "value": "420000"
+          },
+          {
+            "label": "Lopburi",
+            "value": "160000"
+          },
+          {
+            "label": "Mae Hong Son",
+            "value": "580000"
+          },
+          {
+            "label": "Maha Sarakham",
+            "value": "440000"
+          },
+          {
+            "label": "Mukdahan",
+            "value": "490000"
+          },
+          {
+            "label": "Nakhon Nayok",
+            "value": "260000"
+          },
+          {
+            "label": "Nakhon Pathom",
+            "value": "730000"
+          },
+          {
+            "label": "Nakhon Phanom",
+            "value": "480000"
+          },
+          {
+            "label": "Nakhon Ratchasima",
+            "value": "300000"
+          },
+          {
+            "label": "Nakhon Sawan",
+            "value": "600000"
+          },
+          {
+            "label": "Nakhon Si Thammarat",
+            "value": "800000"
+          },
+          {
+            "label": "Nan",
+            "value": "550000"
+          },
+          {
+            "label": "Narathiwat",
+            "value": "960000"
+          },
+          {
+            "label": "Nong Bua Lamphu",
+            "value": "390000"
+          },
+          {
+            "label": "Nong Khai City",
+            "value": "430000"
+          },
+          {
+            "label": "Pattani",
+            "value": "940000"
+          },
+          {
+            "label": "Phang Nga",
+            "value": "820000"
+          },
+          {
+            "label": "Phatthalung",
+            "value": "930000"
+          },
+          {
+            "label": "Phayao",
+            "value": "560000"
+          },
+          {
+            "label": "Phetchabun",
+            "value": "670000"
+          },
+          {
+            "label": "Phetchaburi",
+            "value": "760000"
+          },
+          {
+            "label": "Phichit",
+            "value": "660000"
+          },
+          {
+            "label": "Phitsanulok",
+            "value": "650000"
+          },
+          {
+            "label": "Phrae",
+            "value": "540000"
+          },
+          {
+            "label": "Phra Nakhon Si Ayutthaya",
+            "value": "140000"
+          },
+          {
+            "label": "Prachinburi",
+            "value": "250000"
+          },
+          {
+            "label": "Prachuap Khiri Khan",
+            "value": "770000"
+          },
+          {
+            "label": "Ranong",
+            "value": "850000"
+          },
+          {
+            "label": "Ratchaburi",
+            "value": "700000"
+          },
+          {
+            "label": "Rayong",
+            "value": "210000"
+          },
+          {
+            "label": "Roi Et",
+            "value": "450000"
+          },
+          {
+            "label": "Sa Kaeo",
+            "value": "270000"
+          },
+          {
+            "label": "Sakon Nakhon",
+            "value": "470000"
+          },
+          {
+            "label": "Samut Songkhram",
+            "value": "750000"
+          },
+          {
+            "label": "Saraburi",
+            "value": "190000"
+          },
+          {
+            "label": "Satun",
+            "value": "910000"
+          },
+          {
+            "label": "Singburi",
+            "value": "170000"
+          },
+          {
+            "label": "Sisaket",
+            "value": "330000"
+          },
+          {
+            "label": "Songkhla",
+            "value": "900000"
+          },
+          {
+            "label": "Sukhothai",
+            "value": "640000"
+          },
+          {
+            "label": "Suphanburi",
+            "value": "720000"
+          },
+          {
+            "label": "Surat Thani",
+            "value": "840000"
+          },
+          {
+            "label": "Surin",
+            "value": "320000"
+          },
+          {
+            "label": "Tak",
+            "value": "630000"
+          },
+          {
+            "label": "Trang",
+            "value": "920000"
+          },
+          {
+            "label": "Trat",
+            "value": "230000"
+          },
+          {
+            "label": "Ubon Ratchathani",
+            "value": "340000"
+          },
+          {
+            "label": "Udon Thani",
+            "value": "410000"
+          },
+          {
+            "label": "Unknown",
+            "value": "0"
+          },
+          {
+            "label": "Uthai Thani",
+            "value": "610000"
+          },
+          {
+            "label": "Uttaradit",
+            "value": "530000"
+          },
+          {
+            "label": "Yala",
+            "value": "950000"
+          },
+          {
+            "label": "Yasothon",
+            "value": "350000"
+          }
+        ],
+        "popularcount": 6
+      },
+      "annotations": {
+        "rf/buttons-per-row": "3",
+        "rf/order": "asc",
+        "rf/tip-text": "Please select the province in which your car was registered. You can find the registered province in the car registration document or on your license plate.",
+        "rf/translation-choice-prefix": "oic:location.province.",
+        "rf/translation-label": "motor:questions.labels.province",
+        "rf/translation-placeholder": "motor:questions.placeholders.province",
+        "rf/translation-tooltip": "motor:questions.tooltips.province"
+      }
+    },
+    "car_registered_seats": {
+      "order": 13,
+      "title": "What is the number of registered seats?",
+      "dynamic_fetch": "car",
+      "dynamic_fetch_groups": [
+        "car"
+      ],
+      "type": "singlechoice",
+      "annotations": {
+        "rf/tip-text": "Please select the number of registered seats in the car registration document.",
+        "rf/translation-choice-prefix": "motor:questions.choices.registeredseats.",
+        "rf/translation-label": "motor:questions.labels.registeredseats",
+        "rf/translation-tooltip": "motor:questions.tooltips.registeredseats"
+      }
+    },
+    "car_submodel": {
+      "order": 9,
+      "title": "Which car is it?",
+      "dynamic_fetch": "car",
+      "dynamic_fetch_groups": [
+        "car",
+        "dp"
+      ],
+      "type": "singlechoice",
+      "annotations": {
+        "rf/always-show": "true",
+        "rf/buttons-per-row": "1",
+        "rf/last-choice-jump-label": "motor:questions.choices.submodel.change_my_car",
+        "rf/last-choice-jump-to": "car_brand",
+        "rf/singlechoice-dropdown": "never",
+        "rf/tip-text": "Please select one of the cars that match your submitted criteria.",
+        "rf/translate-placeholders": "",
+        "rf/translation-choice-prefix": "motor:questions.choices.submodel.",
+        "rf/translation-label": "motor:questions.labels.submodel",
+        "rf/translation-tooltip": "motor:questions.tooltips.submodel"
+      }
+    },
+    "car_transmission": {
+      "order": 5,
+      "title": "What kind of transmission does your car have?",
+      "dynamic_fetch": "car",
+      "dynamic_fetch_groups": [
+        "car"
+      ],
+      "type": "singlechoice",
+      "annotations": {
+        "rf/buttons-per-row": "2",
+        "rf/tip-text": "Please select the transmisson type of your car. Electric cars have automatic transmission.",
+        "rf/translation-choice-prefix": "motor:questions.choices.transmission.",
+        "rf/translation-label": "motor:questions.labels.transmission",
+        "rf/translation-placeholder": "",
+        "rf/translation-tooltip": "motor:questions.tooltips.transmission"
+      }
+    },
+    "car_year": {
+      "order": 3,
+      "title": "Which year was your car manufactured?",
+      "dynamic_fetch": "car",
+      "dynamic_fetch_groups": [
+        "car"
+      ],
+      "placeholder": "Select manufacturing year",
+      "type": "singlechoice",
+      "annotations": {
+        "rf/buttons-per-row": "1",
+        "rf/only-dropdown": "",
+        "rf/singlechoice-dropdown": "only",
+        "rf/tip-text": "Please select the year the car was manufactured. You can enter Thai or regular year formats. In case you are not sure when your car was manufactured, check your car registration document.",
+        "rf/translation-label": "motor:questions.labels.year",
+        "rf/translation-placeholder": "motor:questions.placeholders.year",
+        "rf/translation-tooltip": "motor:questions.tooltips.year"
+      }
+    },
+    "consents": {
+      "order": 26,
+      "title": "User consents",
+      "type": "multichoice",
+      "multichoice": {
+        "choices": [
+          {
+            "label": "rabbit",
+            "value": "rabbit",
+            "annotations": {
+              "rf/description": "motor:questions.checkboxes.consents.rabbit.description",
+              "rf/title": "motor:questions.checkboxes.consents.rabbit.title",
+              "rf/translation-tooltip": "motor:questions.checkboxes.consents.rabbit.tooltip"
+            }
+          },
+          {
+            "label": "partners",
+            "value": "partners",
+            "annotations": {
+              "rf/description": "motor:questions.checkboxes.consents.partners.description",
+              "rf/title": "motor:questions.checkboxes.consents.partners.title",
+              "rf/translation-tooltip": "motor:questions.checkboxes.consents.partners.tooltip"
+            }
+          },
+          {
+            "label": "dataAnalytics",
+            "value": "dataAnalytics",
+            "annotations": {
+              "rf/description": "motor:questions.checkboxes.consents.dataAnalytics.description",
+              "rf/title": "motor:questions.checkboxes.consents.dataAnalytics.title"
+            }
+          }
+        ],
+        "popularcount": 0
+      },
+      "annotations": {
+        "rf/consent-type": "multiple",
+        "rf/cta-label": "common:buttons.show_quotes",
+        "rf/html-bottom": "motor:questions.consents.html_bottom",
+        "rf/html-top": "motor:questions.consents.html_top",
+        "rf/question-type": "consents"
+      }
+    },
+    "customer_dob": {
+      "order": 21,
+      "title": "What is your date of birth?",
+      "type": "date",
+      "validation": {
+        "rule": "dob"
+      },
+      "date": {},
+      "annotations": {
+        "rf/tip-text": "Please select the date of birth of the main driver. Some insurers might apply a age dependent discount.",
+        "rf/translation-label": "motor:questions.labels.dob",
+        "rf/translation-tooltip": "motor:questions.tooltips.dob"
+      }
+    },
+    "customer_email": {
+      "order": 19,
+      "title": "What is your email?",
+      "placeholder": "Ex: example@gmail.com",
+      "type": "editbox",
+      "validation": {
+        "rule": "email"
+      },
+      "annotations": {
+        "rf/tip-text": "Submit your correct Email so we can send you important document about your car insurance.",
+        "rf/translation-label": "motor:questions.labels.email",
+        "rf/translation-placeholder": "motor:questions.placeholders.email",
+        "rf/translation-tooltip": "motor:questions.tooltips.email"
+      }
+    },
+    "customer_first_name": {
+      "order": 17,
+      "title": "What is your first name?",
+      "placeholder": "Ex: Maleena",
+      "type": "editbox",
+      "validation": {
+        "rule": "customer_name"
+      },
+      "annotations": {
+        "rf/show-next-on-same-page": "",
+        "rf/tip-text": "Please enter the first name of the main driver. Insurers need your full name for your insurance policy.",
+        "rf/translation-label": "motor:questions.labels.first_name",
+        "rf/translation-placeholder": "motor:questions.placeholders.first_name",
+        "rf/translation-tooltip": "motor:questions.tooltips.first_name"
+      }
+    },
+    "customer_gender": {
+      "order": 20,
+      "title": "What is your gender?",
+      "type": "singlechoice",
+      "singlechoice": {
+        "choices": [
+          {
+            "label": "Male",
+            "value": "M"
+          },
+          {
+            "label": "Female",
+            "value": "F"
+          }
+        ],
+        "popularcount": 0
+      },
+      "annotations": {
+        "rf/buttons-per-row": "2",
+        "rf/highlight-on-select": "true",
+        "rf/popular-choice-icon-srcset-template": "/qflow/static/genders/__value__.svg?0",
+        "rf/tip-text": "Please select your gender. Some insurers might apply a gender dependent discount.",
+        "rf/translation-choice-prefix": "motor:questions.choices.gender.",
+        "rf/translation-label": "motor:questions.labels.gender",
+        "rf/translation-tooltip": "motor:questions.tooltips.gender"
+      }
+    },
+    "customer_last_name": {
+      "order": 18,
+      "title": "What is your last name?",
+      "placeholder": "Ex: Nateerin",
+      "type": "editbox",
+      "validation": {
+        "rule": "customer_name"
+      },
+      "annotations": {
+        "rf/tip-text": "Please enter the last name of the main driver. Insurers need your full name for your insurance policy.",
+        "rf/translation-label": "motor:questions.labels.last_name",
+        "rf/translation-placeholder": "motor:questions.placeholders.last_name",
+        "rf/translation-tooltip": "motor:questions.tooltips.last_name"
+      }
+    },
+    "customer_phone": {
+      "order": 15,
+      "title": "What is your phone number?",
+      "placeholder": "Ex: 0810000000",
+      "type": "editbox",
+      "validation": {
+        "rule": "phone"
+      },
+      "annotations": {
+        "rf/tip-text": "Please submit your correct primary phone number. Our insurance experts will reach out to you for individual consultation. Moreover, we will send you SMS to update you about the steps of your insurance purchase. We will also remind you when it is time to renew your policy.",
+        "rf/translation-label": "motor:questions.labels.phone",
+        "rf/translation-placeholder": "motor:questions.placeholders.phone",
+        "rf/translation-tooltip": "motor:questions.tooltips.phone"
+      }
+    },
+    "insurance_kind": {
+      "order": 24,
+      "title": "What insurance would you like to buy?",
+      "type": "singlechoice",
+      "singlechoice": {
+        "choices": [
+          {
+            "label": "Voluntary",
+            "value": "voluntary"
+          },
+          {
+            "label": "Mandatory",
+            "value": "mandatory"
+          },
+          {
+            "label": "Both",
+            "value": "both"
+          }
+        ],
+        "popularcount": 0
+      },
+      "annotations": {
+        "rf/buttons-per-row": "1",
+        "rf/tip-text": "Please select whether you would like to buy the car insurance required by Thai law, which is called Compulsory Motor Insurance (CMI), or whether you are looking for a more comprehensive coverage with a voluntary insurance package. You can also purchase voluntary and mandatory motor insurance together.",
+        "rf/translation-choice-prefix": "motor:questions.choices.insurance_kind.",
+        "rf/translation-label": "motor:questions.labels.insurance_kind",
+        "rf/translation-tooltip": "motor:questions.tooltips.insurance_kind"
+      }
+    },
+    "insurance_voluntary": {
+      "order": 25,
+      "title": "Which type of insurance would you like?",
+      "type": "multichoice",
+      "multichoice": {
+        "choices": [
+          {
+            "label": "Type 1",
+            "value": "Type 1",
+            "annotations": {
+              "rf/description": "motor:questions.checkboxes.insurance_voluntary.type_1.description",
+              "rf/icon": "thumbsup",
+              "rf/label": "motor:questions.checkboxes.insurance_voluntary.type_1.label",
+              "rf/subtitle": "motor:questions.checkboxes.insurance_voluntary.type_1.subtitle",
+              "rf/title": "motor:questions.checkboxes.insurance_voluntary.type_1.title"
+            }
+          },
+          {
+            "label": "Type 2+/3+",
+            "value": "Type 2+",
+            "annotations": {
+              "rf/description": "motor:questions.checkboxes.insurance_voluntary.type_2+_3+.description",
+              "rf/label": "motor:questions.checkboxes.insurance_voluntary.type_2+_3+.label",
+              "rf/subtitle": "motor:questions.checkboxes.insurance_voluntary.type_2+_3+.subtitle",
+              "rf/title": "motor:questions.checkboxes.insurance_voluntary.type_2+_3+.title"
+            }
+          }
+        ],
+        "popularcount": 0
+      },
+      "annotations": {
+        "rf/display-condition": "insurance_kind in [\"voluntary\", \"both\"]",
+        "rf/option-align": "vertical",
+        "rf/tip-text": "We have several voluntary insurance types for you to compare and purchase, depending on your coverage needs and budget. Please select each insurance type you would like to compare on the quote page.",
+        "rf/translation-label": "motor:questions.labels.insurance_voluntary",
+        "rf/translation-tooltip": "motor:questions.tooltips.insurance_voluntary"
+      }
+    },
+    "insurer_name": {
+      "order": 22,
+      "title": "What is your current insurer?",
+      "placeholder": "Select other insurer brands",
+      "type": "singlechoice",
+      "singlechoice": {
+        "choices": [
+          {
+            "label": "Viriyah Insurance",
+            "value": "27"
+          },
+          {
+            "label": "Tokio Marine Safety Insurance",
+            "value": "35"
+          },
+          {
+            "label": "Bangkok Insurance",
+            "value": "7"
+          },
+          {
+            "label": "Muang Thai Insurance",
+            "value": "17"
+          },
+          {
+            "label": "Thanachart Insurance",
+            "value": "28"
+          },
+          {
+            "label": "I don't have an insurer",
+            "value": "0"
+          },
+          {
+            "label": "FPG",
+            "value": "42"
+          },
+          {
+            "label": "CHUBB",
+            "value": "40"
+          },
+          {
+            "label": "ROOJAI",
+            "value": "38"
+          },
+          {
+            "label": "AIG Insurance",
+            "value": "37"
+          },
+          {
+            "label": "Sri Ayudhaya General Insurance",
+            "value": "36"
+          },
+          {
+            "label": "MSIG Insurance",
+            "value": "34"
+          },
+          {
+            "label": "LMG Insurance",
+            "value": "33"
+          },
+          {
+            "label": "Krungthai Panich Insurance",
+            "value": "32"
+          },
+          {
+            "label": "Navakij Insurance",
+            "value": "31"
+          },
+          {
+            "label": "Generali Insurance",
+            "value": "30"
+          },
+          {
+            "label": "Samaggi Insurance",
+            "value": "29"
+          },
+          {
+            "label": "Tokio Marine Insurance",
+            "value": "26"
+          },
+          {
+            "label": "Thaivivat Insurance",
+            "value": "25"
+          },
+          {
+            "label": "ERGO Insurance",
+            "value": "24"
+          },
+          {
+            "label": "Thai Setakij Insurance",
+            "value": "23"
+          },
+          {
+            "label": "iCare",
+            "value": "22"
+          },
+          {
+            "label": "Thai Insurance",
+            "value": "21"
+          },
+          {
+            "label": "Syn Mun Kong Insurance",
+            "value": "20"
+          },
+          {
+            "label": "Southeast Insurance",
+            "value": "19"
+          },
+          {
+            "label": "Nam Seng Insurance",
+            "value": "18"
+          },
+          {
+            "label": "Mittare Insurance",
+            "value": "16"
+          },
+          {
+            "label": "KSK Insurance",
+            "value": "15"
+          },
+          {
+            "label": "Kamol Insurance",
+            "value": "14"
+          },
+          {
+            "label": "Indara Insurance",
+            "value": "13"
+          },
+          {
+            "label": "Erawan Insurance",
+            "value": "12"
+          },
+          {
+            "label": "Dhipaya Insurance",
+            "value": "11"
+          },
+          {
+            "label": "Deves Insurance",
+            "value": "10"
+          },
+          {
+            "label": "Charan Insurance",
+            "value": "9"
+          },
+          {
+            "label": "Chao Phaya Insurance",
+            "value": "8"
+          },
+          {
+            "label": "AXA Insurance",
+            "value": "6"
+          },
+          {
+            "label": "Assets Insurance",
+            "value": "5"
+          },
+          {
+            "label": "Asia Insurance",
+            "value": "4"
+          },
+          {
+            "label": "Aioi Bangkok Insurance",
+            "value": "3"
+          },
+          {
+            "label": "Thai Paiboon Insurance",
+            "value": "2"
+          },
+          {
+            "label": "Allianz C.P.",
+            "value": "1"
+          }
+        ],
+        "popularcount": 6
+      },
+      "annotations": {
+        "rf/buttons-per-row": "2",
+        "rf/order": "asc",
+        "rf/popular-choice-img-srcset-template": "/qflow/static/insurers/__value__.png?1 1x, /qflow/static/insurers/__value__@2x.png?1 2x",
+        "rf/tip-text": "In case you currently have car insurance for this car, please select your current insurance company. This will allow us to determine the exact price for your new insurance and also apply switching discounts in case you want to change your insurer.",
+        "rf/translation-choice-prefix": "motor:questions.choices.insurer_name.",
+        "rf/translation-label": "motor:questions.labels.insurer_name",
+        "rf/translation-placeholder": "motor:questions.placeholders.insurer_name",
+        "rf/translation-tooltip": "motor:questions.tooltips.insurer_name"
+      }
+    },
+    "policy_start": {
+      "order": 23,
+      "title": "When do you want your policy to start?",
+      "placeholder": "DD / MM / YYYY",
+      "type": "date",
+      "validation": {
+        "rule": "future"
+      },
+      "date": {
+        "presets": [
+          {
+            "label": "Today",
+            "delta_days": 0,
+            "annotations": {
+              "rf/translation-string": "motor:questions.date.presets.today"
+            }
+          },
+          {
+            "label": "This week",
+            "delta_days": 4,
+            "annotations": {
+              "rf/translation-string": "motor:questions.date.presets.next_week"
+            }
+          },
+          {
+            "label": "I don't know yet",
+            "delta_days": null,
+            "annotations": {
+              "rf/translation-string": "motor:questions.date.presets.i_dont_know"
+            }
+          }
+        ]
+      },
+      "annotations": {
+        "rf/skip-button-label": "I don't know yet",
+        "rf/tip-text": "Please select the coverage start date for your new car insurance policy here.",
+        "rf/translation-label": "motor:questions.labels.policy_start",
+        "rf/translation-tooltip": "motor:questions.tooltips.policy_start"
+      }
+    },
+    "sunday_contactable": {
+      "order": 16,
+      "title": "Can we contact you on Sunday?",
+      "type": "singlechoice",
+      "singlechoice": {
+        "choices": [
+          {
+            "label": "Yes",
+            "value": "1"
+          },
+          {
+            "label": "No",
+            "value": "0"
+          }
+        ],
+        "popularcount": 0
+      },
+      "annotations": {
+        "rf/translation-choice-prefix": "motor:questions.choices.sundayContactable.",
+        "rf/translation-label": "motor:questions.labels.sundayContactable",
+        "rf/translation-tooltip": "motor:questions.tooltips.sundayContactable"
+      }
+    }
+  }
+}

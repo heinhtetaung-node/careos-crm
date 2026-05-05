@@ -1,0 +1,60 @@
+export const mockPackageDetailResponse = {
+  package: {
+    name: 'Test Package',
+    displayName: 'Test Display Name',
+    carInsuranceType: 'TYPE_1',
+    repairType: 'GARAGE',
+    sumCoverageMin: '1000000',
+    deductibleAmount: '5000',
+    price: '50000',
+    insuranceCategory: 'voluntary',
+    oicCode: 'TYPE_1',
+    termsEn: 'Standard terms',
+    termsTh: 'เงื่อนไขมาตรฐาน',
+    validFrom: '2025-01-01T00:00:00Z',
+    validTo: '2025-12-31T00:00:00Z',
+  },
+  insurer: {
+    name: 'Test Insurer',
+    displayName: 'Test Insurer Display',
+    displayNameTh: 'บริษัทประกันทดสอบ',
+    shortnameEn: 'Test',
+    shortnameTh: 'ทดสอบ',
+    rating: 4.5,
+    order: 1,
+    logo: 'test-logo.png',
+    phone: '02-123-4567',
+    website: 'https://test.com',
+    taxId: '1234567890123',
+    ticker: 'TEST',
+    fax: '02-123-4568',
+    addressEn: 'Test Address',
+    addressTh: 'ที่อยู่ทดสอบ',
+    contactEmail: 'test@test.com',
+    contactPersonName: 'Test Person',
+    infoEn: 'Test Info',
+    infoTh: 'ข้อมูลทดสอบ',
+    carPicturesRequired: false,
+    brokerCode: 'TEST001',
+  },
+  voluntaryPrice: {
+    units: '50000',
+    nanos: 0,
+  },
+  mandatoryPrice: {
+    units: '0',
+    nanos: 0,
+  },
+};
+
+export const mockLeadStatusPurchasedPackage = {
+  data: {
+    checkout: {
+      package: '1234',
+    },
+    carSubModelYear: 2020,
+    insuranceKind: 'voluntary',
+    voluntaryInsuranceType: ['type_2'],
+  },
+  status: 'LEAD_STATUS_PURCHASED',
+};

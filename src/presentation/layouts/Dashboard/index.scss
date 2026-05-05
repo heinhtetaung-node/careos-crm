@@ -1,0 +1,24 @@
+@import '../../../scss/reuse-mixin';
+
+.dash-board {
+  width: 100vw;
+
+  .general-body {
+    .main-paper {
+      z-index: $z-index-normal;
+    }
+  }
+
+  .paper-drawer {
+    width: 260px;
+
+    &.minimize {
+      width: 60px;
+      overflow: hidden;
+
+      .sidebar-category {
+        height: 45px;
+      }
+    }
+  }
+}

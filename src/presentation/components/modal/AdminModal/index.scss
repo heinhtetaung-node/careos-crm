@@ -1,0 +1,16 @@
+.admin-modal {
+  .button-group {
+    width: 90%;
+    text-align: right;
+    padding: 20px 15px;
+
+    .button-create {
+      margin-right: 15px;
+    }
+
+    .button-create-active {
+      background-color: black;
+      color: white;
+    }
+  }
+}

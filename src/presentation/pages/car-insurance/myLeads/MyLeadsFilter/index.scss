@@ -1,0 +1,47 @@
+@import '../../../../../scss/reuse-mixin.scss';
+
+.my-lead-filter {
+  margin-top: 10px;
+  position: relative;
+
+  .date-range-content {
+    position: relative;
+  }
+
+  @include min-md {
+    .date-range-btn {
+      right: -15px;
+      width: fit-content;
+      position: absolute;
+
+      .share-btn {
+        z-index: 1;
+        position: absolute;
+      }
+    }
+
+    bottom: unset;
+  }
+
+  .date-range-container,
+  .date-range-btn {
+    flex-basis: unset;
+    max-width: unset;
+  }
+
+  .filter-panel-button {
+    top: 20px;
+    right: 22px;
+    position: absolute;
+
+    @include min-md {
+      top: unset;
+      right: unset;
+      position: relative;
+    }
+  }
+
+  .MuiExpansionPanelSummary-root {
+    position: unset;
+  }
+}

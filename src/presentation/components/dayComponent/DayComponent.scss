@@ -1,0 +1,80 @@
+@import '../../../scss/reuse-mixin.scss';
+
+.app-day-component {
+  width: 100%;
+  z-index: 2;
+
+  &__container {
+    width: 100%;
+    padding: 5px 10px 0 10px;
+    min-width: 120px;
+
+    @include max-lg {
+      padding: 5px 2px 0 2px;
+      min-width: 110px;
+    }
+
+    @include min-xl {
+      min-width: 150px;
+      min-height: 151px;
+    }
+
+    box-shadow: 0 0 3px 0;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 2px solid transparent;
+
+    &__header {
+      padding-top: 0;
+      text-align: center;
+      border-bottom: 1px solid #000;
+
+      .title {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+      }
+
+      .sub-title {
+        font-size: 12px;
+      }
+    }
+
+    &__action {
+      padding: 10px 0 5px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .day-loading {
+      border-bottom: 1px solid #f5f5f5;
+    }
+  }
+
+  &__item {
+    small {
+      display: block;
+      padding: 3px 0;
+      font-weight: 600;
+    }
+
+    &:last-child {
+      small {
+        text-align: right;
+      }
+    }
+  }
+
+  .day-active {
+    border: 2px solid #000;
+    border-radius: 0;
+  }
+}
+
+.app-day-component-disabled {
+  opacity: 0.5;
+
+  .app-day-component__container {
+    cursor: not-allowed;
+  }
+}

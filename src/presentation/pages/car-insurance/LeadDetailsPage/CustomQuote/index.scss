@@ -1,0 +1,170 @@
+@import '../../../../../scss/reuse-mixin.scss';
+
+.custom-quote-page {
+  &__form {
+    padding-top: 50px;
+    padding-left: 15%;
+    padding-right: 15%;
+    align-items: normal;
+
+    @include max-lg {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    @include max-xl {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    .shared-insurer-info {
+      padding-bottom: 30px;
+    }
+  }
+
+  &__action {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    button.Mui-disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      color: rgba(0, 0, 0, 0.26);
+      box-shadow: none;
+      background-color: rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  &__field {
+    display: flex;
+    padding: 8px 20px;
+    line-height: 30px;
+
+    &--title,
+    &--colon,
+    &--input {
+      display: flex;
+      align-items: center;
+
+      .MuiSelect-select {
+        &[aria-expanded='true'] {
+          background: #fff;
+        }
+      }
+    }
+
+    &--title {
+      display: inline;
+    }
+
+    &--colon {
+      width: 5%;
+      justify-content: center;
+      display: flex;
+    }
+
+    &--input {
+      width: 45%;
+
+      .shared-input {
+        .MuiFormHelperText-contained {
+          margin-left: 0;
+        }
+
+        .MuiInputBase-input:not(#dateSearch) {
+          padding: 11px 16px;
+          border: 1px solid $bg-color-blue-5;
+          border-radius: 6px;
+          height: 32px;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+
+          &:hover,
+          &:focus {
+            transition: 0.2s;
+            border: 1px solid $text-color-blue-6;
+            box-shadow: 0 7px 15px 0 $box-shadow-field;
+          }
+        }
+      }
+
+      .shared-select {
+        .MuiSelect-root {
+          color: $color-selected;
+          padding: 18px 32px;
+
+          &[aria-expanded='true'] {
+            border: 1px solid $text-color-blue-6;
+            border-bottom: 0;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+          }
+        }
+      }
+    }
+
+    .MuiInputBase-root {
+      border-radius: 7px;
+
+      fieldset {
+        border-color: #222;
+      }
+
+      .Mui-disabled {
+        background: #d9d9d9;
+        color: #222;
+      }
+    }
+
+    .MuiInputBase-root.Mui-disabled {
+      overflow: hidden;
+
+      fieldset {
+        border-color: #222;
+      }
+    }
+
+    .MuiInputBase-input:not(#dateSearch) {
+      line-height: 0.5em;
+    }
+
+    .MuiOutlinedInput-root.Mui-disabled {
+      border-color: #222 !important;
+    }
+  }
+
+  &__name {
+    margin: 0;
+    padding: 8px 20px;
+
+    &--text {
+      margin: 5px 0;
+    }
+  }
+
+  &--colon {
+    margin-right: 10px;
+  }
+
+  .MuiSelect-selectMenu {
+    padding-top: 16px;
+    color: $color-selected;
+  }
+}
+
+.custom-quote-components {
+  border: 1px solid #eaebf6;
+  border-radius: 8px;
+
+  &--headerSection {
+    b {
+      font-size: 16px;
+    }
+  }
+}
+
+.shared-insurer-info {
+  border-radius: 10;
+  height: 100%;
+}

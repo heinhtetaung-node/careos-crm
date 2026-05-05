@@ -1,0 +1,40 @@
+.permission-denied-page {
+  margin: 0 30px;
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  justify-content: center;
+  height: calc(85vh + 8px);
+
+  &__content {
+    max-width: 420px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-weight: 800;
+    }
+
+    &__image {
+      height: 250px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-bottom: 20px;
+    }
+
+    &__btn {
+      line-height: 2;
+      padding: 5px 20px;
+      width: -moz-fit-content;
+      width: fit-content;
+      margin: 0 auto;
+
+      .btn_text {
+        font-weight: 800;
+        font-size: 18px;
+      }
+    }
+  }
+}

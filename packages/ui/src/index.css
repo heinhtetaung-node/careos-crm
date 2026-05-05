@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --toastify-color-progress-light: #005098;
+}
+
+/* Firefox */
+* {
+    scrollbar-color: #A5AAC0;
+  }
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #A5AAC0;
+    border-radius: 14px;
+}
+  

@@ -1,0 +1,184 @@
+@import '../../../scss/reuse-mixin.scss';
+
+.shared-insurer-info {
+  &__group-button {
+    margin: 0;
+    padding: 3px 10px;
+    margin-top: 59px;
+
+    &__item {
+      width: 50%;
+      display: flex;
+      align-items: center;
+
+      &__button {
+        width: 50%;
+        padding: 0 5px 0 5px;
+        display: inline-block;
+        justify-content: center;
+
+        .shared-button {
+          width: 100%;
+        }
+
+        .button-view-renewal {
+          @include min-md {
+            font-size: small;
+            height: 32px;
+          }
+
+          @include min-xl-1 {
+            font-size: medium;
+            height: 32px;
+          }
+        }
+
+        .button-view-quotes {
+          @include min-md {
+            font-size: small;
+            height: 32px;
+          }
+
+          @include min-xl-1 {
+            font-size: medium;
+            height: 32px;
+          }
+        }
+
+        .MuiButton-root {
+          width: 100%;
+
+          span {
+            width: 100%;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+
+  .custom-quote {
+    margin-top: 6px;
+
+    .button-request-quote {
+      &__button {
+        margin-right: 5px;
+      }
+
+      @include min-lg {
+        font-size: small;
+        height: 32px;
+      }
+
+      @include min-xl-1 {
+        font-size: medium;
+        height: 32px;
+      }
+    }
+  }
+
+  .add-coupon {
+    margin-top: 9px;
+
+    .button-request-quote {
+      @include min-lg {
+        font-size: small;
+        height: 32px;
+      }
+
+      @include min-xl-1 {
+        font-size: medium;
+        height: 32px;
+      }
+    }
+  }
+
+  .add-payslip,
+  .view-purchase {
+    margin-top: 9px;
+    margin-bottom: 9px;
+
+    .button-request-quote {
+      @include min-lg {
+        font-size: small;
+        height: 32px;
+      }
+
+      @include min-xl-1 {
+        font-size: medium;
+        height: 32px;
+      }
+    }
+  }
+
+  &__button {
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .shared-button {
+      width: 100%;
+    }
+
+    .MuiButton-root {
+      width: 100%;
+
+      span {
+        width: 100%;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .shared-button {
+    margin: 0;
+
+    .MuiButton-root {
+      margin: 0;
+      padding: 10px 2.25px;
+      min-width: 50px;
+
+      span {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .Mui-disabled {
+    .MuiInputBase-input {
+      cursor: not-allowed;
+      border: 1px solid #eee !important;
+    }
+  }
+}
+
+.insurer-info-story {
+  .shared-insurer-info__button {
+    width: auto;
+    margin-top: 7px;
+  }
+
+  .shared-insurer-info__group-button {
+    display: flex;
+  }
+
+  .shared-insurer-info {
+    padding-bottom: 10px;
+  }
+
+  .shared-select {
+    width: 100%;
+  }
+
+  .MuiOutlinedInput-input {
+    padding: 12px 14px;
+    width: 100%;
+  }
+
+  .MuiOutlinedInput-root {
+    border-radius: 0;
+    width: 100%;
+  }
+}

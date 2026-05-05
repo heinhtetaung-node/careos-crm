@@ -1,0 +1,131 @@
+@import '../../../scss/reuse-mixin.scss';
+
+.time-slots {
+  width: 100%;
+  padding: 16px;
+  display: grid;
+  position: relative;
+
+  @include min-xs {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  @include min-md {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  @include min-xl {
+    grid-template-columns: repeat(20, 1fr);
+  }
+
+  .cancel-button {
+    color: $text-color-pink-3;
+    width: 100%;
+    font-weight: normal;
+  }
+}
+
+#appointment-detail__popper {
+  z-index: 10000;
+  top: -15px !important;
+}
+
+.appointment-detail {
+  &__close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.26);
+    border-radius: 50%;
+    background: #fff;
+    width: 21px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &__header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 15px;
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 15px;
+
+    > span:first-child {
+      color: #767676;
+      font-size: 12px;
+    }
+
+    > span:last-child {
+      padding-top: 5px;
+      color: #000;
+      font-size: 12px;
+    }
+  }
+
+  &__main-title {
+    color: #000;
+    font-size: 16px;
+  }
+
+  &__time-detail {
+    padding-top: 5px;
+    font-size: 12px;
+  }
+
+  &__appointment-type {
+    text-transform: capitalize;
+  }
+}
+
+.popper {
+  &__overlay-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    opacity: 0.4;
+    z-index: 3;
+  }
+
+  &__main-container {
+    padding: 16px 12px 30px;
+    background: #fff;
+    min-width: 230px;
+    max-width: 250px;
+    border-radius: 8px;
+  }
+}
+
+.popper-appointment-arrow {
+  position: absolute;
+  font-size: 7;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -0.9em;
+  width: 3em;
+  height: 1em;
+
+  &::before {
+    content: '';
+    margin: auto;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0.8em 0.7em 0 0.7em;
+    border-color: #fff transparent transparent transparent;
+  }
+}

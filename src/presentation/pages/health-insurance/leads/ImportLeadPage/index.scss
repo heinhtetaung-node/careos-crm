@@ -1,0 +1,36 @@
+.lead-import {
+  .MuiCard-root {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .MuiCardContent-root {
+    padding: 16px 0;
+  }
+
+  td:first-child {
+    text-align: center;
+  }
+
+  th:first-child {
+    text-align: center;
+  }
+
+  .paging {
+    text-align: end;
+    margin-top: 20px;
+  }
+
+  .top-pagination {
+    text-align: end;
+    margin-bottom: 10px;
+  }
+
+  .MuiInputLabel-outlined.MuiInputLabel-shrink {
+    transform: translate(14px, -3px) scale(0.75);
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
+  }
+}

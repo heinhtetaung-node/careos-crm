@@ -1,0 +1,101 @@
+@import '../../../../scss/reuse-mixin.scss';
+
+.file-browser-modal-wrap {
+  .MuiDialog-paper {
+    overflow-y: unset;
+    max-width: 100%;
+    border-radius: 16px;
+  }
+
+  .file-browser-modal-override {
+    height: 100%;
+
+    .modal-button-close {
+      background-color: #dbdbdb;
+
+      .close-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        cursor: pointer;
+        top: -20px;
+        right: -20px;
+        background-color: #f8f6f6;
+        color: #005098;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        z-index: 3;
+        overflow: hidden;
+        box-shadow: 2px 3px 14px 0 rgba(74, 74, 74, 0.25);
+      }
+    }
+
+    .no-background {
+      background-color: #fff;
+    }
+
+    .file-browser-list {
+      justify-content: center;
+      margin: 0 auto;
+
+      button {
+        text-transform: uppercase;
+      }
+
+      .drop-area {
+        position: absolute;
+        top: 40%;
+        left: 16%;
+
+        .upload-icon {
+          margin-right: 5px;
+        }
+
+        u {
+          margin-left: 5px;
+          color: $text-color-blue-6;
+        }
+      }
+
+      .iframe-container {
+        padding: 16px;
+        height: 70vh;
+      }
+
+      .download-button {
+        path {
+          fill: white;
+        }
+      }
+
+      .remove-button {
+        float: right;
+      }
+
+      .file-active {
+        color: $text-color-blue-6;
+
+        path {
+          fill: $text-color-blue-6;
+        }
+      }
+
+      .file-name-list {
+        cursor: pointer;
+      }
+
+      .document-type {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        color: $text-color-blue-6;
+      }
+    }
+
+    .MuiGrid-grid-xs-1 {
+      max-width: 9.333333%;
+      flex-basis: 9.333333%;
+    }
+  }
+}

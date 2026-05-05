@@ -1,0 +1,36 @@
+@import '../../../../scss/reuse-mixin.scss';
+
+.logout-modal {
+  margin-top: 15px;
+
+  .button-list {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .MuiSelect-root {
+    border: 1px solid $bg-color-blue-5;
+    height: 42px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background: $bg-color-primary;
+    border-radius: 10px;
+
+    &:focus {
+      border-radius: 10px;
+    }
+
+    &[aria-expanded='true'] {
+      border: 1px solid $text-color-blue-6;
+      border-bottom: 0;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  .MuiSelect-icon {
+    color: $text-color-blue-6;
+    margin-right: 6px;
+  }
+}

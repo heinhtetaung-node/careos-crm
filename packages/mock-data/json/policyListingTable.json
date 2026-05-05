@@ -1,0 +1,70 @@
+{
+    "policies":[
+        {
+            "policyId":"L2387453-1",
+            "isCancelled":false,
+            "policyStartDate":"01/02/2022",
+            "insurer":"Bangkok Insurance", 
+            "insurancePackageType":"PA motor add-on",
+            "submissionStatus":"Policy uploaded",
+            "deliveredByEmail":"2022-09-06T04:00:53.395457Z",
+            "deliveredByCourier":"2022-09-06T04:00:53.395457Z",
+            "trackingNumber":"RABL238745318",
+            "pickedUpInPerson":"2022-09-06T04:00:53.395457Z",
+            "name": "orders/47827241-9143-4b36-b38f-15f0e46ee65e/items/a9fc0b06-de23-46e7-b724-4e11e9309de5",
+            "assignedTo": ""
+        },
+        {
+            "policyId":"L2387453-1",
+            "isCancelled":false,
+            "policyStartDate":"01/02/2022",
+            "insurer":"Tokio Marine Insurance", 
+            "insurancePackageType":"Special add-on",
+            "submissionStatus":"Policy uploaded",
+            "deliveredByEmail":"2022-09-06T04:00:53.395457Z",
+            "deliveredByCourier":"2022-09-06T04:00:53.395457Z",
+            "trackingNumber":"RABL238745318",
+            "pickedUpInPerson":"2022-09-06T04:00:53.395457Z",
+            "name": "orders/47827241-9143-4b36-b38f-15f0e46ee65e/items/a9fc0b06-de23-46e7-b724-4e11e9309da6",
+            "assignedTo":{
+                "firstName":"Thet",
+                "lastName": "Naing"
+            }
+        },
+        {
+            "policyId":"L2387453-1",
+            "isCancelled":false,
+            "policyStartDate":"01/02/2022",
+            "insurer":"Bangkok Insurance", 
+            "insurancePackageType":"PA motor add-on",
+            "submissionStatus":"Policy uploaded",
+            "deliveredByEmail":"2022-09-06T04:00:53.395457Z",
+            "deliveredByCourier":"2022-09-06T04:00:53.395457Z",
+            "trackingNumber":"RABL238745318",
+            "pickedUpInPerson":"2022-09-06T04:00:53.395457Z",
+            "name": "orders/47827241-9143-4b36-b38f-15f0e46ee32e/items/a9fc0b06-de23-46e7-b724-4e11e9309d99"
+        },
+        {
+            "policyId":"L2387453-1",
+            "isCancelled":false,
+            "policyStartDate":"01/02/2022",
+            "insurer":"Bangkok Insurance", 
+            "insurancePackageType":"PA motor add-on",
+            "submissionStatus":"Policy uploaded",
+            "trackingNumber":"RABL238745318",
+            "pickedUpInPerson":"2022-09-06T04:00:53.395457Z",
+            "name": "orders/47827241-9143-4b36-b38f-15f0e46ee33e/items/a9fc0b06-de23-46e7-b724-4e11e9309d88"
+        },
+        {
+            "policyId":"L2387453-1",
+            "isCancelled":true,
+            "policyStartDate":"01/02/2022",
+            "insurer":"Bangkok Insurance", 
+            "insurancePackageType":"PA motor add-on",
+            "submissionStatus":"Policy uploaded",
+            "deliveredByEmail":"2022-09-06T04:00:53.395457Z",
+            "deliveredByCourier":"2022-09-06T04:00:53.395457Z",
+            "name": "orders/47827241-9143-4b36-b38f-15f0e46ee34e/items/a9fc0b06-de23-46e7-b724-4e11e9309de5"
+        }
+    ]
+}

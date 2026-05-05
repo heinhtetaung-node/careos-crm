@@ -1,0 +1,53 @@
+.shared-button {
+  .loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+  }
+
+  .active {
+    background-color: #005098;
+    color: #fff !important;
+  }
+
+  .remove-event {
+    pointer-events: none;
+  }
+
+  .MuiButtonBase-root {
+    font-size: 14px;
+    margin-right: 8px;
+
+    &.Mui-disabled {
+      cursor: not-allowed;
+      pointer-events: none;
+
+      &.MuiButton-containedPrimary {
+        background-color: #aaaaaa;
+        color: #fff;
+      }
+
+      &.MuiButton-containedSecondary {
+        background-color: rgba(#b0c6e3, 0);
+      }
+    }
+  }
+
+  .MuiButton-containedPrimary {
+    background-color: #005098;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .MuiButton-containedSecondary {
+    background-color: rgba(#b0c6e3, 0);
+    color: #5c5b5b;
+    box-shadow: none;
+
+    &:hover {
+      background-color: rgba(#b0c6e3, 0.3);
+    }
+  }
+}

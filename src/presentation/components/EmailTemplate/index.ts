@@ -1,0 +1,182 @@
+import { getString } from 'presentation/theme/localization';
+
+const formatEmailTemplate = (bodyText: string) => {
+  return `<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    html {
+      font-size: 100%;
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body style="padding: 0; background-color: #f9f9fc;">
+  <table role='presentation' class="rabbit-email-template" align="center" style="border: 1px solid #cccccc; width: 100%; max-width: 600px;"
+    cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr style="height: 5px">
+        <td>
+          <div style="height: 5px; background: #005098"></div>
+        </td>
+      </tr>
+      <tr style="height: calc(30px + 1vw)">
+        <td style="padding: 30px 20pt 2pt 20pt">
+          <table role='presentation' border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+              <td width="50%">
+                <img style="width: 55%;"
+                  src=${getString('emailTemplate.imageUrl')}
+                  alt="rabbit logo" />
+              </td>
+              <td align="right">
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table role='presentation'
+            style="width: 100%; border-collapse: collapse; border: 0; border-spacing: 0; background-image: url('https://storage.googleapis.com/unified-firefly/sales-crm-assets/footer-bg.png');">
+            <tr style="height: calc(150px + 20vw) ; width: 100%;">
+              <td valign="top">
+                <div style='padding: 2% 5% 2% 5% ; word-break: break-word; overflow: hidden;'>
+                  ${bodyText}
+                </div>
+              </td>
+            </tr>
+            <tr style=" height: 166px;">
+              <td style="padding: 20px 20px 7px 20px">
+                <table>
+                  <tr>
+                    <td align="center" style="width: 25%">
+                      <a href="tel: 1438" target="_blank" rel="rel noopener" style="text-decoration: none;">
+                        <div style="text-align: center;">
+                          <div>
+                            <img src="https://storage.googleapis.com/unified-firefly/sales-crm-assets/phone-logo.png"
+                              alt="phone">
+                          </div>
+                          <h4 style="margin: 0; margin-bottom: 8px; padding: 0; color: #005098; ">Hotline</h4>
+                          <p style="color: #4F4B66; padding: 0; margin: 0; font-size: 12px">1438 (24 hours)</p>
+                        </div>
+                      </a>
+                    </td>
+                    <td align="center" style="width: 25%;">
+                      <a href="mailto: insurance@rabbit.co.th" target="_blank" rel="rel noopener"
+                        style="text-decoration: none; color: #4f4b66;">
+                        <div>
+                          <div>
+                            <img src="https://storage.googleapis.com/unified-firefly/sales-crm-assets/email-logo.png"
+                              alt="email">
+                          </div>
+                           <h4 style="margin: 0; margin-bottom: 8px; padding: 0; color: #005098; ">Email</h4>
+                           <p style="color: #4F4B66; padding: 0; margin: 0; font-size: 12px">insurance@rabbit.co.th
+                           </p>
+                        </div>
+                      </a>
+                    </td>
+                    <td align="center" style="width: 25%;">
+                      <a href="https://line.me/ti/p/~@rabbitcare" target="_blank" rel="rel noopener"
+                        style="text-decoration: none;">
+                        <div>
+                          <div>
+                            <img src="https://storage.googleapis.com/unified-firefly/sales-crm-assets/line-logo.png"
+                              alt="phone">
+                          </div>
+                          <h4 style="margin: 0; margin-bottom: 8px; padding: 0; color: #005098; ">Line</h4>
+                          <p style="color: #4F4B66; padding: 0; margin: 0; font-size: 12px">@rabbitcare</p>
+                        </div>
+                      </a>
+                    </td>
+                    <td align="center" style="width: 25%;">
+                      <a href="http://m.me/rabbitfcare" target="_blank" rel="rel noopener"
+                        style="text-decoration: none;">
+                        <div>
+                          <div>
+                            <img src="https://storage.googleapis.com/unified-firefly/sales-crm-assets/facebook-logo.png"
+                              alt="facebook">
+                          </div>
+                          <h4 style="margin: 0; margin-bottom: 8px; padding: 0; color: #005098; ">Facebook</h4>
+                          <p style="color: #4F4B66; padding: 0; margin: 0; font-size: 12px">Rabbit Care</p>
+                        </div>
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td style="
+                    color: #fff;
+                    font-size: min(max(7px, 1.5vw), 12px);
+                    padding: 143px 5% 6% 5%;
+                    background-image: url('https://storage.googleapis.com/unified-firefly/sales-crm-assets/email-footer.png');
+                    background-position: center;
+                    background-size: cover;
+                    text-align: center;
+                    font-weight: 400;
+                    ">
+          <table>
+            <tr>
+              <span style="display: block">${getString(
+                'emailTemplate.emailFrom'
+              )}
+                <a style="color: #fff; text-decoration: none;" href="https://rabbitcare.com/" target="_blank" rel="noopener noreferrer">${getString(
+                  'emailTemplate.rabbitWebsite'
+                )}</a></span>
+            </tr>
+            <tr>
+              <span style="display: block; margin-top: 20px; font-weight: 700;">${getString(
+                'emailTemplate.companyName'
+              )}</span>
+
+            </tr>
+            <tr>
+              <span style="display: block">${getString(
+                'emailTemplate.companyAddress'
+              )}</span>
+            </tr>
+            <tr>
+              <span style="display: block; margin-top: 20px; margin-bottom: 20px;">
+                <a style="color: #fff; margin-right: 40px;" href="${getString(
+                  'emailTemplate.privacyWebsite'
+                )}"
+                  target="_blank" rel="rel noopener">${getString(
+                    'emailTemplate.privacy'
+                  )}</a>
+                <a style="color: #fff" href="${getString(
+                  'emailTemplate.termWebsite'
+                )}" target="_blank"
+                  rel="rel noopener">${getString('emailTemplate.term')}</a>
+              </span>
+            </tr>
+            <tr>
+              <span style="display: inline-block; max-width: 340px;">${getString(
+                'emailTemplate.subscribe'
+              )}</span>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
+  `;
+};
+
+export default formatEmailTemplate;

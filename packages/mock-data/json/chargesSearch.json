@@ -1,0 +1,209 @@
+{
+    "followups": [
+        {
+          "charges": [{
+            "name": "transactions/fba6b2ef-8d8e-4743-b887-45ffdc047754/charges/768ccb08-8a5c-461a-b5d5-28de4ccd2f11",
+            "createTime": "2023-12-11T03:06:46.766737Z",
+            "updateTime": "2023-12-11T03:06:47.535021Z",
+            "money": {
+              "currencyCode": "THB",
+              "amount": "656016"
+            },
+            "serviceProvider": "OMISE",
+            "paymentMethod": "ONLINECARD",
+            "returnUri": "",
+            "authorizeUri": "https://api.omise.co/payments/paym_test_5y24w62eqzjf41lgogr/authorize",
+            "token": "",
+            "status": "SUCCESSFUL",
+            "thirdPartyId": "chrg_test_5y24w62dmyklh8ozrxn",
+            "sourceUri": "",
+            "errorCode": "",
+            "httpStatusCode": 200,
+            "errorMessage": "",
+            "installmentNumber": 1,
+            "cardToken": "",
+            "dueDate": "1970-01-01T00:00:00Z",
+            "slipIdResource": "",
+            "sendSms": false,
+            "paymentDate": null
+          }],
+          "lead": {
+            "name": "leads/19c72045-679a-4149-bace-c93d42d7e946",
+            "createTime": "2023-12-11T03:06:01.585243Z",
+            "updateTime": "2023-12-11T03:06:41.728150Z",
+            "deleteTime": null,
+            "createBy": "users/fec79494-ab64-42f8-809d-aac20c68fa9a",
+            "product": "products/car-insurance",
+            "schema": "schemas/efce3390-8da6-44b3-9e4c-2c7b78ca2c9d",
+            "data": {
+              "carColor": [
+                "green"
+              ],
+              "carDashCam": false,
+              "carLicensePlate": "33ย-3234 กท",
+              "carModified": false,
+              "carSubModelYear": 46442,
+              "carUsageType": "personal",
+              "chassisNumber": "233422342324",
+              "checkout": {
+                "deliveryOption": "deliveryOptions/digital-delivery",
+                "installments": 1,
+                "package": "customPackages/5370f358-2fbf-46a7-abd4-476575c81e48",
+                "paymentMethod": "QR_CODE",
+                "paymentOption": "FULL_PAYMENT"
+              },
+              "compulsoryPolicyStartDate": "2023-12-11",
+              "currentInsurer": 10,
+              "customerBillingAddress": [
+                {
+                  "address": "test",
+                  "addressType": "personal",
+                  "district": 100100,
+                  "firstName": "Pactum",
+                  "lastName": "testing",
+                  "postCode": 10200,
+                  "province": 100000,
+                  "subDistrict": 100102
+                }
+              ],
+              "customerDOB": "1969-11-25",
+              "customerEmail": [
+                "oriolp@rabbit.co.th"
+              ],
+              "customerFirstName": "Pactum",
+              "customerGender": "m",
+              "customerLastName": "Testing",
+              "customerPhoneNumber": [
+                {
+                  "phone": "+66999999999",
+                  "status": "unverified"
+                }
+              ],
+              "customerPolicyAddress": [
+                {
+                  "address": "test",
+                  "addressType": "personal",
+                  "district": 100100,
+                  "firstName": "Pactum",
+                  "lastName": "Testing",
+                  "postCode": 10200,
+                  "province": 100000,
+                  "subDistrict": 100102
+                }
+              ],
+              "customerShippingAddress": [
+                {
+                  "address": "test",
+                  "addressType": "personal",
+                  "district": 100100,
+                  "firstName": "Pactum",
+                  "lastName": "Testing",
+                  "postCode": 10200,
+                  "province": 100000,
+                  "subDistrict": 100102
+                }
+              ],
+              "firstDriverDOB": "1969-11-25",
+              "firstDriverFirstName": "DriverOne",
+              "firstDriverLastName": "Testing",
+              "firstDriverLicense": "213123123123213123",
+              "firstDriverNationalId": "21231232323123",
+              "insuranceKind": "both",
+              "locale": "th-th",
+              "numberOfFixedDriver": 2,
+              "policyHolderDOB": "1969-11-25",
+              "policyHolderFirstName": "Pactum",
+              "policyHolderLastName": "Testing",
+              "policyHolderNationalId": "1014310000001",
+              "policyHolderType": "customer",
+              "policyStartDate": "2000-03-25",
+              "policyTitle": "MR",
+              "primaryPhoneIndex": 0,
+              "registeredProvince": 100000,
+              "secondDriverDOB": "1969-11-25",
+              "secondDriverFirstName": "DriverTwo",
+              "secondDriverLastName": "Testing",
+              "secondDriverLicense": "02394832843243",
+              "vehicleIdNumber": "234234234234",
+              "voluntaryInsuranceType": [
+                "type_1",
+                "type_2",
+                "type_2+",
+                "type_3",
+                "type_3+"
+              ]
+            },
+            "source": "sources/e0d14b43-a64d-41c5-adcc-822166d46e48",
+            "important": false,
+            "assignedTo": "",
+            "status": "LEAD_STATUS_PENDING_PAYMENT",
+            "humanId": "L9908475",
+            "root": "",
+            "type": "LEAD_TYPE_NEW",
+            "isRejected": false,
+            "reference": "",
+            "annotations": null
+          },
+          "transaction": {
+            "name": "transactions/fba6b2ef-8d8e-4743-b887-45ffdc047754",
+            "createTime": "2023-12-11T03:06:41.763316892Z",
+            "updateTime": "2023-12-11T03:06:41.763316892Z",
+            "money": {
+              "currencyCode": "THB",
+              "amount": "656016"
+            },
+            "installments": 1,
+            "lead": "leads/19c72045-679a-4149-bace-c93d42d7e946",
+            "leadHumanId": "L9908475",
+            "order": "",
+            "gatewayReference": "gateway-references/ICO-L9908475-231211100641",
+            "statusCode": "PENDING",
+            "paymentOption": "FULL_PAYMENT"
+          },
+          "order": {
+            "name": "",
+            "lead": "",
+            "createTime": null,
+            "updateTime": null,
+            "deleteTime": null,
+            "convertBy": "",
+            "supervisor": "",
+            "isCancelled": false,
+            "product": "",
+            "invoicePrice": "0",
+            "humanId": "",
+            "discounts": [
+              
+            ],
+            "payment": "",
+            "customer": "",
+            "schema": "",
+            "data": null,
+            "documentBy": "",
+            "documentStatus": "",
+            "qcBy": "",
+            "qcStatus": "",
+            "isUrgentDelivery": false,
+            "isFullyPaid": false,
+            "cancelTime": null
+          },
+          "assigned": null,
+          "team": null,
+          "followup": 
+            {
+              "name": "transactions/fa86ac4e-f324-4f9f-affa-30b2e1f110fc/followups/872cdfcb-2020-475b-b08d-2a19b7e807e4",
+              "createTime": "2023-12-07T13:43:54.214741Z",
+              "updateTime": "2023-12-07T13:44:10.065448Z",
+              "deleteTime": null,
+              "version": "0",
+              "chargeId": "transactions/fa86ac4e-f324-4f9f-affa-30b2e1f110fc/charges/16e20cbb-56fb-4808-8772-78a8905fde7a",
+              "transactionId": "transactions/fa86ac4e-f324-4f9f-affa-30b2e1f110fc",
+              "installmentNumber": 1,
+              "dueDate": "2024-01-06T00:00:00Z",
+              "sendSms": false,
+              "slipIdResource": ""
+            }
+        }
+    ],
+    "total": 1
+}

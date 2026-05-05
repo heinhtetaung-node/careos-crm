@@ -1,0 +1,79 @@
+@import '../../../../scss/reuse-mixin.scss';
+
+.shared-common-modal {
+  #form-dialog-title {
+    color: white;
+  }
+
+  .MuiDialog-paper {
+    overflow-y: unset;
+    border-radius: 20px;
+  }
+
+  .MuiDialog-paperWidthSm {
+    max-width: 540px;
+  }
+
+  .modal-header {
+    background-color: #005098;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    &.bg-grey {
+      background-color: $bg-color-blue-5;
+      height: 40px;
+    }
+
+    .close-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      cursor: pointer;
+      top: -20px;
+      right: -20px;
+      background-color: #f8f6f6;
+      color: #005098;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 2px 3px 14px 0 rgba(74, 74, 74, 0.25);
+    }
+
+    .dialog-content-text {
+      min-width: 400px;
+    }
+
+    &.no-background {
+      background-color: #fff;
+    }
+
+    &.add-border {
+      border-radius: 20px 20px 0 0;
+    }
+
+    &.text-center {
+      text-align: center;
+    }
+
+    .MuiDialogTitle-root {
+      &.text-center {
+        text-align: center;
+      }
+    }
+  }
+
+  .select-box {
+    text-align: center;
+  }
+
+  &.add-modal-border .MuiPaper-root {
+    border-radius: 20px;
+  }
+
+  .MuiDialogContent-root {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}

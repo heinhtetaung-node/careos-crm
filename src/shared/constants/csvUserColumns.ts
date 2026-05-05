@@ -1,0 +1,15 @@
+export const csvUserColumns = [
+  'User Role',
+  'First Name',
+  'Last Name',
+  'User Name',
+  'Assigned Product',
+  'Assigned Team',
+  'Daily Lead Limit',
+  'Total Lead Limit',
+  'Agent Score',
+  'License Number',
+  'License Issue Date',
+  'License Expiry Date',
+  'User Status',
+];

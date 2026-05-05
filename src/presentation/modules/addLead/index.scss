@@ -1,0 +1,63 @@
+@import '../../../scss/reuse-mixin.scss';
+
+.lead-add-lead {
+  .full-width {
+    width: 100% !important;
+  }
+
+  .button-list {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+
+    .shared-button:last-child {
+      button {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .MuiInputBase-input.MuiInput-input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    height: 42px;
+    line-height: 0.5em;
+    border-radius: 10px;
+    border: 1px solid $bg-color-blue-5;
+    background: #fff;
+    padding: 11px 16px;
+
+    &:hover,
+    &:focus {
+      transition: 0.2s;
+      border: 1px solid $text-color-blue-6;
+      box-shadow: 0 7px 15px 0 $box-shadow-field;
+    }
+  }
+
+  .MuiFormHelperText-root.Mui-error {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.65rem;
+  }
+
+  .MuiFormControl-root:nth-child(6) {
+    .shared-autocomplete {
+      .shared-input {
+        .MuiAutocomplete-inputRoot {
+          padding: 0 20px 3px 16px;
+        }
+      }
+    }
+
+    .MuiInputBase-input.MuiInput-input {
+      border: none;
+      background: transparent;
+
+      &:hover,
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}

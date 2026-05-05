@@ -1,0 +1,41 @@
+{
+  "name": "@careos/utils",
+  "version": "1.0.0",
+  "description": "This repository is for careos util code",
+  "main": "./dist",
+  "types": "./dist/index.d.ts",
+  "author": "Rabbit Internet Company Limited",
+  "private": true,
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "splitting": false,
+    "sourcemap": true,
+    "clean": false,
+    "onSuccess": "pnpm run gen-types"
+  },
+  "scripts": {
+    "build": "tsup --format esm,cjs",
+    "dev": "tsup --format esm,cjs --watch",
+    "gen-types": "tsc --declaration --emitDeclarationOnly",
+    "test": "jest",
+    "test:coverage": "jest"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.4.13",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.7",
+    "flagsmith": "4.0.2",
+    "jest": "^29.7.0",
+    "jest-sonar-reporter": "^2.0.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "~5.4.4"
+  },
+  "dependencies": {
+    "date-fns": "^3.6.0",
+    "lodash": "^4.17.21",
+    "rxjs": "^7.8.1",
+    "yup": "^1.4.0"
+  }
+}

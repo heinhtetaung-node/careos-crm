@@ -1,0 +1,19 @@
+@import '../../../scss/reuse-mixin.scss';
+
+.shared-input {
+  &--error {
+    input {
+      border: 1px solid $text-color-pink-3 !important;
+
+      &:hover,
+      &:focus {
+        border: 1px solid $text-color-pink-3 !important;
+      }
+    }
+  }
+
+  .MuiFormHelperText-root.Mui-error {
+    font-size: 0.65rem;
+    margin-top: 5px;
+  }
+}

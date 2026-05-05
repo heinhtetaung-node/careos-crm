@@ -1,0 +1,22 @@
+.multiselect-form-label {
+  height: 42px;
+  background: white;
+  margin-left: 0;
+  border-radius: 4px;
+  border: 1px solid;
+  flex-grow: 1;
+  justify-content: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  .MuiTypography-body1 {
+    font-weight: 600;
+  }
+
+  &.active {
+    color: white;
+    background: #005098;
+  }
+}

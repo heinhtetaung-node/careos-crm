@@ -228,6 +228,15 @@ export const apiUrl = {
     getAllInsurer: `${apiEndpoint.getCar}/insurers`,
     getAllCarModel: `${apiEndpoint.getCar}/brands/-/models`,
     gettAllCarSubmodel: `${apiEndpoint.getCar}/brands/-/models/-/submodels`,
+    getManufacturedYears: `${apiEndpoint.getCar}/manufacturedYears`,
+    getBrandsByYear: (year: string | number) =>
+      `${apiEndpoint.getCar}/manufacturedYears/${year}/brands`,
+    getModelsByYearBrand: (year: string | number, brandId: string | number) =>
+      `${apiEndpoint.getCar}/manufacturedYears/${year}/brands/${brandId}/models`,
+    getSubmodelsByBrandModel: (
+      brandId: string | number,
+      modelId: string | number
+    ) => `${apiEndpoint.getCar}/brands/${brandId}/models/${modelId}/submodels`,
     getImportedPackageHistory: `${apiEndpoint.packageImported}/v1alpha1/imports`,
     getPackageImportDownloadUrl: `${apiEndpoint.packageImported}/v1alpha1`,
   },

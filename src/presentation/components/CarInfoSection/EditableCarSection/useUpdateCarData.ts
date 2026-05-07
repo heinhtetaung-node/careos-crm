@@ -101,18 +101,31 @@ function useUpdateCarData(
   const [getCarData] = useLazyGetCarDataQuery();
 
   const { data: yearResponse, isLoading: isYearLoading } = useGetCarDataQuery({
-    pathParam: 'brands/-/models/-/submodels/-/years/-:getUniqueCars',
+    pathParam: 'manufacturedYears',
     queryParam: {},
     field: 'manufacturedYears',
   });
 
   const formattedYearResponse = useMemo(() => {
     if (yearResponse) {
-      return yearResponse.map((year: number, index: number) => ({
-        id: index,
-        value: year,
-        title: year.toString(),
-      }));
+      return yearResponse.map((year: any, index: number) => {
+        // New endpoint returns objects like `{ name: 'manufacturedYears/2025', year: 2025 }`.
+        // Old endpoint returned plain numbers.
+        let yearValue: number | undefined;
+        if (typeof year === 'number') {
+          yearValue = year;
+        } else if (typeof year?.year === 'number') {
+          yearValue = year.year;
+        } else if (typeof year?.name === 'string') {
+          const tail = year.name.split('/').pop();
+          yearValue = tail ? Number(tail) : undefined;
+        }
+        return {
+          id: index,
+          value: yearValue,
+          title: yearValue != null ? yearValue.toString() : '',
+        };
+      });
     }
     return [];
   }, [yearResponse]);
@@ -255,11 +268,18 @@ function useUpdateCarData(
         let patchResponse: any = [];
 
         if (stateField === 'brand' || stateField === 'model') {
-          resCopy = resCopy.map((fields: any) => ({
-            id: fields?.id,
-            value: fields.id,
-            title: fields.name,
-          }));
+          resCopy = resCopy.map((fields: any) => {
+            // New endpoints return `{ name: '…/brands/<id>' | '…/models/<id>', displayName }`.
+            // Old endpoint returned `{ id, name }`. Support both.
+            const trailingId = fields?.name?.includes('/')
+              ? Number(fields.name.split('/').pop())
+              : fields?.id;
+            return {
+              id: trailingId,
+              value: trailingId,
+              title: fields?.displayName ?? fields?.name,
+            };
+          });
 
           patchResponse = [
             {
@@ -286,12 +306,18 @@ function useUpdateCarData(
         // Transform car api response to show car submodel name to user.
         if (stateField === 'carSubModelYear') {
           resCopy = resCopy.map((fields: any, index: number) => {
-            const fieldValue = fields?.name
-              .substring(fields.name.indexOf('years/'))
-              .replace('years/', '');
+            // New endpoint returns `{ name: '…/submodels/<id>', displayName, engineSize, doors }`
+            // (no `years/<id>` segment). Old endpoint returned `…/submodels/<sid>/years/<yid>`.
+            // Support both: prefer year segment when present, else fall back to submodel id.
+            const nameStr: string = fields?.name ?? '';
+            const yearMatch = nameStr.includes('years/')
+              ? nameStr
+                  .substring(nameStr.indexOf('years/'))
+                  .replace('years/', '')
+              : nameStr.split('/').pop();
             return {
               id: index,
-              value: fieldValue ? parseInt(fieldValue, 10) : '',
+              value: yearMatch ? parseInt(yearMatch, 10) : '',
               title: fields?.displayName?.trim(),
               engineSize: fields?.engineSize,
               doors: fields?.doors,
@@ -331,11 +357,9 @@ function useUpdateCarData(
       // fetch brand
       if (carState.year && !hasFetch.brand) {
         fetchOptions({
-          pathParam: 'brands/-/models/-/submodels/-/years/-:getUniqueCars',
-          queryParam: {
-            car_manufactured_year: carState.year,
-          },
-          field: 'uniqueBrands',
+          pathParam: `manufacturedYears/${carState.year}/brands`,
+          queryParam: {},
+          field: 'brands',
           stateField: 'brand',
         });
       }
@@ -343,11 +367,9 @@ function useUpdateCarData(
       // fetch model
       if (carState.year && carState.brand && !hasFetch.model) {
         fetchOptions({
-          pathParam: `brands/${carState.brand}/models/-/submodels/-/years/-:getUniqueCars`,
-          queryParam: {
-            car_manufactured_year: carState.year,
-          },
-          field: 'uniqueModels',
+          pathParam: `manufacturedYears/${carState.year}/brands/${carState.brand}/models`,
+          queryParam: {},
+          field: 'models',
           stateField: 'model',
         });
       }
@@ -355,22 +377,18 @@ function useUpdateCarData(
       // fetch submodel
       if (carState.year && carState.brand && carState.model && !hasFetch.year) {
         fetchOptions({
-          pathParam: `brands/${carState.brand}/models/${carState.model}/submodels/-/years/-:getUniqueCars`,
-          queryParam: {
-            car_manufactured_year: carState.year,
-          },
-          field: 'car',
+          pathParam: `brands/${carState.brand}/models/${carState.model}/submodels`,
+          queryParam: {},
+          field: 'submodels',
           stateField: 'carSubModelYear',
         });
       }
       // fetch noOfDoors
       if (carState.year && carState.brand && carState.model && !hasFetch.year) {
         fetchOptions({
-          pathParam: `brands/${carState.brand}/models/${carState.model}/submodels/-/years/-:getUniqueCars`,
-          queryParam: {
-            car_manufactured_year: carState.year,
-          },
-          field: 'car',
+          pathParam: `brands/${carState.brand}/models/${carState.model}/submodels`,
+          queryParam: {},
+          field: 'submodels',
           stateField: 'noOfDoors',
         });
       }

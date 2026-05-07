@@ -76,7 +76,7 @@ describe('EditableCarSection', () => {
   it('renders the component correctly', async () => {
     server.use(
       http.get(
-        `${process.env.VITE_API_ENDPOINT}/api/car/v1alpha1/brands/-/models/-/submodels/-/years/-:getUniqueCars`,
+        `${process.env.VITE_API_ENDPOINT}/api/car/v1alpha1/manufacturedYears`,
         () => HttpResponse.json(CarApiResponse)
       ),
       http.get(

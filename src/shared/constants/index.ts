@@ -155,6 +155,15 @@ export const apiEndpoint = {
   getOrderComments: 'api/orders',
 };
 
+/** Query parameter for filtering submodels by manufactured year (`getUniqueCars` resource). */
+export const CAR_MANUFACTURED_YEAR_QUERY_PARAM = 'car_manufactured_year';
+
+/** Path segment after `${apiEndpoint.getCar}/` listing submodels for a brand+model (uses getUniqueCars). */
+export const getCarApiSubmodelsYearsPath = (
+  brandId: string | number,
+  modelId: string | number
+) => `brands/${brandId}/models/${modelId}/submodels/-/years/-:getUniqueCars`;
+
 export const apiUrl = {
   getTeam: `${apiEndpoint.teamEndpoint}/teams`,
   getUser: `${apiEndpoint.userEndpoint}/users`,
@@ -236,7 +245,8 @@ export const apiUrl = {
     getSubmodelsByBrandModel: (
       brandId: string | number,
       modelId: string | number
-    ) => `${apiEndpoint.getCar}/brands/${brandId}/models/${modelId}/submodels`,
+    ) =>
+      `${apiEndpoint.getCar}/${getCarApiSubmodelsYearsPath(brandId, modelId)}`,
     getImportedPackageHistory: `${apiEndpoint.packageImported}/v1alpha1/imports`,
     getPackageImportDownloadUrl: `${apiEndpoint.packageImported}/v1alpha1`,
   },

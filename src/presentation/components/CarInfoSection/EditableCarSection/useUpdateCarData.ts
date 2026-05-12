@@ -6,6 +6,10 @@ import { useMemo, useState, useEffect } from 'react';
 import carColumns from './config';
 import { useGetAddressDataQuery } from 'data/slices/addressSlice';
 import {
+  getCarApiSubmodelsYearsPath,
+  CAR_MANUFACTURED_YEAR_QUERY_PARAM,
+} from 'shared/constants';
+import {
   useLazyGetCarDataQuery,
   useGetCarDataQuery,
 } from 'data/slices/carSlice';
@@ -377,8 +381,11 @@ function useUpdateCarData(
       // fetch submodel
       if (carState.year && carState.brand && carState.model && !hasFetch.year) {
         fetchOptions({
-          pathParam: `brands/${carState.brand}/models/${carState.model}/submodels`,
-          queryParam: {},
+          pathParam: getCarApiSubmodelsYearsPath(
+            carState.brand,
+            carState.model
+          ),
+          queryParam: { [CAR_MANUFACTURED_YEAR_QUERY_PARAM]: carState.year },
           field: 'submodels',
           stateField: 'carSubModelYear',
         });
@@ -386,8 +393,11 @@ function useUpdateCarData(
       // fetch noOfDoors
       if (carState.year && carState.brand && carState.model && !hasFetch.year) {
         fetchOptions({
-          pathParam: `brands/${carState.brand}/models/${carState.model}/submodels`,
-          queryParam: {},
+          pathParam: getCarApiSubmodelsYearsPath(
+            carState.brand,
+            carState.model
+          ),
+          queryParam: { [CAR_MANUFACTURED_YEAR_QUERY_PARAM]: carState.year },
           field: 'submodels',
           stateField: 'noOfDoors',
         });

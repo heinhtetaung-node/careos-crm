@@ -8,6 +8,7 @@ import { useGetAddressDataQuery } from 'data/slices/addressSlice';
 import {
   getCarApiSubmodelsYearsPath,
   CAR_MANUFACTURED_YEAR_QUERY_PARAM,
+  getCarApiSubmodelsListResponseField,
 } from 'shared/constants';
 import {
   useLazyGetCarDataQuery,
@@ -378,27 +379,26 @@ function useUpdateCarData(
         });
       }
 
-      // fetch submodel
+      // Submodel / doors lists: `:getUniqueCars` returns variants under `car`, not `submodels`.
       if (carState.year && carState.brand && carState.model && !hasFetch.year) {
+        const pathParam = getCarApiSubmodelsYearsPath(
+          carState.brand,
+          carState.model
+        );
+        const listField = getCarApiSubmodelsListResponseField(pathParam);
+        const queryParam = {
+          [CAR_MANUFACTURED_YEAR_QUERY_PARAM]: carState.year,
+        };
         fetchOptions({
-          pathParam: getCarApiSubmodelsYearsPath(
-            carState.brand,
-            carState.model
-          ),
-          queryParam: { [CAR_MANUFACTURED_YEAR_QUERY_PARAM]: carState.year },
-          field: 'submodels',
+          pathParam,
+          queryParam,
+          field: listField,
           stateField: 'carSubModelYear',
         });
-      }
-      // fetch noOfDoors
-      if (carState.year && carState.brand && carState.model && !hasFetch.year) {
         fetchOptions({
-          pathParam: getCarApiSubmodelsYearsPath(
-            carState.brand,
-            carState.model
-          ),
-          queryParam: { [CAR_MANUFACTURED_YEAR_QUERY_PARAM]: carState.year },
-          field: 'submodels',
+          pathParam,
+          queryParam,
+          field: listField,
           stateField: 'noOfDoors',
         });
       }

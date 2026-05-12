@@ -158,6 +158,17 @@ export const apiEndpoint = {
 /** Query parameter for filtering submodels by manufactured year (`getUniqueCars` resource). */
 export const CAR_MANUFACTURED_YEAR_QUERY_PARAM = 'car_manufactured_year';
 
+/** JSON field on `:getUniqueCars` responses that lists variant rows (plain list endpoints use `submodels`). */
+export const CAR_UNIQUE_CARS_RESPONSE_FIELD = 'car' as const;
+
+export function getCarApiSubmodelsListResponseField(
+  pathParam: string
+): typeof CAR_UNIQUE_CARS_RESPONSE_FIELD | 'submodels' {
+  return pathParam.includes(':getUniqueCars')
+    ? CAR_UNIQUE_CARS_RESPONSE_FIELD
+    : 'submodels';
+}
+
 /** Path segment after `${apiEndpoint.getCar}/` listing submodels for a brand+model (uses getUniqueCars). */
 export const getCarApiSubmodelsYearsPath = (
   brandId: string | number,

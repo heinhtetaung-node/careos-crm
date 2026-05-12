@@ -379,7 +379,9 @@ function useUpdateCarData(
         });
       }
 
-      // Submodel / doors lists: `:getUniqueCars` returns variants under `car`, not `submodels`.
+      // Submodel + doors: single request — `:getUniqueCars` returns variants under `car`.
+      // Two sequential fetchOptions calls each did setDataSchema from scratch, so whichever
+      // finished last wiped the other field's options (defaults).
       if (carState.year && carState.brand && carState.model && !hasFetch.year) {
         const pathParam = getCarApiSubmodelsYearsPath(
           carState.brand,
@@ -389,18 +391,72 @@ function useUpdateCarData(
         const queryParam = {
           [CAR_MANUFACTURED_YEAR_QUERY_PARAM]: carState.year,
         };
-        fetchOptions({
-          pathParam,
-          queryParam,
-          field: listField,
-          stateField: 'carSubModelYear',
-        });
-        fetchOptions({
-          pathParam,
-          queryParam,
-          field: listField,
-          stateField: 'noOfDoors',
-        });
+
+        const loadSubmodelsAndDoors = async () => {
+          const response = await getCarData({
+            pathParam,
+            queryParam,
+            field: listField,
+          });
+
+          if (response.isError) {
+            newrelic?.noticeError?.(response as any);
+            return;
+          }
+
+          const resCopy = [...response.data];
+          const subModelOptions = resCopy.map((fields: any, index: number) => {
+            const nameStr: string = fields?.name ?? '';
+            const yearMatch = nameStr.includes('years/')
+              ? nameStr
+                  .substring(nameStr.indexOf('years/'))
+                  .replace('years/', '')
+              : nameStr.split('/').pop();
+            return {
+              id: index,
+              value: yearMatch ? parseInt(yearMatch, 10) : '',
+              title: fields?.displayName?.trim(),
+              engineSize: fields.engineSize,
+              doors: fields.doors,
+              redbookId: fields.redbookId,
+            };
+          });
+
+          const noOfDoorsOptions = resCopy.map((fields: any) => ({
+            engineSize: fields.engineSize,
+            doors: fields.doors,
+          }));
+
+          const patchResponse: any[] = [
+            {
+              name: CAR_ROWS.SUB_MODEL,
+              field: 'options',
+              response: subModelOptions,
+            },
+            ...(carState.subModel
+              ? [
+                  {
+                    name: CAR_ROWS.SUB_MODEL,
+                    field: 'fallbackSelectedValueResolver',
+                    response: () => ({
+                      id: -1,
+                      value: -1,
+                      title: carState.subModel,
+                    }),
+                  },
+                ]
+              : []),
+            {
+              name: CAR_ROWS.NUMBER_DOORS,
+              field: 'options',
+              response: noOfDoorsOptions,
+            },
+          ];
+
+          setDataSchema(() => getMappedCarData(carState, patchResponse));
+        };
+
+        loadSubmodelsAndDoors().catch(() => {});
       }
     }
   }, [carState]);

@@ -21,8 +21,8 @@ export const ALLOWED_FIXED_DRIVER_COUNTS = [0, 1, 2];
 export const getFieldTitle = (config: any, key: string, fallbackKey: string) =>
   getString(config[key]?.title || fallbackKey);
 
-export const getFieldTooltip = (config: any, key: string) =>
-  getString(config[key]?.tooltip);
+export const getFieldTooltip = (key: string) =>
+  getString(`leadFilter.tooltip.${key}`);
 
 export const getFieldOptions = (
   config: any,

@@ -18,7 +18,6 @@ enum FeatureFlags {
   BROK_1052_ENABLE_PRODUCT_DROPDOWN_ON_LEAD_SOURCE_MODAL_20241223_TEMP = 'brok-1052_enable-product-dropdown-on-lead-source-modal_20241223_temp',
   LEAD_4764_USE_NEW_MODAL_FOR_CREATE_UPDATE_USER_20240129_TEMP = 'lead-4764_use-new-modal-for-create-update-user_20240129_temp',
 
-  BROK_1710_ENABLE_CHATWOOT_BUTTON_2025_02_03_TEMP = 'brok-1710_enable_chatwoot_button_2025_02_03_temp',
   BROK_1778_SHOW_DIRECT_DEBIT_20250210_TEMP = 'brok-1778_show_direct_debit_20250210_temp',
   BROK_2243_ENABLE_AUTO_FILL_APPLICATION_FORM_HEALTH_20250423 = 'brok-2243_enable-auto-fill-application-form-health_2025_04_23',
   BROK_2382_CANCELLATION_MANAGEMENT_CHANGES_REFUND_REQUEST_20250515_TEMP = 'brok-2382_cancellation_management_changes_refund_request_20250515_temp',

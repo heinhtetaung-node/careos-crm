@@ -94,7 +94,7 @@ function FilterSelectRegion({
         value={currentData?.[fieldKey] ?? ''}
         onChange={(e) => handleChange(fieldKey, e)}
         options={getFieldOptions(config, fieldKey, fallbackOptions)}
-        tooltipHelperText={getFieldTooltip(config, fieldKey)}
+        tooltipHelperText={getFieldTooltip(fieldKey)}
         disabled={policyHolderTypeUpdating}
         backgroundColor="#FFF"
       />
@@ -235,7 +235,7 @@ function FilterRadio({
   return (
     <CommonRadio
       title={getFieldTitle(config, fieldKey, fallbackKey)}
-      tooltipText={getFieldTooltip(config, fieldKey)}
+      tooltipText={getFieldTooltip(fieldKey)}
       selectedValue={currentData[fieldKey]?.toString() ?? ''}
       options={getFieldOptions(config, fieldKey, fallbackOptions)}
       setValue={(e: any) => handleChange(fieldKey, e)}

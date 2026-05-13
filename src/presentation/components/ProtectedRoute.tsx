@@ -1,5 +1,5 @@
 import { useNewRelic } from '@careos/newrelic';
-import { useFlags, useFlagsmith } from 'flagsmith/react';
+import { useFlagsmith } from 'flagsmith/react';
 import React, { memo, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Navigate } from 'react-router-dom';
@@ -14,13 +14,11 @@ import {
   UserRoleID,
 } from './ProtectedRouteHelper';
 
-import FeatureFlags from 'config/flagsmithConfig';
 import {
   useGetAuthenticateQuery,
   useUpdateLastLoginMutation,
 } from 'data/slices/authSlice';
 import { authorizeSuccess } from 'presentation/redux/slices/auth';
-import { shouldEnableChatwoot } from 'presentation/routes/helper';
 import LocalStorage, { LOCALSTORAGE_KEY } from 'shared/helper/LocalStorage';
 import {
   intervalObservable,
@@ -30,7 +28,6 @@ import {
 import { RabbitResource } from '../../data/gateway/api/resource';
 import Loading from '../../Loading';
 import { updatePresence } from '../redux/actions/presence';
-import ChatwootInboxEmbedded from './ChatwootInboxEmbedded';
 
 const localStorage = new LocalStorage();
 
@@ -66,10 +63,6 @@ function ProtectedRoute({
   const globalProduct = useAppSelector(
     (state) => state.typeSelectorReducer.globalProductSelectorReducer.data
   );
-
-  const isEnabledChatwootButton = useFlags([
-    FeatureFlags.BROK_1710_ENABLE_CHATWOOT_BUTTON_2025_02_03_TEMP,
-  ])[FeatureFlags.BROK_1710_ENABLE_CHATWOOT_BUTTON_2025_02_03_TEMP]?.enabled;
 
   useEffect(() => {
     if (user) {
@@ -119,7 +112,6 @@ function ProtectedRoute({
   }
 
   const hasPermission = permission?.includes(user?.role as UserRoleID);
-  const enableChatwoot = shouldEnableChatwoot(user?.role as UserRoleID, path);
 
   // Handle root path redirections
   if (path === '/') {
@@ -144,7 +136,6 @@ function ProtectedRoute({
   // Render authorized route
   return (
     <Layout>
-      {isEnabledChatwootButton && enableChatwoot && <ChatwootInboxEmbedded />}
       <Component authInfo={user} />
     </Layout>
   );

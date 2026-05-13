@@ -1,7 +1,4 @@
 export default {
-  widget: {
-    chatWithCustomer: "Chat with Customer"
-  },
   addressModal: {
     addrressType: "Address type",
     mainAddress: "Main address",
@@ -1641,7 +1638,21 @@ export default {
     policyHolderType: "Policy holder type",
     yes: "Yes",
     no: "No",
-    english: "English"
+    english: "English",
+    tooltip: {
+      redPlate:
+        "Select Yes if this vehicle uses a Thai red dealer plate registration while waiting for permanent plates.",
+      insuranceKind:
+        "Choose compulsory ( พ.ร.บ. ), voluntary, or bundled coverage.\nPricing and required dates depend on this setting.",
+      policyHolderType:
+        "Indicates whether the customer, another individual, or a company is named as the insured on this policy.",
+      policyTitle:
+        "Official title prefix of the insured person matching ID documents.",
+      customerGender:
+        "Gender recorded for the insured customer.",
+      customerLanguage:
+        "Preferred language for correspondence and documents for this customer.",
+    },
   },
   healthPackageFilter: {
     premium: 'Premium',

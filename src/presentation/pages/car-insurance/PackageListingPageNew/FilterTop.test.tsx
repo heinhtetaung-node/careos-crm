@@ -128,6 +128,7 @@ describe('FilterTop', () => {
   it('renders insurer logos (via alt text) for all insurers', () => {
     renderFilterTop();
     const insurers = [
+      'Allianz Ayudhya',
       'Bangkok Insurance',
       'Viriyah Insurance',
       'Thanachart Insurance',

@@ -27,12 +27,6 @@
     right: 220px;
   }
 
-  &:not(.pitch-checklist-panel--expanded) {
-    @media (min-width: 1280px) {
-      right: calc(var(--chatwoot-toggle-clearance, 222px) + 18px);
-    }
-  }
-
   &--expanded {
     left: 12px;
     right: 12px;

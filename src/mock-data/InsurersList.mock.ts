@@ -5,6 +5,11 @@ type Insurer = {
 };
 const InsurerList: Insurer[] = [
   {
+    key: 'insurers/1',
+    label: 'Allianz Ayudhya',
+    logo: 'https://storage.googleapis.com/skillful-rush/insurers/1.png',
+  },
+  {
     key: 'insurers/7',
     label: 'Bangkok Insurance',
     logo: 'https://storage.googleapis.com/skillful-rush/insurers/7.png',

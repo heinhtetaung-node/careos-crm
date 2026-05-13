@@ -91,11 +91,11 @@ describe('LeadFilterOptions Helper', () => {
     });
   });
   describe('getFieldTooltip', () => {
-    it('handles all tooltip scenarios', () => {
-      const config = { testField: { tooltip: 'Custom Tooltip' } };
-      expect(getFieldTooltip(config, 'testField')).toBe('Custom Tooltip');
-      expect(getFieldTooltip({}, 'testField')).toBeUndefined();
-      expect(getFieldTooltip({ testField: {} }, 'testField')).toBeUndefined();
+    it('returns localized tooltip key by field', () => {
+      expect(getFieldTooltip('testField')).toBe('leadFilter.tooltip.testField');
+      expect(getFieldTooltip('policyHolderDOB')).toBe(
+        'leadFilter.tooltip.policyHolderDOB'
+      );
     });
   });
   describe('getFieldOptions', () => {

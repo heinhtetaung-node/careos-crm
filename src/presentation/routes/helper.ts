@@ -423,33 +423,3 @@ export const getUserPermission = (path: string): string[] => {
 };
 
 export default mapPageRoute;
-
-export const shouldEnableChatwoot = (
-  userRole: UserRoleID,
-  path: string
-): boolean => {
-  if (
-    [UserRoleID.Admin, UserRoleID.SuperAdmin, UserRoleID.InboundAgent].includes(
-      userRole
-    )
-  ) {
-    return true;
-  }
-
-  const hasAccessRole = [
-    UserRoleID.Manager,
-    UserRoleID.Supervisor,
-    UserRoleID.SalesAgent,
-    UserRoleID.BackOffice,
-  ].includes(userRole);
-
-  const hasAccessPath = [
-    '/leads/:id',
-    '/orders/:orderId',
-    '/orders/my-orders/:orderId',
-    '/health/leads/:id',
-    '/health/orders/:orderId',
-  ].includes(path);
-
-  return hasAccessRole && hasAccessPath;
-};

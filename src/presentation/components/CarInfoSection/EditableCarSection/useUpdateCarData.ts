@@ -19,7 +19,12 @@ import { UpdatePayload } from 'presentation/components/common/FormikFields/LeadA
 import { ICarInfo } from 'presentation/pages/car-insurance/LeadDetailsPage/leadDetailsPage.helper';
 import { getString } from 'presentation/theme/localization';
 
-import { getMappedCarData, API_CALLING_FIELDS } from './helper';
+import {
+  getMappedCarData,
+  API_CALLING_FIELDS,
+  parseManufacturedYear,
+  parseCarSubmodelResourceNameToOptionValue,
+} from './helper';
 import { CAR_ROWS } from './interface';
 
 export function getValue(value: string) {
@@ -114,17 +119,7 @@ function useUpdateCarData(
   const formattedYearResponse = useMemo(() => {
     if (yearResponse) {
       return yearResponse.map((year: any, index: number) => {
-        // New endpoint returns objects like `{ name: 'manufacturedYears/2025', year: 2025 }`.
-        // Old endpoint returned plain numbers.
-        let yearValue: number | undefined;
-        if (typeof year === 'number') {
-          yearValue = year;
-        } else if (typeof year?.year === 'number') {
-          yearValue = year.year;
-        } else if (typeof year?.name === 'string') {
-          const tail = year.name.split('/').pop();
-          yearValue = tail ? Number(tail) : undefined;
-        }
+        const yearValue = parseManufacturedYear(year);
         return {
           id: index,
           value: yearValue,
@@ -274,8 +269,6 @@ function useUpdateCarData(
 
         if (stateField === 'brand' || stateField === 'model') {
           resCopy = resCopy.map((fields: any) => {
-            // New endpoints return `{ name: '…/brands/<id>' | '…/models/<id>', displayName }`.
-            // Old endpoint returned `{ id, name }`. Support both.
             const trailingId = fields?.name?.includes('/')
               ? Number(fields.name.split('/').pop())
               : fields?.id;
@@ -311,18 +304,9 @@ function useUpdateCarData(
         // Transform car api response to show car submodel name to user.
         if (stateField === 'carSubModelYear') {
           resCopy = resCopy.map((fields: any, index: number) => {
-            // New endpoint returns `{ name: '…/submodels/<id>', displayName, engineSize, doors }`
-            // (no `years/<id>` segment). Old endpoint returned `…/submodels/<sid>/years/<yid>`.
-            // Support both: prefer year segment when present, else fall back to submodel id.
-            const nameStr: string = fields?.name ?? '';
-            const yearMatch = nameStr.includes('years/')
-              ? nameStr
-                  .substring(nameStr.indexOf('years/'))
-                  .replace('years/', '')
-              : nameStr.split('/').pop();
             return {
               id: index,
-              value: yearMatch ? parseInt(yearMatch, 10) : '',
+              value: parseCarSubmodelResourceNameToOptionValue(fields?.name),
               title: fields?.displayName?.trim(),
               engineSize: fields?.engineSize,
               doors: fields?.doors,
@@ -379,84 +363,99 @@ function useUpdateCarData(
         });
       }
 
-      // Submodel + doors: single request — `:getUniqueCars` returns variants under `car`.
-      // Two sequential fetchOptions calls each did setDataSchema from scratch, so whichever
-      // finished last wiped the other field's options (defaults).
       if (carState.year && carState.brand && carState.model && !hasFetch.year) {
-        const pathParam = getCarApiSubmodelsYearsPath(
-          carState.brand,
-          carState.model
-        );
-        const listField = getCarApiSubmodelsListResponseField(pathParam);
-        const queryParam = {
-          [CAR_MANUFACTURED_YEAR_QUERY_PARAM]: carState.year,
-        };
-
         const loadSubmodelsAndDoors = async () => {
-          const response = await getCarData({
-            pathParam,
-            queryParam,
-            field: listField,
-          });
+          try {
+            const pathParam = getCarApiSubmodelsYearsPath(
+              carState.brand,
+              carState.model
+            );
 
-          if (response.isError) {
-            newrelic?.noticeError?.(response as any);
-            return;
+            const response = await getCarData({
+              pathParam,
+              field: getCarApiSubmodelsListResponseField(pathParam),
+              queryParam: {
+                [CAR_MANUFACTURED_YEAR_QUERY_PARAM]: carState.year,
+              },
+            });
+
+            if (response.isError) {
+              newrelic?.noticeError?.(response as any);
+              return;
+            }
+
+            const subModelOptions = response.data.map(
+              (item: any, index: number) => {
+                const name = item?.name ?? '';
+
+                const value = Number(
+                  name.includes('years/')
+                    ? name
+                        .substring(name.indexOf('years/'))
+                        .replace('years/', '')
+                    : name.split('/').pop()
+                );
+
+                return {
+                  id: index,
+                  value: Number.isNaN(value) ? '' : value,
+                  title: item?.displayName?.trim(),
+                  engineSize: item?.engineSize,
+                  doors: item?.doors,
+                  redbookId: item?.redbookId,
+                };
+              }
+            );
+
+            setDataSchema(() =>
+              getMappedCarData(carState, [
+                {
+                  name: CAR_ROWS.SUB_MODEL,
+                  field: 'options',
+                  response: subModelOptions,
+                },
+                ...(carState.subModel
+                  ? [
+                      {
+                        name: CAR_ROWS.SUB_MODEL,
+                        field: 'fallbackSelectedValueResolver',
+                        response: () => ({
+                          id: -1,
+                          value: -1,
+                          title: carState.subModel,
+                        }),
+                      },
+                    ]
+                  : []),
+                {
+                  name: CAR_ROWS.NUMBER_DOORS,
+                  field: 'options',
+                  response: subModelOptions.map(
+                    ({
+                      engineSize,
+                      doors,
+                    }: {
+                      engineSize: number;
+                      doors: number;
+                    }) => ({
+                      engineSize,
+                      doors,
+                    })
+                  ),
+                },
+              ])
+            );
+
+            setHasFetch((prev: any) => ({
+              ...prev,
+              subModel: true,
+            }));
+          } catch (error) {
+            newrelic?.noticeError?.(error as any);
           }
-
-          const resCopy = [...response.data];
-          const subModelOptions = resCopy.map((fields: any, index: number) => {
-            const nameStr: string = fields?.name ?? '';
-            const yearMatch = nameStr.includes('years/')
-              ? nameStr
-                  .substring(nameStr.indexOf('years/'))
-                  .replace('years/', '')
-              : nameStr.split('/').pop();
-            return {
-              id: index,
-              value: yearMatch ? parseInt(yearMatch, 10) : '',
-              title: fields?.displayName?.trim(),
-              engineSize: fields.engineSize,
-              doors: fields.doors,
-              redbookId: fields.redbookId,
-            };
-          });
-
-          const noOfDoorsOptions = resCopy.map((fields: any) => ({
-            engineSize: fields.engineSize,
-            doors: fields.doors,
-          }));
-
-          const patchResponse: any[] = [
-            {
-              name: CAR_ROWS.SUB_MODEL,
-              field: 'options',
-              response: subModelOptions,
-            },
-            ...(carState.subModel
-              ? [
-                  {
-                    name: CAR_ROWS.SUB_MODEL,
-                    field: 'fallbackSelectedValueResolver',
-                    response: () => ({
-                      id: -1,
-                      value: -1,
-                      title: carState.subModel,
-                    }),
-                  },
-                ]
-              : []),
-            {
-              name: CAR_ROWS.NUMBER_DOORS,
-              field: 'options',
-              response: noOfDoorsOptions,
-            },
-          ];
-
-          setDataSchema(() => getMappedCarData(carState, patchResponse));
         };
 
-        loadSubmodelsAndDoors().catch(() => {});
+        loadSubmodelsAndDoors();
       }
     }
   }, [carState]);
